@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="profile-wrapper">
+  <img class="profile-avatar" src="images/avatar.png" alt="avatar">
+  <h2 class="profile-name">Hieu Pham</h2>
+
+  <p class="profile-introduction">
+    <span class="will-go-down">Watch lover.</span>
+    <span class="will-go-down">Over-thinker.</span>
+    <span class="will-go-down">Web developer.</span>
+    <br>
+    UI/UX lover <a href="https://twitter.com/ReFUEL4" class="no-decoration" target="_blank">@ReFUEL4</a>.
+  </p>
+
+  <div class="profile-connect">
+    <p class="connect-header">SEE ME ON</p>
+    <ul class="social-items">
+      {% for network in site.data.social_networks %}
+        <li class="social-item">
+          <a href="{{ network.url }}" class="no-decoration" target="_blank">
+            <i class="mdi mdi-{{network.icon}} mdi-24px" title="{{network.name}}"></i>
+            <span class="mdi-text">{{network.name}}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <p>
+    ┐( ˘_˘ )┌
+  </p>
+</div>

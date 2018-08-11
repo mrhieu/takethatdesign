@@ -1,0 +1,105 @@
+@import './variables.scss';
+
+.form-group {
+  margin-bottom: 20px;
+  label {
+    font-weight: 700;
+    color: $textPrimary;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+    .text-muted {
+      font-weight: 400;
+    }
+  }
+
+  .form-control {
+    border-radius: 2px;
+    padding: 8px 8px;
+    border: 1px solid $divider;
+    font-size: 16px;
+    outline: none;
+
+    &:focus {
+      border-color: $textSecondary;
+    }
+  }
+
+  .form-control-group {
+    position: relative;
+    .form-control-icon {
+      position: absolute;
+      left: 8px;
+      top: 8px;
+    }
+    input.form-control {
+      padding-left: 24px;
+    }
+  }
+
+  select.form-control {
+    height: 36px;
+  }
+
+  input, textarea {
+    background-color: #f9f9f9;
+  }
+}
+
+.no-resize {
+  resize: none;
+}
+
+/* Custom-select CSS (https://github.com/filamentgroup/select-css)*/
+
+/* Container used for styling the custom select, the buttom class below adds the
+ * bg gradient, corners, etc. */
+.custom-select {
+	position: relative;
+  background-color: #f9f9f9;
+
+  select {
+  	width: 100%;
+  	box-sizing: border-box;
+  }
+
+  &::after {
+  	content: " ";
+  	position: absolute;
+  	top: 50%;
+  	right: 1em;
+  	z-index: 2;
+  	/* These hacks make the select behind the arrow clickable in some browsers */
+  	pointer-events: none;
+  	display: none;
+    width: 0;
+  	height: 0;
+  	border-left: 4px solid transparent;
+  	border-right: 4px solid transparent;
+  	border-top: 7px solid #666;
+  	margin-top: -3px;
+  }
+}
+
+/* Firefox <= 34 has a false positive on @supports( -moz-appearance: none )
+ * @supports ( mask-type: alpha ) is Firefox 35+
+ */
+@supports (-webkit-appearance: none) or (appearance: none) or ((-moz-appearance: none) and (mask-type: alpha)) {
+
+	/* Show custom arrow */
+	.custom-select::after {
+		display: block;
+	}
+
+	/* Remove select styling */
+	.custom-select select {
+		padding-right: 2em; /* Match-01 */
+		/* inside @supports so that iOS <= 8 display the native arrow */
+		background: none; /* Match-04 */
+		/* inside @supports so that Android <= 4.3 display the native arrow */
+		border: 1px solid transparent; /* Match-05 */
+		-webkit-appearance: none;
+		appearance: none;
+	}
+}
+/* END OF Custom-select CSS */
