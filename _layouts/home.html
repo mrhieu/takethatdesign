@@ -2,15 +2,6 @@
 layout: default
 ---
 
-<div class="text-center m-b-lg">
-  <h2 class="text-3x font-bold">Ionic Themes</h2>
-  <p class="text-2x l-h-1x text-muted font-thin">
-    Kick start you next project
-    <br>
-    Save time for your ideas
-  </p>
-</div>
-
 <div class="tags-bar wrapper">
   <ul>
     <li class="tag active">
@@ -25,6 +16,10 @@ layout: default
   </ul>
 </div>
 
+<div class="padder-v text-center text-muted text-sm">
+  Purchasing process will take place at <span class="font-bold text-dark">Gumroad</span> product pages.
+</div>
+
 <div class="product-container">
   <div class="product-items row">
     {% for item in site.data.products %}
@@ -35,8 +30,11 @@ layout: default
           </div>
           <div class="item-footer">
             <div class="item-info">
-              <div class="text-lg">
+              <div class="font-bold">
                 LinkedIn UI 2
+              </div>
+              <div class="text-muted text-sm">
+                Social Network for Professional
               </div>
               <div class="item-tags">
                 <div class="tag tag-sm">
@@ -48,7 +46,7 @@ layout: default
               </div>
             </div>
 
-            <button class="btn btn-buy">
+            <button class="btn btn-sm btn-dark btn-buy">
               BUY
             </button>
           </div>
@@ -56,8 +54,4 @@ layout: default
       </div>
     {% endfor %}
   </div>
-</div>
-
-<div class="text-center text-muted">
-  ┐( ˘_˘ )┌
 </div>
