@@ -47,15 +47,18 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  padding: 8px 0;
+  padding: 4px 0 16px;
   display: block;
   min-width: 57px;
+  letter-spacing: 2px;
   &:visited, &:hover {
     color: #000;
     text-decoration: none;
   }
 
   .character-d {
+    position: relative;
+    top: 4px;
     display: inline-block;
     background-color: #000;
     color: #fff;
@@ -63,6 +66,15 @@ body {
     border-radius: 4px;
     font-weight: 400;
     margin-left: 0.1em;
+    transform: rotate(-10deg);
+    width: 30px;
+    height: 30px;
+  }
+  .the-d {
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    transform: rotate(10deg);
   }
 }
 
