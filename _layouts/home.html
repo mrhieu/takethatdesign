@@ -2,6 +2,10 @@
 layout: default
 ---
 
+<div class="hero-text">
+  Best of Ionic Themes & Plugins
+</div>
+
 <div class="tags-bar wrapper">
   <ul>
     <li class="tag active">
@@ -16,14 +20,14 @@ layout: default
   </ul>
 </div>
 
-<div class="padder-v text-center text-muted text-sm">
+<div class="padder-v text-center text-muted text-sm m-b">
   Purchasing process will take place at <span class="font-bold text-dark">Gumroad</span> product pages.
 </div>
 
 <div class="product-container">
   <div class="product-items row">
     {% for item in site.data.products %}
-      <div class="col-sm-4">
+      <div class="col-lg-4 col-md-6">
         <div class="product-item">
           <div class="item-image">
             <img src="images/product_image_1.png" alt="">
@@ -55,7 +59,3 @@ layout: default
     {% endfor %}
   </div>
 </div>
-
-<script>
-  console.log('%cLook at me', 'background-color: green; color: white; padding: 4px'); // eslint-disable-line
-</script>

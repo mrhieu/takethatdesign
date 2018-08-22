@@ -1,16 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
-
-// @import './normalize.scss';
 @import './variables.scss';
 @import './helper.scss';
-// @import './flexboxgrid.scss';
-// @import './forms.scss';
-// @import './buttons.scss';
-// @import './modals.scss';
 
 body {
   background-color: #f8f8f8;
-  font-family: 'Nunito', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  // font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 ::selection {
@@ -51,12 +44,13 @@ body {
   display: block;
   min-width: 57px;
   letter-spacing: 2px;
+
   &:visited, &:hover {
     color: #000;
     text-decoration: none;
   }
 
-  .character-d {
+  .d-bg {
     position: relative;
     top: 4px;
     display: inline-block;
@@ -70,7 +64,8 @@ body {
     width: 30px;
     height: 30px;
   }
-  .the-d {
+
+  .d-character {
     position: absolute;
     top: 4px;
     left: 6px;
@@ -81,20 +76,18 @@ body {
 /**
  * TAGS
  */
-ul {
-  margin-left: 0;
-}
-li {
-  list-style: none;
-}
 .tags-bar {
-  margin-top: 32px;
   padding: 8px 16px;
   text-align: center;
+
+  ul {
+    margin-left: 0;
+  }
 }
+
 .tag {
   display: inline-block;
-  border: 2px solid $textSecondary;
+  border: 2px solid $divider;
   color: $textSecondary;
   padding: 4px 16px;
   border-radius: 999em;
@@ -103,22 +96,28 @@ li {
   font-size: 14px;
   text-align: center;
   transition: box-shadow 350ms ease-in-out;
+  background-color: #fff;
   cursor: pointer;
+
   & + .tag {
     margin-left: 16px;
   }
+
   &:hover {
-    box-shadow: $boxShadowLv1;
+    background-color: $divider;
   }
+
   &.active {
     background-color: $textPrimary;
     color: #fff;
   }
+
   &.tag-sm {
     font-size: 9px;
     min-width: 40px;
     padding: 1px 8px;
     border-width: 1px;
+
     & + .tag-sm {
       margin-left: 8px;
     }
@@ -129,23 +128,27 @@ li {
   background-color: #fff;
   border: 1px solid #f3f3f3;
   transition: box-shadow 250ms ease-in-out;
-  transition-property: box-shadow, margin-top;
+  transition-property: box-shadow;
   border-radius: 2px;
   cursor: pointer;
   margin-bottom: 32px;
+
   &:hover {
     box-shadow: $boxShadowLv2;
-    margin-top: -4px;
   }
+
   .item-image {
     padding: 16px 16px 0;
     img {
       width: 100%;
+      border-radius: 2px;
     }
   }
+
   .item-info {
     padding-right: 54px;
   }
+
   .item-footer {
     padding: 16px;
     position: relative;
@@ -156,6 +159,22 @@ li {
       right: 16px;
       letter-spacing: 2px;
       font-size: 12px;
+      padding-left: 16px;
+      padding-right: 16px;
     }
+  }
+}
+
+/* GENERAL */
+.hero-text {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-text {
+    font-size: 32px;
   }
 }
