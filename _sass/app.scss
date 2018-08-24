@@ -46,7 +46,7 @@ body {
   letter-spacing: 2px;
 
   &:visited, &:hover {
-    color: #000;
+    color: #000!important;
     text-decoration: none;
   }
 
@@ -142,6 +142,7 @@ body {
     img {
       width: 100%;
       border-radius: 2px;
+      background-color: $secondaryColor;
     }
   }
 
@@ -175,6 +176,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .hero-text {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
