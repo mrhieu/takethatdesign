@@ -1,0 +1,46 @@
+<div class="product-item">
+  <div class="item-image">
+    <img src="{{ item.thumbnail }}" alt="">
+    <a href="{{ item.marketUrl }}" target="_blank" class="item-image-overlay">
+      <button class="btn btn-dark">View</button>
+    </a>
+  </div>
+  <div class="item-footer">
+    <div class="item-info">
+      <div class="font-bold">
+        <a href="{{ item.marketUrl }}" target="_blank">
+          {{ item.title }}
+        </a>
+      </div>
+      <div class="text-muted text-sm">
+        {{ item.description }}
+      </div>
+      <div class="item-tags">
+        {% for tag in item.tags %}
+          <div class="tag tag-sm">
+            {{ tag }}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <a href="{{ item.gumroadUrl }}" target="_blank" class="btn btn-sm btn-dark btn-buy font-bold has-hover-element">
+      {% if item.price == 0 %}
+        <span class="hide-on-hover">
+          FREE
+        </span>
+        <span class="show-on-hover">
+          GET
+        </span>
+      {% endif %}
+      {% if item.price != 0 %}
+        <span class="hide-on-hover">
+          <span class="font-thin">$</span> {{ item.price }}
+        </span>
+        <span class="show-on-hover">
+          BUY
+        </span>
+      {% endif %}
+    </a>
+  </div>
+</div>

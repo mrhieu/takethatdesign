@@ -130,20 +130,46 @@ body {
   transition: box-shadow 250ms ease-in-out;
   transition-property: box-shadow;
   border-radius: 2px;
-  cursor: pointer;
   margin-bottom: 32px;
+
+  a {
+    color: $textPrimary;
+    &:active, &:hover {
+      color: $textPrimary;
+    }
+  }
 
   &:hover {
     box-shadow: $boxShadowLv2;
   }
 
   .item-image {
+    position: relative;
     padding: 16px 16px 0;
     img {
       width: 100%;
       border-radius: 2px;
       background-color: $secondaryColor;
     }
+
+    &:hover {
+      .item-image-overlay {
+        display: flex;
+      }
+    }
+  }
+
+  .item-image-overlay {
+    position: absolute;
+    display: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    top: 16px;
+    right: 16px;
+    bottom: 0;
+    left: 16px;
+    background-color: $textHint;
   }
 
   .item-info {
@@ -163,6 +189,12 @@ body {
       padding-left: 16px;
       padding-right: 16px;
     }
+    a.btn-buy {
+      color: white;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -176,6 +208,26 @@ body {
 
 @media screen and (max-width: 767px) {
   .hero-text {
-    font-size: 24px;
+    font-size: 36px;
+  }
+}
+
+.has-hover-element {
+  .show-on-hover {
+    display: none;
+  }
+
+  .hide-on-hover {
+    display: inherit;
+  }
+
+  &:hover {
+    .show-on-hover {
+      display: block;
+    }
+
+    .hide-on-hover {
+      display: none;
+    }
   }
 }

@@ -1,240 +1,208 @@
-[
-  {
-    "id": "asos-1",
-    "image_url": "images/products/asos-1.png",
-    "name": "ASOS UI",
-    "short_description": "E-commerce template",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/linkedin-1.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/giphy-1.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/giphy-2.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/linkedin-2.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/lockscreen-1.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/lockscreen-2.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/pinterest-1.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/pinterest-lite.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/sidemenu-1.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/sidemenu-2.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/skeleton.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/tinder-1.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/tinder-2.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/twitter-1.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/vine-1.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-  {
-    "id": "linkedin-1",
-    "image_url": "images/products/yahoo-1.png",
-    "name": "LinkedIn UI",
-    "short_description": "Social Network for Professional",
-    "tags": [
-      {
-        "name": "ionic 3"
-      },
-      {
-        "name": "theme"
-      }
-    ]
-  },
-]
+{
+  "data": [
+    {
+      "id": "asos-1",
+      "icon": "images/icons/asos-1.png",
+      "thumbnail": "images/products/asos-1.png",
+      "title": "ASOS UI",
+      "description": "E-commerce App Template",
+      "price": "18",
+      "categories": "Themes",
+      "tags": ["ionic 3", "theme"],
+      "marketUrl": "https://market.ionicframework.com/themes/ionic-asos-ui",
+      "gumroadUrl": "https://gumroad.com/l/ionic-asos-ui"
+    },
+    {
+      "id": "giphy-1",
+      "icon": "images/icons/giphy-1.png",
+      "thumbnail": "images/products/giphy-1.png",
+      "title": "Giphy Plugin",
+      "description": "GIF keyboard",
+      "price": "6",
+      "categories": "Plugins",
+      "tags": ["ionic 1", "plugin"],
+      "marketUrl": "https://market.ionicframework.com/plugins/ionic-giphy",
+      "gumroadUrl": "https://gum.co/KNbEN"
+    },
+    {
+      "id": "giphy-2",
+      "icon": "images/icons/giphy-2.png",
+      "thumbnail": "images/products/giphy-2.png",
+      "title": "Giphy Plugin 2 (Ionic 3)",
+      "description": "GIF keyboard",
+      "price": "6",
+      "categories": "Plugins",
+      "tags": ["ionic 3", "plugin"],
+      "marketUrl": "https://market.ionicframework.com/plugins/ionic-giphy-2",
+      "gumroadUrl": "https://gum.co/ionic-giphy-2"
+    },
+    {
+      "id": "linkedin-1",
+      "icon": "images/icons/linkedin-1.png",
+      "thumbnail": "images/products/linkedin-1.png",
+      "title": "LinkedIn UI",
+      "description": "Social Network for Professional",
+      "price": "18",
+      "categories": "Themes",
+      "tags": ["ionic 1", "theme"],
+      "marketUrl": "https://market.ionicframework.com/themes/ionic-linkedin-ui",
+      "gumroadUrl": "https://gumroad.com/l/ionic-linkedin-ui"
+    },
+    {
+      "id": "linkedin-2",
+      "icon": "images/icons/linkedin-2.png",
+      "thumbnail": "images/products/linkedin-2.png",
+      "title": "LinkedIn 2 (Ionic 3)",
+      "description": "Social Network for Professional",
+      "price": "24",
+      "categories": "Themes",
+      "tags": ["ionic 3", "theme"],
+      "marketUrl": "https://market.ionicframework.com/themes/ionic-linkedin-2",
+      "gumroadUrl": "https://gum.co/ionic-linkedin-2"
+    },
+    {
+      "id": "lockscreen-1",
+      "icon": "images/icons/lockscreen-1.png",
+      "thumbnail": "images/products/lockscreen-1.png",
+      "title": "Lockscreen Plugin",
+      "description": "iOS-like lockscreen with ease",
+      "price": "3",
+      "categories": "Plugins",
+      "tags": ["ionic 1", "plugin"],
+      "marketUrl": "https://market.ionicframework.com/plugins/lockscreen",
+      "gumroadUrl": "https://gumroad.com/l/lockscreen"
+    },
+    {
+      "id": "lockscreen-2",
+      "icon": "images/icons/lockscreen-2.png",
+      "thumbnail": "images/products/lockscreen-2.png",
+      "title": "Lockscreen Plugin 2 (Ionic 3)",
+      "description": "iOS-like lockscreen with ease",
+      "price": "4",
+      "categories": "Plugins",
+      "tags": ["ionic 3", "plugin"],
+      "marketUrl": "https://market.ionicframework.com/plugins/lockscreen",
+      "gumroadUrl": "https://gumroad.com/l/lockscreen"
+    },
+    {
+      "id": "pinterest-1",
+      "icon": "images/icons/pinterest-1.png",
+      "thumbnail": "images/products/pinterest-1.png",
+      "title": "Pinterest UI",
+      "description": "Photo Sharing Network",
+      "price": "18",
+      "categories": "Themes",
+      "tags": ["ionic 1", "theme"],
+      "marketUrl": "https://market.ionicframework.com/themes/ionic-pinterest-ui",
+      "gumroadUrl": "https://gum.co/ionic-pinterest-ui"
+    },
+    {
+      "id": "pinterest-lite",
+      "icon": "images/icons/pinterest-lite.png",
+      "thumbnail": "images/products/pinterest-lite.png",
+      "title": "Pinterest Lite (Ionic 3)",
+      "description": "Photo Sharing Network",
+      "price": "9",
+      "categories": "Themes",
+      "tags": ["ionic 3", "theme"],
+      "marketUrl": "https://market.ionicframework.com/themes/ionic-pinterest-lite",
+      "gumroadUrl": "https://gum.co/ionic-pinterest-lite"
+    },
+    {
+      "id": "sidemenu-1",
+      "icon": "images/icons/sidemenu-1.png",
+      "thumbnail": "images/products/sidemenu-1.png",
+      "title": "Sidemenu Plugin",
+      "description": "Multi-level Sidemenu",
+      "price": "6",
+      "categories": "Plugins",
+      "tags": ["ionic 1", "plugin"],
+      "marketUrl": "https://market.ionicframework.com/plugins/ionic-multilevel-sidemenu",
+      "gumroadUrl": "https://gumroad.com/l/ionic-multilevel-sidemenu"
+    },
+    {
+      "id": "sidemenu-2",
+      "icon": "images/icons/sidemenu-2.png",
+      "thumbnail": "images/products/sidemenu-2.png",
+      "title": "Sidemenu Plugin 2 (Ionic 3)",
+      "description": "Multi-level Sidemenu",
+      "price": "6",
+      "categories": "Plugins",
+      "tags": ["ionic 3", "plugin"],
+      "marketUrl": "https://market.ionicframework.com/plugins/multilevel-sidemenu-2",
+      "gumroadUrl": "https://gum.co/ionic-sidemenu-2"
+    },
+    {
+      "id": "skeleton",
+      "icon": "images/icons/skeleton.png",
+      "thumbnail": "images/products/skeleton.png",
+      "title": "Skeleton Loader (Ionic 3)",
+      "description": "Fancy Trendy Screen Loader",
+      "price": "0",
+      "categories": "Plugins",
+      "tags": ["ionic 3", "plugin"],
+      "marketUrl": "https://market.ionicframework.com/plugins/ionic-skeleton-loader",
+      "gumroadUrl": "https://github.com/mrhieu/ionic-skeleton-loader"
+    },
+    {
+      "id": "tinder-1",
+      "icon": "images/icons/tinder-1.png",
+      "thumbnail": "images/products/tinder-1.png",
+      "title": "Tinder UI",
+      "description": "Popular Dating App Template",
+      "price": "18",
+      "categories": "Themes",
+      "tags": ["ionic 1", "theme"],
+      "marketUrl": "https://market.ionicframework.com/themes/ionic-tinder-ui",
+      "gumroadUrl": "https://gum.co/ionic-tinder-ui"
+    },
+    {
+      "id": "tinder-2",
+      "icon": "images/icons/tinder-2.png",
+      "thumbnail": "images/products/tinder-2.png",
+      "title": "Tinder 2 (Ionic 3)",
+      "description": "Popular Dating App Template",
+      "price": "24",
+      "categories": "Themes",
+      "tags": ["ionic 3", "theme"],
+      "marketUrl": "https://market.ionicframework.com/themes/tinder-ui-2",
+      "gumroadUrl": "https://gum.co/ionic-tinder-2"
+    },
+    {
+      "id": "twitter-1",
+      "icon": "images/icons/twitter-1.png",
+      "thumbnail": "images/products/twitter-1.png",
+      "title": "Twitter UI",
+      "description": "Twitter Template",
+      "price": "18",
+      "categories": "Themes",
+      "tags": ["ionic 1", "theme"],
+      "marketUrl": "https://market.ionicframework.com/themes/ionic-twitter-ui",
+      "gumroadUrl": "https://gum.co/ionic-twitter-ui"
+    },
+    {
+      "id": "vine-1",
+      "icon": "images/icons/vine-1.png",
+      "thumbnail": "images/products/vine-1.png",
+      "title": "Vine UI",
+      "description": "Vine Template",
+      "price": "18",
+      "categories": "Themes",
+      "tags": ["ionic 1", "theme"],
+      "marketUrl": "https://market.ionicframework.com/themes/ionic-vine-ui",
+      "gumroadUrl": "https://gumroad.com/l/ionic-vine-ui"
+    },
+    {
+      "id": "yahoo-1",
+      "icon": "images/icons/yahoo-1.png",
+      "thumbnail": "images/products/yahoo-1.png",
+      "title": "Yahoo Messenger UI",
+      "description": "Messaging Template",
+      "price": "6",
+      "categories": "Themes",
+      "tags": ["ionic 1", "theme"],
+      "marketUrl": "https://market.ionicframework.com/themes/ionic-yahoo-messenger-ui",
+      "gumroadUrl": "https://gumroad.com/l/ionic-yahoo-messenger-ui"
+    }
+  ]
+}

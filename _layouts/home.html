@@ -6,54 +6,15 @@ layout: default
   Best of Ionic Themes & Plugins
 </div>
 
-<div class="tags-bar wrapper">
-  <ul>
-    <li class="tag active">
-      All
-    </li>
-    <li class="tag">
-      Ionic 3
-    </li>
-    <li class="tag">
-      Ionic 1
-    </li>
-  </ul>
-</div>
-
 <div class="padder-v text-center text-muted text-sm m-b d-none d-md-block">
   Purchasing process will take place at <span class="font-bold text-dark">Gumroad</span> product pages.
 </div>
 
 <div class="product-container">
   <div class="product-items row">
-    {% for item in site.data.products %}
+    {% for item in site.posts %}
       <div class="col-lg-4 col-md-6">
-        <div class="product-item">
-          <div class="item-image">
-            <img src="{{ item.image_url }}" alt="">
-          </div>
-          <div class="item-footer">
-            <div class="item-info">
-              <div class="font-bold">
-                {{ item.name }}
-              </div>
-              <div class="text-muted text-sm">
-                {{ item.short_description }}
-              </div>
-              <div class="item-tags">
-                {% for tag in item.tags %}
-                  <div class="tag tag-sm">
-                    {{ tag.name }}
-                  </div>
-                {% endfor %}
-              </div>
-            </div>
-
-            <button class="btn btn-sm btn-dark btn-buy font-bold">
-              BUY
-            </button>
-          </div>
-        </div>
+        {% include item.html item=item %}
       </div>
     {% endfor %}
   </div>
