@@ -2,7 +2,7 @@
   <div class="item-image">
     <img src="{{ item.thumbnail }}" alt="">
     <a href="{{ item.marketUrl }}" target="_blank" class="item-image-overlay">
-      <button class="btn btn-dark">View</button>
+      <button class="btn btn-dark btn-view" data-title="{{ item.title }}">View</button>
     </a>
   </div>
   <div class="item-footer">
@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <a href="{{ item.gumroadUrl }}" target="_blank" class="btn btn-sm btn-dark btn-buy font-bold has-hover-element">
+    <a href="{{ item.gumroadUrl }}" target="_blank" data-title="{{ item.title }}" class="btn btn-sm btn-dark btn-buy font-bold has-hover-element">
       {% if item.price == 0 %}
         <span class="hide-on-hover">
           FREE
