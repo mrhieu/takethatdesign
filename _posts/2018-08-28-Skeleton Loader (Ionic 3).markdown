@@ -3,7 +3,7 @@ layout: post
 title: Skeleton Loader (Ionic 3)
 description: Fancy Trendy Screen Loader
 price: 0
-date: 2018-08-26 18:00:18 +0800
+date: 2018-08-27 10:08:18 +0800
 categories: Plugins
 icon: images/icons/skeleton.png
 thumbnail: images/products/skeleton.png

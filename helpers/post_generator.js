@@ -11,7 +11,11 @@ products.data.map(item => {
 
 console.log('GENERATED', products.data.length, 'POSTS');
 
-function getTime() {
+function getTime(item) {
+  if (item.created_at) {
+    return item.created_at;
+  }
+  
   var date = now.split('T')[0];
   var time = now.split('T')[1].split('.')[0];
   var timezone = '+0800';
@@ -29,7 +33,7 @@ layout: post
 title: ${data.title}
 description: ${data.description}
 price: ${data.price}
-date: ${getTime()}
+date: ${getTime(data)}
 categories: ${data.categories}
 icon: ${data.icon}
 thumbnail: ${data.thumbnail}
