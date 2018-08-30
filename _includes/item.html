@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <a href="{{ item.gumroadUrl }}" target="_blank" data-title="{{ item.title }}" class="btn btn-sm btn-dark btn-buy font-bold has-hover-element">
+    <a href="{{ item.gumroadUrl }}" target="_blank" data-title="{{ item.title }}" class="btn btn-dark btn-buy font-bold has-hover-element">
       {% if item.price == 0 %}
         <span class="hide-on-hover">
           FREE
@@ -35,7 +35,7 @@
       {% endif %}
       {% if item.price != 0 %}
         <span class="hide-on-hover">
-          <span class="font-thin">$</span> {{ item.price }}
+          ${{ item.price }}
         </span>
         <span class="show-on-hover">
           BUY
