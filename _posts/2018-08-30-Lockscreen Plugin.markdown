@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Lockscreen Plugin 2 (Ionic 3)
+title: Lockscreen Plugin
 description: iOS-like lockscreen with ease
-price: 4
-date: 2018-08-22 10:08:18 +0800
+price: 3
+date: 2015-11-27 02:49:29 +0800
 categories: Plugins
-icon: images/icons/lockscreen-2.png
-thumbnail: images/products/lockscreen-2.png
-tags: [ionic 3, plugin]
+icon: images/icons/lockscreen-1.png
+thumbnail: images/products/lockscreen-1.png
+tags: [ionic 1, plugin]
 marketUrl: https://market.ionicframework.com/plugins/lockscreen
 gumroadUrl: https://gumroad.com/l/lockscreen
 ---

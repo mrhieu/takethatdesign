@@ -3,7 +3,7 @@ layout: post
 title: Sidemenu Plugin 2 (Ionic 3)
 description: Multi-level Sidemenu
 price: 6
-date: 2018-08-22 10:08:18 +0800
+date: 2017-03-19 00:51:22 +0800
 categories: Plugins
 icon: images/icons/sidemenu-2.png
 thumbnail: images/products/sidemenu-2.png

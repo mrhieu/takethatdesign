@@ -3,7 +3,7 @@ layout: post
 title: Giphy Plugin 2 (Ionic 3)
 description: GIF keyboard
 price: 6
-date: 2018-08-22 10:08:18 +0800
+date: 2017-10-20 22:16:35 +0800
 categories: Plugins
 icon: images/icons/giphy-2.png
 thumbnail: images/products/giphy-2.png
