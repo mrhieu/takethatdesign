@@ -15,7 +15,7 @@ function getTime(item) {
   if (item.created_at) {
     return item.created_at;
   }
-  
+
   var date = now.split('T')[0];
   var time = now.split('T')[1].split('.')[0];
   var timezone = '+0800';
@@ -23,8 +23,8 @@ function getTime(item) {
   return `${date} ${time} ${timezone}`;
 }
 
-function getDate() {
-  return now.split('T')[0];
+function getDate(time = now) {
+  return time.split('T')[0];
 }
 
 function compile(data) {
@@ -48,7 +48,8 @@ gumroadUrl: ${data.gumroadUrl}
 
 function writeToFile(data) {
   var string = compile(data);
-  var stream = fs.createWriteStream(path.join(__dirname, DIR_PATH, getDate() + '-' + data.title + '.markdown'));
+  var formattedDate = getDate(new Date(data.created_at).toISOString());
+  var stream = fs.createWriteStream(path.join(__dirname, DIR_PATH, formattedDate + '-' + data.title + '.markdown'));
   stream.once('open', function(fd) {
     stream.write(string);
     stream.end();

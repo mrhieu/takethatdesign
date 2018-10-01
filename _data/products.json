@@ -237,6 +237,20 @@
       "created_at": "2015-12-10 03:02:53 +0800",
       "marketUrl": "https://market.ionicframework.com/themes/ionic-yahoo-messenger-ui",
       "gumroadUrl": "https://gumroad.com/l/ionic-yahoo-messenger-ui"
+    },
+    {
+      "id": "pinterest-2",
+      "icon": "images/icons/pinterest-2.png",
+      "thumbnail": "images/products/pinterest-2.png",
+      "title": "Pinterest 2 (Ionic 3)",
+      "description": "Photo Sharing Network",
+      "price": "24",
+      "categories": "Themes",
+      "tags": ["ionic 3", "theme"],
+      "created_at_dummy": "2018-09-30 10:08:18 +0800",
+      "created_at": "2018-09-30 22:48:59 +0800",
+      "marketUrl": "https://market.ionicframework.com/themes/pinterest-ui-2",
+      "gumroadUrl": "https://gum.co/ionic-pinterest-2"
     }
   ]
 }
