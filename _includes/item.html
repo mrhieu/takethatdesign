@@ -7,12 +7,12 @@
   </div>
   <div class="item-footer">
     <div class="item-info">
-      <div class="font-bold">
-        <a href="{{ item.marketUrl }}" target="_blank">
+      <div class="font-bold text-ellipsis">
+        <a href="{{ item.marketUrl }}" title="{{ item.title }}" target="_blank">
           {{ item.title }}
         </a>
       </div>
-      <div class="text-muted text-sm">
+      <div class="text-muted text-sm text-ellipsis" title="{{ item.description }}">
         {{ item.description }}
       </div>
       <div class="item-tags">
