@@ -251,6 +251,34 @@
       "created_at": "2018-09-30 22:48:59 +0800",
       "marketUrl": "https://market.ionicframework.com/themes/pinterest-ui-2",
       "gumroadUrl": "https://gum.co/ionic-pinterest-2"
+    },
+    {
+      "id": "giphy-4",
+      "icon": "images/icons/giphy-4.png",
+      "thumbnail": "images/products/giphy-4.png",
+      "title": "Giphy 4 (Ionic 4)",
+      "description": "GIF keyboard",
+      "price": "9",
+      "categories": "Plugins",
+      "tags": ["ionic 4", "plugin"],
+      "created_at_dummy": "2019-01-01 10:08:18 +0800",
+      "created_at": "2019-01-01 22:48:59 +0800",
+      "marketUrl": "https://market.ionicframework.com/plugins/giphy-4",
+      "gumroadUrl": "https://gum.co/giphy-4"
+    },
+    {
+      "id": "tinder-4",
+      "icon": "images/icons/tinder-4.png",
+      "thumbnail": "images/products/tinder-4.png",
+      "title": "Tinder 4 (Ionic 4)",
+      "description": "Popular Dating App Template",
+      "price": "36",
+      "categories": "Themes",
+      "tags": ["ionic 4", "theme"],
+      "created_at_dummy": "2019-03-16 10:08:18 +0800",
+      "created_at": "2019-03-15 22:48:59 +0800",
+      "marketUrl": "https://market.ionicframework.com/themes/tinder-ui-4",
+      "gumroadUrl": "https://gum.co/ionic-tinder-4"
     }
   ]
 }

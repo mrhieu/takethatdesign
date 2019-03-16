@@ -1,0 +1,15 @@
+---
+layout: post
+title: Giphy 4 (Ionic 4)
+description: GIF keyboard
+price: 9
+date: 2019-01-01 22:48:59 +0800
+categories: Plugins
+icon: images/icons/giphy-4.png
+thumbnail: images/products/giphy-4.png
+tags: [ionic 4, plugin]
+marketUrl: https://market.ionicframework.com/plugins/giphy-4
+gumroadUrl: https://gum.co/giphy-4
+---
+
+## Take That Design
