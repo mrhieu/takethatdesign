@@ -2,7 +2,7 @@
 layout: post
 title: Tinder 4 (Ionic 4)
 description: Popular Dating App Template
-price: 36
+price: 30
 date: 2019-03-15 22:48:59 +0800
 categories: Themes
 icon: images/icons/tinder-4.png
