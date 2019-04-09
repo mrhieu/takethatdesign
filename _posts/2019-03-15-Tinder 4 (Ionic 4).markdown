@@ -10,6 +10,9 @@ thumbnail: images/products/tinder-4.png
 tags: [ionic 4, theme]
 marketUrl: https://market.ionicframework.com/themes/tinder-ui-4
 gumroadUrl: https://gum.co/ionic-tinder-4
+image1: images/tinder/1.png
+image2: images/tinder/2.png
+image3: images/tinder/3.png
 ---
 
 ## Take That Design

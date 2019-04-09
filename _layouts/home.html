@@ -12,10 +12,16 @@ layout: default
 
 <div class="product-container">
   <div class="product-items row">
+    <div class="col-lg-4 col-md-6">
+      {% assign item = site.posts.first %}
+      {% include listItem.html %}
+    </div>
+
     {% for item in site.posts %}
       <div class="col-lg-4 col-md-6">
         {% include item.html item=item %}
       </div>
     {% endfor %}
   </div>
+  <div class="text-center text-muted">Total: {{ site.posts | size }} items.</div>
 </div>

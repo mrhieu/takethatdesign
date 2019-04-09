@@ -1,0 +1,54 @@
+<div class="product-item">
+  {% if item.image1 %}
+    <div class="item-image-stack">
+      <img src="{{ item.image1 }}" alt="">
+      <img src="{{ item.image2 }}" alt="">
+      <img src="{{ item.image3 }}" alt="">
+    </div>
+  {% else %}
+    <div class="item-image">
+      <img src="{{ item.thumbnail }}" alt="">
+      <a href="{{ item.marketUrl }}" target="_blank" class="item-image-overlay">
+        <button class="btn btn-dark btn-view" data-title="{{ item.title }}">View</button>
+      </a>
+    </div>
+  {% endif %}
+  <div class="item-footer">
+    <div class="item-info">
+      <div class="font-bold text-ellipsis">
+        <a href="{{ item.marketUrl }}" title="{{ item.title }}" target="_blank">
+          {{ item.title }}
+        </a>
+      </div>
+      <div class="text-muted text-sm text-ellipsis" title="{{ item.description }}">
+        {{ item.description }}
+      </div>
+      <div class="item-tags">
+        {% for tag in item.tags %}
+          <div class="tag tag-sm">
+            {{ tag }}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <a href="{{ item.gumroadUrl }}" target="_blank" data-title="{{ item.title }}" class="btn btn-dark btn-buy font-bold has-hover-element">
+      {% if item.price == 0 %}
+        <span class="hide-on-hover">
+          FREE
+        </span>
+        <span class="show-on-hover">
+          GET
+        </span>
+      {% endif %}
+      {% if item.price != 0 %}
+        <span class="hide-on-hover">
+          ${{ item.price }}
+        </span>
+        <span class="show-on-hover">
+          BUY
+        </span>
+      {% endif %}
+    </a>
+  </div>
+</div>
