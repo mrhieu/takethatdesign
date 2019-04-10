@@ -1,0 +1,107 @@
+@import './helper.scss';
+
+$sidebarWidth: 240px;
+
+.post {
+  position: relative;
+  padding-left: $sidebarWidth + 32px;
+
+  .post-summary {
+    width: $sidebarWidth;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: right;
+
+    .item-icon {
+      img {
+        width: $sidebarWidth * 0.8;
+        border-radius: 20px;
+      }
+    }
+
+    a.btn-primary {
+      color: #fff;
+    }
+
+    .item-info {
+      margin: 8px 0 40px;
+      font-size: 0.9em;
+      @extend .text-muted;
+    }
+
+    .item-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #000;
+    }
+  }
+
+  .post-thumbnail-container {
+    height: 600px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+
+    .thumbnail-list {
+      height: 100%;
+      margin: 0;
+    }
+
+    .thumbnail-item {
+      height: 100%;
+      display: inline-block;
+      margin-right: 16px;
+      border: 1px solid rgba(#aaa, .1);
+      list-style: none;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .post-content {
+
+  }
+
+  .btn-buy .dropdown-menu.show {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .post {
+    padding-left: 0;
+
+    .post-summary {
+      position: relative;
+      padding-left: 140px;
+      width: 100%;
+      text-align: left;
+
+      .item-icon {
+        width: 120px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .item-info {
+        margin-bottom: 8px;
+      }
+
+      .btn-buy .btn-lg {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        border-radius: .25rem;
+      }
+    }
+  }
+}

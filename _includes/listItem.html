@@ -1,9 +1,9 @@
 <div class="product-item">
-  {% if item.image1 %}
-    <div class="item-image-stack">
-      <img src="{{ item.image1 }}" alt="">
-      <img src="{{ item.image2 }}" alt="">
-      <img src="{{ item.image3 }}" alt="">
+  {% if item.thumbnail1 %}
+    <div class="item-image-stack" style="background-color: {{ item.color }}">
+      <img src="{{ item.thumbnail1 }}" alt="">
+      <img src="{{ item.thumbnail2 }}" alt="">
+      <img src="{{ item.thumbnail3 }}" alt="">
     </div>
   {% else %}
     <div class="item-image">
@@ -16,12 +16,12 @@
   <div class="item-footer">
     <div class="item-info">
       <div class="font-bold text-ellipsis">
-        <a href="{{ item.marketUrl }}" title="{{ item.title }}" target="_blank">
+        <a href="{{ item.url }}" title="{{ item.title }}">
           {{ item.title }}
         </a>
       </div>
       <div class="text-muted text-sm text-ellipsis" title="{{ item.description }}">
-        {{ item.description }}
+        {{ item.shortDescription }}
       </div>
       <div class="item-tags">
         {% for tag in item.tags %}

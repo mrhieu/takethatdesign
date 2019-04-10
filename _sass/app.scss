@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import './helper.scss';
+@import './post.scss';
 
 body {
   background-color: #f8f8f8;
@@ -103,7 +104,7 @@ $logoSize: 36px;
   transition: box-shadow 350ms ease-in-out;
   background-color: #fff;
   cursor: pointer;
-
+  vertical-align: middle;
   & + .tag {
     margin-left: 16px;
   }
@@ -183,7 +184,7 @@ $logoSize: 36px;
     height: 0;
     padding-top: 56.25%;
     overflow: hidden;
-    background-color: #fd5068;
+    background-color: grey;
     img {
       width: 35%;
       position: absolute;

@@ -23,6 +23,7 @@ twitter_username: mrhieu
 github_username:  mrhieu
 google_analytics: UA-26188758-14
 google_tag_manager: GTM-W3WCQBW
+permalink: /:categories/:title
 
 # Build settings
 markdown: kramdown

@@ -1,8 +1,20 @@
 ---
 layout: default
 ---
+<div class="post-toolbar m-b">
+  <a class="btn btn-link btn-sm" href="/">
+    <i class="mdi mdi-chevron-left"></i> Back
+  </a>
+
+  <button class="btn btn-sm pull-right">
+    <i class="mdi mdi-share-variant"></i>
+    Share
+  </button>
+</div>
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
+  {%- if false -%}
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
@@ -14,6 +26,64 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
   </header>
+  {%- endif -%}
+
+  <div class="post-summary">
+    <div class="item-icon">
+      <img src="{{ page.icon }}" alt="">
+    </div>
+    <div class="item-info">
+      <div class="item-title">
+        {{ page.title}}
+      </div>
+
+      <div>Created on {{ page.createdAt | date: '%B %d, %Y'}}</div>
+      <div>{{ page.framework }} · {{ page.category }}</div>
+      <div><i class="mdi mdi-tag"></i> <div class="tag tag-sm">dating</div><div class="tag tag-sm">social network</div></div>
+    </div>
+
+    <div>
+      <div class="btn-group m-b btn-block btn-buy">
+        <button type="button" class="btn btn-dark btn-block btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Buy now
+          <span class="btn-addon">
+            $19
+          </span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="{{ page.gumroadUrl}}" target="_blank">
+            Pay via Gumroad <i class="mdi mdi-open-in-new"></i>
+          </a>
+          <a class="dropdown-item" href="{{ page.sellfyUrl}}" target="_blank">
+            Pay via Sellfy <i class="mdi mdi-open-in-new"></i>
+          </a>
+          <a class="dropdown-item" href="{{ page.paypalUrl}}" target="_blank">
+            Pay via Paypal <i class="mdi mdi-open-in-new"></i>
+          </a>
+
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="{{ page.marketUrl}}" target="_blank">
+            View on Ionic Market <i class="mdi mdi-open-in-new"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-thumbnail-container">
+    <ul class="thumbnail-list">
+      <li class="thumbnail-item">
+        <img src="{{ page.thumbnail1 }}" alt="">
+      </li>
+      <li class="thumbnail-item">
+        <img src="{{ page.thumbnail2 }}" alt="">
+      </li>
+      <li class="thumbnail-item">
+        <img src="{{ page.thumbnail3 }}" alt="">
+      </li>
+    </ul>
+  </div>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
