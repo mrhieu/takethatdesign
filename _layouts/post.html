@@ -6,10 +6,10 @@ layout: default
     <i class="mdi mdi-chevron-left"></i> Back
   </a>
 
-  <button class="btn btn-sm pull-right">
+  <!-- <button class="btn btn-sm pull-right">
     <i class="mdi mdi-share-variant"></i>
     Share
-  </button>
+  </button> -->
 </div>
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
@@ -44,28 +44,44 @@ layout: default
 
     <div>
       <div class="btn-group m-b btn-block btn-buy">
-        <button type="button" class="btn btn-dark btn-block btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button type="button" class="btn btn-dark btn-block btn-lg dropdown-toggle btn-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Buy now
-          <span class="btn-addon">
-            $19
-          </span>
+          <div class="btn-addon" title="USD${{ page.price }}">
+            ${{ page.price }}
+          </div>
         </button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="{{ page.gumroadUrl}}" target="_blank">
-            Pay via Gumroad <i class="mdi mdi-open-in-new"></i>
-          </a>
-          <a class="dropdown-item" href="{{ page.sellfyUrl}}" target="_blank">
-            Pay via Sellfy <i class="mdi mdi-open-in-new"></i>
-          </a>
-          <a class="dropdown-item" href="{{ page.paypalUrl}}" target="_blank">
-            Pay via Paypal <i class="mdi mdi-open-in-new"></i>
-          </a>
+          {%- if page.gumroadUrl -%}
+            <a class="dropdown-item" href="{{ page.gumroadUrl }}" target="_blank">
+              <i class="mdi mdi-open-in-new"></i> Pay via Gumroad
+            </a>
+          {%- endif -%}
+
+          {%- if page.sellfyUrl -%}
+            <a class="dropdown-item" href="{{ page.sellfyUrl }}" target="_blank">
+              <i class="mdi mdi-open-in-new"></i> Pay via Sellfy
+            </a>
+          {%- endif -%}
+
+          {%- if page.paypalUrl -%}
+            <a class="dropdown-item" href="{{ page.paypalUrl }}" target="_blank">
+              <i class="mdi mdi-open-in-new"></i> Pay via Paypal
+            </a>
+          {%- endif -%}
 
           <div class="dropdown-divider"></div>
 
-          <a class="dropdown-item" href="{{ page.marketUrl}}" target="_blank">
-            View on Ionic Market <i class="mdi mdi-open-in-new"></i>
-          </a>
+          {%- if page.githubUrl -%}
+            <a class="dropdown-item" href="{{ page.githubUrl }}" target="_blank">
+              <i class="mdi mdi-open-in-new"></i> View on Github
+            </a>
+          {%- endif -%}
+
+          {%- if page.marketUrl -%}
+            <a class="dropdown-item" href="{{ page.marketUrl }}" target="_blank">
+              <i class="mdi mdi-open-in-new"></i> View on Ionic Market
+            </a>
+          {%- endif -%}
         </div>
       </div>
     </div>
@@ -73,15 +89,11 @@ layout: default
 
   <div class="post-thumbnail-container">
     <ul class="thumbnail-list">
-      <li class="thumbnail-item">
-        <img src="{{ page.thumbnail1 }}" alt="">
-      </li>
-      <li class="thumbnail-item">
-        <img src="{{ page.thumbnail2 }}" alt="">
-      </li>
-      <li class="thumbnail-item">
-        <img src="{{ page.thumbnail3 }}" alt="">
-      </li>
+      {% for imageUrl in page.thumbnails %}
+        <li class="thumbnail-item">
+          <img src="{{ imageUrl }}" alt="">
+        </li>
+      {% endfor %}
     </ul>
   </div>
 

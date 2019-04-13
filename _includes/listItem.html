@@ -1,9 +1,9 @@
 <div class="product-item">
-  {% if item.thumbnail1 %}
+  {% if item.smallThumbnails %}
     <div class="item-image-stack" style="background-color: {{ item.color }}">
-      <img src="{{ item.thumbnail1 }}" alt="">
-      <img src="{{ item.thumbnail2 }}" alt="">
-      <img src="{{ item.thumbnail3 }}" alt="">
+      {% for imageUrl in item.smallThumbnails %}
+        <img src="{{ imageUrl }}" alt="">
+      {% endfor %}
     </div>
   {% else %}
     <div class="item-image">

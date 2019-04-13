@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Tinder 4 (Ionic 4)
-shortDescription: Popular Dating App Template
+title: Ionic Tinder UI 4 (Ionic 4)
+shortDescription: Dating App
 price: 30
-createdAt: 2019-03-15 22:48:59 +0800
-category: Themes
-icon: /images/icons/tinder-4.png
-tags: [ionic 4, theme]
+createdAt: 2019-03-13 00:00:00 +0800
+category: Theme
+icon: /images/export/404aff2304f054a868aa26a38f47cb4ea2895dbc-1024x1024.png
+tags: ["tinder","messaging","giphy","swiping"]
 framework: Ionic 4
 marketUrl: https://market.ionicframework.com/themes/tinder-ui-4
-gumroadUrl: https://gum.co/ionic-tinder-4
+gumroadUrl: http://https://gum.co/ionic-tinder-4
 sellfyUrl: https://sellfy.com/p/AxnM/
 paypalUrl: https://paypal.me/mrhieu/30
 color: "#fd5068"
-thumbnail1: /images/tinder/1.png
-thumbnail2: /images/tinder/2.png
-thumbnail3: /images/tinder/3.png
+thumbnails: ["/images/export/f09f1cc72d97bea10dfff919a583832886adf159-1242x2208.png","/images/export/620ffc387316ee2728ca4e6d3ec5637b2c67b635-1242x2208.png","/images/export/ba638bd10d89e4c8d206bfc46f0782231b867447-1242x2208.png","/images/export/7096d83d354ae4b0ef178df4c6789cbe7dfc101d-1242x2208.png","/images/export/58b352de606a09d62a9a37d8995b24ee0245192f-1242x2208.png"]
+smallThumbnails: ["/images/export/f09f1cc72d97bea10dfff919a583832886adf159-1242x2208.png","/images/export/620ffc387316ee2728ca4e6d3ec5637b2c67b635-1242x2208.png","/images/export/ba638bd10d89e4c8d206bfc46f0782231b867447-1242x2208.png"]
 ---
 
 # Introduction
@@ -127,6 +126,7 @@ $ ionic serve
 If you need technical support or have any questions, don't hesitate to send me a message: [mr_hie@yahoo.com](mailto:mr_hie@yahoo.com)
 
 Homepage: [https://www.takethatdesign.com](https://www.takethatdesign.com)
+
 
 ------------------
 
