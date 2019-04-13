@@ -1,0 +1,182 @@
+---
+layout: post
+title: Ionic Giphy 2 (Ionic 3)
+shortDescription: GIF keyboard 
+price: 6
+createdAt: 2018-08-22 00:00:00 +0800
+category: Plugin
+icon: /images/export/80a8412df35ad124755739080e6262e67901ac3c-240x240.png
+tags: ["plugin","gif","keyboard","messaging"]
+framework: Ionic 3
+marketUrl: https://market.ionicframework.com/plugins/ionic-giphy-2
+gumroadUrl: https://gum.co/ionic-giphy-2
+sellfyUrl: https://sellfy.com/p/E2t4/
+paypalUrl: https://paypal.me/mrhieu/6
+color: "#e1e1e1"
+thumbnails: ["/images/export/2ae07d4cb9c00517baf11fe87260a99705642ddd-665x1182.jpg","/images/export/73e2e86caaf5852279cd035e573ff18eec604621-665x1182.jpg","/images/export/aba1183fee008768393d2e78b37bee259f120584-665x1182.jpg"]
+smallThumbnails: ["/images/export/2ae07d4cb9c00517baf11fe87260a99705642ddd-665x1182.jpg","/images/export/73e2e86caaf5852279cd035e573ff18eec604621-665x1182.jpg","/images/export/aba1183fee008768393d2e78b37bee259f120584-665x1182.jpg"]
+---
+
+# Introduction
+
+[Giphy](https://giphy.com/) is an online database and search engine that allows users to search for and share animated GIF files (wiki). I knew about this interesting service while I was working on my [Ionic-yahoo-messenger-ui](https://market.ionic.io/themes/ionic-yahoo-messenger-ui) but I didn't spend time on it. Lately, during the development of [Ionic-tinder-ui](https://market.ionic.io/themes/ionic-tinder-ui), I found it again as a undeniable feature, so nothing can stop me anymore. Then the plugin was made. This plugin will also be integrated into the **Tinder 2** theme soon.
+
+Not only the Giphy service itself, the source code also includes a beautiful and easy-to-implement **Messaging UI** with auto-expanding input and data structure.
+
+I always take it serious to keep the code quality high, with clean and self-explained code. When purchasing this, you also get my latest "helper" snippets inside the package to make it more fun to code.
+
+
+# Preview
+
+
+
+**Download APK to preview the theme:** 
+
+[![enter image description here](https://lh3.googleusercontent.com/MIkXV-iIhrxPG5tZn8QTglczrISwLwebr8QmCKcJFN6NL0eNLf5GqWltrefAZwzAwh2r4RPk=w96-h96-e365)
+giphy-2_demo.apk](http://bit.ly/2V5qtxR)
+
+
+**Watch on Youtube**
+
+See how it works on Youtube: https://youtu.be/ce9hYXbuOYU
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ce9hYXbuOYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+Happy prototyping!
+
+
+# Changelog
+
+*Last updated: Dec 23 2018*
+
+### v1
+
+* First version
+
+### v2
+
+* Fix pushed up Header
+
+### v3
+
+* Re-organize Giphy and all related services into one module. Easier to integrate than ever.
+
+
+# Screens
+
+1. Messaging UI
+2. Giphy keyboard (GIF search tool)
+
+
+# Run locally
+1.Install Ionic environment
+
+```
+$ npm install -g cordova
+$ npm install -g ionic@4.11.0
+```
+
+2.After purchasing, download the zip file containing the entire demo app and unzip
+
+3.Go inside the extracted folder
+
+4.Install all dependencies
+
+```
+$ npm install
+```
+
+5.Start local server
+```
+$ ionic serve
+```
+
+6.Your default browser should now automatically open the app
+
+
+# Notes
+
+Sample data structure for the messages template is pretty straight-forward. You will find it in pages/message/message.ts
+
+```
+this.messages = [
+      {
+        isMe: true,
+        type: 'image',// text || image
+        body: 'https://media.giphy.com/media/3oz8xSjBmD1ZyELqW4/giphy.gif',
+        timestamp: 'Oct 10, 2017 9:47am'
+      },
+      {
+        isMe: false,
+        avatar: 'assets/img/hieu.png',
+        type: 'text',// text || image
+        body: 'Hey yo what\'s up?',
+        timestamp: 'Oct 10, 2017 9:48am'
+      },
+      {
+        isMe: true,
+        type: 'image',// text || image
+        body: 'https://media.giphy.com/media/lXiRyZVS9B79r2YOQ/giphy.gif',
+        timestamp: 'Oct 10, 2017 9:50am'
+      },
+      {
+        isMe: false,
+        avatar: 'assets/img/hieu.png',
+        type: 'image',// text || image
+        body: 'https://media.giphy.com/media/JUMLTR3dHEGpW/giphy.gif',
+        timestamp: 'Oct 10, 2017 9:52am'
+      },
+      {
+        isMe: true,
+        type: 'text',// text || image
+        body: 'Where are you, buddy?',
+        timestamp: 'Oct 10, 2017 9:53am'
+      },
+      {
+        isMe: false,
+        avatar: 'assets/img/hieu.png',
+        type: 'text',// text || image
+        body: 'I\'m almost there',
+        timestamp: 'Oct 10, 2017 9:53am'
+      }
+    ];
+```
+
+Giphy module is now a folder under src/giphy
+![enter image description here](https://i.gyazo.com/858aa5e52d1e9c7264e64ca2ac02cdd4.png)
+
+After importing into your app.module.ts
+
+```
+import { GiphyModule } from '../giphy';
+...
+```
+
+You can start to use the main component **inputWithGiphy** in your message UI
+
+```
+<ion-footer [keyboardAttach]="content" no-border>
+  <input-with-giphy
+    (onSubmit)="onSubmitMessage($event)"
+    (onGifToggled)="scrollToBottom()"
+  ></input-with-giphy>
+</ion-footer>
+```
+
+
+# Contact
+If you need technical support or have any questions, don't hesitate to send me a message: [mr_hie@yahoo.com](mailto:mr_hie@yahoo.com)
+
+Homepage: [https://www.takethatdesign.com](https://www.takethatdesign.com)
+
+
+------------------
+
+`<StartOfPromotion>`
+### [PROMO] Ionic 3 Bundle: 6 in 1
+Proudly introduce the best of my Ionic 3 products: 3 themes + 3 plugins in Studio Pack #2  now on sale with promotion code **19SPEED**. Please click the button below for more information.
+
+[![Purchase Externally](http://bit.ly/2E4p4z3)](https://gum.co/ionic3-ui-bundle)
+
+`</EndOfPromotion>`

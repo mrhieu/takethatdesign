@@ -15,6 +15,12 @@
   {% endif %}
   <div class="item-footer">
     <div class="item-info">
+      <div class="item-icon">
+        <a href="{{ item.url }}" title="{{ item.title }}">
+          <img src="{{ item.icon }}" alt="">
+        </a>
+      </div>
+
       <div class="font-bold text-ellipsis">
         <a href="{{ item.url }}" title="{{ item.title }}">
           {{ item.title }}
@@ -24,30 +30,25 @@
         {{ item.shortDescription }}
       </div>
       <div class="item-tags">
-        {% for tag in item.tags %}
+        <div class="tag tag-sm">
+          {{ item.framework }}
+        </div>
+        <div class="tag tag-sm">
+          {{ item.category }}
+        </div>
+        <!-- {% for tag in item.tags limit: 3 %}
           <div class="tag tag-sm">
             {{ tag }}
           </div>
-        {% endfor %}
+        {% endfor %} -->
       </div>
     </div>
 
-    <a href="{{ item.gumroadUrl }}" target="_blank" data-title="{{ item.title }}" class="btn btn-dark btn-buy font-bold has-hover-element">
+    <a href="{{ item.url }}" target="_blank" data-title="{{ item.title }}" class="item-price">
       {% if item.price == 0 %}
-        <span class="hide-on-hover">
-          FREE
-        </span>
-        <span class="show-on-hover">
-          GET
-        </span>
-      {% endif %}
-      {% if item.price != 0 %}
-        <span class="hide-on-hover">
-          ${{ item.price }}
-        </span>
-        <span class="show-on-hover">
-          BUY
-        </span>
+        <span class="text-danger">Free</span>
+      {% else %}
+        ${{ item.price }}
       {% endif %}
     </a>
   </div>

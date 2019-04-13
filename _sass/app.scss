@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import './helper.scss';
+@import './list.scss';
 @import './post.scss';
 
 body {
@@ -103,7 +104,6 @@ $logoSize: 36px;
   text-align: center;
   transition: box-shadow 350ms ease-in-out;
   background-color: #fff;
-  cursor: pointer;
   vertical-align: middle;
   & + .tag {
     margin-left: 16px;
@@ -121,124 +121,13 @@ $logoSize: 36px;
   &.tag-sm {
     font-size: 9px;
     min-width: 40px;
-    padding: 1px 8px;
+    padding: 2px 8px;
     border: none;
     background-color: $divider;
     border-radius: 2px;
 
     & + .tag-sm {
       margin-left: 8px;
-    }
-  }
-}
-
-/**
- * LIST ITEM
- */
-.product-item {
-  background-color: #fff;
-  border: 1px solid #f3f3f3;
-  transition: box-shadow 250ms ease-in-out;
-  transition-property: box-shadow;
-  border-radius: 2px;
-  margin-bottom: 32px;
-
-  a {
-    color: $textPrimary;
-    &:active, &:hover {
-      color: $textPrimary;
-    }
-  }
-
-  &:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
-    .item-image-overlay {
-      display: flex;
-    }
-  }
-
-  .item-image {
-    position: relative;
-    img {
-      width: 100%;
-      border-radius: 2px;
-      background-color: $secondaryColor;
-    }
-  }
-
-  .item-image-overlay {
-    position: absolute;
-    display: none;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: $textHint;
-  }
-
-  .item-image-stack {
-    position: relative;
-    height: 0;
-    padding-top: 56.25%;
-    overflow: hidden;
-    background-color: grey;
-    img {
-      width: 35%;
-      position: absolute;
-      top: 15%;
-      left: 50%;
-      transform: translate3d(-50%, 0, 0);
-      box-shadow: 0 0 4px 0 rgba(0,0,0,0.12), 0 2px 6px 0 rgba(0,0,0,0.24);
-      transform-origin: 50% 100%;
-      transition: transform 150ms ease-in-out;
-      background-color: #aaa;
-      &:nth-child(1) {
-        transform: translate3d(-50%, 12%, 0) rotate(20deg);
-        z-index: 3;
-        &:hover, &:active {
-          transform: translate3d(-38%, 0, 0) rotate(20deg);
-        }
-      }
-      &:nth-child(2) {
-        z-index: 2;
-        &:hover, &:active {
-          transform: translate3d(-50%, -12%, 0);
-        }
-      }
-      &:nth-child(3) {
-        transform: translate3d(-50%, 12%, 0) rotate(-20deg);
-        z-index: 1;
-        &:hover, &:active {
-          transform: translate3d(-62%, 0, 0) rotate(-20deg);
-        }
-      }
-    }
-  }
-
-  .item-info {
-    padding-right: 54px;
-  }
-
-  .item-footer {
-    padding: 16px;
-    position: relative;
-
-    .btn-buy {
-      position: absolute;
-      top: 16px;
-      right: 16px;
-      font-size: 12px;
-      padding-left: 16px;
-      padding-right: 16px;
-    }
-    a.btn-buy {
-      color: white;
-      &:hover {
-        text-decoration: none;
-      }
     }
   }
 }

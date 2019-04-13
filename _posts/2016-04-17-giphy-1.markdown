@@ -1,0 +1,104 @@
+---
+layout: post
+title: Ionic Giphy 1
+shortDescription: GIF keyboard 
+price: 6
+createdAt: 2016-04-17 00:00:00 +0800
+category: Plugin
+icon: /images/export/ba5bff4de85db014249cfba4f94a2f70321f92c4-240x240.png
+tags: ["gif","keyboard","messaging"]
+framework: Ionic 1
+marketUrl: https://market.ionicframework.com/plugins/ionic-giphy
+gumroadUrl: https://gum.co/KNbEN
+sellfyUrl: https://sellfy.com/p/QiYw/
+paypalUrl: https://paypal.me/mrhieu/6
+color: "#e1e1e1"
+thumbnails: ["/images/export/fa2c70eef1f1b3b2f54d53715951269283c21ccf-640x1136.jpg","/images/export/27c2b6af60ad58724f90a31f16927a73e6a8bd26-640x1136.jpg","/images/export/00699bb98ad784ad1fd60dbd3b3a89634e822719-640x1136.jpg"]
+smallThumbnails: ["/images/export/fa2c70eef1f1b3b2f54d53715951269283c21ccf-640x1136.jpg","/images/export/27c2b6af60ad58724f90a31f16927a73e6a8bd26-640x1136.jpg","/images/export/00699bb98ad784ad1fd60dbd3b3a89634e822719-640x1136.jpg"]
+---
+
+# Introduction
+
+[Giphy](http://giphy.com/) is an online database and search engine that allows users to search for and share animated GIF files (wiki). I knew about this interesting service while I was working on my [Ionic-yahoo-messenger-ui](https://market.ionic.io/themes/ionic-yahoo-messenger-ui) but I didn't spend time on it. Lately, during the development of [Ionic-tinder-ui](https://market.ionic.io/themes/ionic-tinder-ui), I found it again as a undeniable feature, so nothing can stop me anymore. Then the plugin was made. This plugin will also be integrated into the Tinder theme soon.
+
+Not only the Giphy service itself, the source code also includes a beautiful and easy-to-implement messaging UI with auto-expanding input and data structure.
+
+I always take it serious to keep the code quality high, with clean and self-explained code. When purchasing this, you also get my latest "helper" snippets inside the package to make it more fun to code.
+
+# Preview
+
+
+
+
+**Watch on Youtube**
+
+See how it works on Youtube: https://youtu.be/Q8eV6JYtGsc
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q8eV6JYtGsc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+Happy prototyping!
+
+
+# Changelog
+
+*Last updated: Jun 17 2017*
+
+### v1
+
+* First version
+
+### v2
+
+* Compatible with Ionic CLI ~3.4.0
+
+# Screens
+
+1. Messaging with GIF search tool
+
+# Run locally
+1.Install Ionic environment
+
+```
+$ npm install -g cordova
+$ npm install -g ionic@4.11.0
+```
+
+2.After purchasing, download the zip file containing the entire demo app and unzip
+
+3.Go inside the extracted folder
+
+4.Install all dependencies
+
+```
+$ npm install
+```
+
+5.Start local server
+```
+$ ionic serve
+```
+
+6.Your default browser should now automatically open the app
+
+
+# Notes
+
+### Dependencies
+1. Angular-elastic `$ bower install --save angular-elastic`
+
+# Contact
+If you need technical support or have any questions, don't hesitate to send me a message: [mr_hie@yahoo.com](mailto:mr_hie@yahoo.com)
+
+Homepage: [https://www.takethatdesign.com](https://www.takethatdesign.com)
+
+
+------------------
+
+`<StartOfPromotion>`
+### [PROMO] Ionic 3 Bundle: 6 in 1
+Proudly introduce the best of my Ionic 3 products: 3 themes + 3 plugins in Studio Pack #2  now on sale with promotion code **19SPEED**. Please click the button below for more information.
+
+[![Purchase Externally](http://bit.ly/2E4p4z3)](https://gum.co/ionic3-ui-bundle)
+
+`</EndOfPromotion>`
