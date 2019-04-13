@@ -3,7 +3,7 @@ layout: post
 title: Ionic Giphy 4 (Ionic 4)
 shortDescription: GIF keyboard 
 price: 9
-createdAt: 2018-07-18 00:00:00 +0800
+createdAt: 2019-01-29 00:00:00 +0800
 category: Plugin
 icon: /images/export/c971bc027311a6aeb563c8cc6c9e01a92417e038-240x240.png
 tags: ["plugin","gif","keyboard","messaging"]
