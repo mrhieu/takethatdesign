@@ -34,8 +34,8 @@ $sidebarWidth: 240px;
       font-size: 1.4rem;
       font-weight: 700;
       color: #000;
-      width: 192px;
-      float: right;
+      margin-bottom: 24px;
+      padding-left: 36px;
     }
   }
 
@@ -121,6 +121,10 @@ $sidebarWidth: 240px;
         position: absolute;
         left: 0;
         top: 0;
+      }
+
+      .item-title {
+        padding-left: 0;
       }
 
       .item-info {
