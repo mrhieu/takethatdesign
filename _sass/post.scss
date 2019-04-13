@@ -112,12 +112,12 @@ $sidebarWidth: 240px;
 
     .post-summary {
       position: relative;
-      padding-left: 140px;
+      padding-left: 90px;
       width: 100%;
       text-align: left;
 
       .item-icon {
-        width: 120px;
+        width: 80px;
         position: absolute;
         left: 0;
         top: 0;
@@ -125,6 +125,7 @@ $sidebarWidth: 240px;
 
       .item-title {
         padding-left: 0;
+        margin-bottom: 0;
       }
 
       .item-info {
@@ -135,7 +136,32 @@ $sidebarWidth: 240px;
         padding: .375rem .75rem;
         font-size: 1rem;
         border-radius: .25rem;
+        width: 200px;
+      }
+
+      .btn-split {
+        padding-right: 70px!important;
+
+        .btn-addon {
+          padding: 6px 0;
+        }
       }
     }
+
+    .btn-buy .dropdown-menu.show {
+      width: auto;
+    }
+
+    .post-thumbnail-container {
+      height: 320px;
+    }
+
+    .post-content iframe[width][height] {
+      max-width: 100%;
+    }
+  }
+
+  .at-share-dock-outer {
+    display: none;
   }
 }
