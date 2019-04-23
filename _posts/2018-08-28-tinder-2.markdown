@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ionic Tinder 2 (Ionic 3)
-shortDescription: Popular Dating App Template
+shortDescription: Popular Dating App Template 
 price: 24
 createdAt: 2018-08-28 00:00:00 +0800
 category: Theme
@@ -13,13 +13,13 @@ gumroadUrl: https://gum.co/ionic-tinder-2
 sellfyUrl: https://sellfy.com/p/a9Zb/
 paypalUrl: https://paypal.me/mrhieu/24
 color: "#fd4f68"
-thumbnails: ["/images/export/b993a58eac0fed41e303b52795cd84762d90c252-1242x2208.png","/images/export/324a396fe6972d5cfb876f1ccfdfbef2e529c79b-1242x2208.png","/images/export/132a3fa7896d2d64f41da88e29d60b95e12b54e8-1242x2208.png","/images/export/41e666edbc69b9ab9be71cea8c810a0c381041d6-1242x2208.png","/images/export/6c9f4c6fb7faa990d0600a1f3621f59c578e0c96-1242x2208.png","/images/export/fef558048546721fdbd64285be6f702a433e7223-1242x2208.png","/images/export/a3fb85bf2b87b18a6c7d31e6252e18b8d2461a31-665x1182.jpg"]
-smallThumbnails: ["/images/export/b993a58eac0fed41e303b52795cd84762d90c252-1242x2208.png","/images/export/324a396fe6972d5cfb876f1ccfdfbef2e529c79b-1242x2208.png","/images/export/132a3fa7896d2d64f41da88e29d60b95e12b54e8-1242x2208.png"]
+thumbnails: ["/images/export/b993a58eac0fed41e303b52795cd84762d90c252-1242x2208.jpg","/images/export/324a396fe6972d5cfb876f1ccfdfbef2e529c79b-1242x2208.jpg","/images/export/132a3fa7896d2d64f41da88e29d60b95e12b54e8-1242x2208.jpg","/images/export/41e666edbc69b9ab9be71cea8c810a0c381041d6-1242x2208.jpg","/images/export/6c9f4c6fb7faa990d0600a1f3621f59c578e0c96-1242x2208.jpg","/images/export/fef558048546721fdbd64285be6f702a433e7223-1242x2208.jpg","/images/export/a3fb85bf2b87b18a6c7d31e6252e18b8d2461a31-665x1182.jpg"]
+smallThumbnails: ["/images/export/small/b993a58eac0fed41e303b52795cd84762d90c252-1242x2208.jpg","/images/export/small/324a396fe6972d5cfb876f1ccfdfbef2e529c79b-1242x2208.jpg","/images/export/small/132a3fa7896d2d64f41da88e29d60b95e12b54e8-1242x2208.jpg"]
 ---
 
 # Introduction
 
-[Tinder](https://tinder.com/) is a location-based dating and social discovery application that facilitates communication between mutually interested users, allowing matched users to chat. Tinder is famous for its swipping card UI, which is later implemented in some other popular mobile apps e.g [Fancy](https://fancy.com/)
+[Tinder](https://tinder.com/) is a location-based dating and social discovery application that facilitates communication between mutually interested users, allowing matched users to chat. Tinder is famous for its swipping card UI, which is later implemented in some other popular mobile apps e.g [Fancy](https://fancy.com/) 
 
 > I'm an UI/UX lover. I see nice UI, I clone. That's all!
 
@@ -29,7 +29,7 @@ I always take it serious to keep the code quality high, with clean and self-expl
 
 
 
-**Download APK to preview the theme:**
+**Download APK to preview the theme:** 
 
 [![enter image description here](https://lh3.googleusercontent.com/MIkXV-iIhrxPG5tZn8QTglczrISwLwebr8QmCKcJFN6NL0eNLf5GqWltrefAZwzAwh2r4RPk=w96-h96-e365)
 tinder-2_demo.apk](http://bit.ly/2r2TUmC)
@@ -59,7 +59,7 @@ Happy prototyping!
 * Add Feed screen
 
 ### v3
-
+	
 * Build demo APK
 
 # Screens
@@ -73,7 +73,7 @@ Happy prototyping!
 7. Profile Edit
 8. Matched
 9. Messaging
-10. Feed
+10. Feed 
 11. Chat (including [Giphy-2 plugin](https://market.ionicframework.com/plugins/ionic-giphy-2))  
 
 # Run locally

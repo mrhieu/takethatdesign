@@ -13,8 +13,8 @@ gumroadUrl: https://gum.co/giphy-4
 sellfyUrl: https://sellfy.com/p/5QT1/
 paypalUrl: https://paypal.me/mrhieu/9
 color: "#e1e1e1"
-thumbnails: ["/images/export/4e3fbd5146458066aaf779d9ee51cf4fa0adf964-1242x2208.png","/images/export/0da142de8e8b23d173fceed1a35bf4588279afb7-1242x2208.png","/images/export/b899f1fab45c97e719fff9c1239afd1b46d8e92d-1242x2208.png","/images/export/73c75c48e6dc8bad515b37235e51bfa14bcdfbcc-546x968.gif"]
-smallThumbnails: ["/images/export/4e3fbd5146458066aaf779d9ee51cf4fa0adf964-1242x2208.png","/images/export/0da142de8e8b23d173fceed1a35bf4588279afb7-1242x2208.png","/images/export/b899f1fab45c97e719fff9c1239afd1b46d8e92d-1242x2208.png"]
+thumbnails: ["/images/export/4e3fbd5146458066aaf779d9ee51cf4fa0adf964-1242x2208.jpg","/images/export/0da142de8e8b23d173fceed1a35bf4588279afb7-1242x2208.jpg","/images/export/b899f1fab45c97e719fff9c1239afd1b46d8e92d-1242x2208.jpg","/images/export/73c75c48e6dc8bad515b37235e51bfa14bcdfbcc-546x968.gif"]
+smallThumbnails: ["/images/export/small/4e3fbd5146458066aaf779d9ee51cf4fa0adf964-1242x2208.jpg","/images/export/small/0da142de8e8b23d173fceed1a35bf4588279afb7-1242x2208.jpg","/images/export/small/b899f1fab45c97e719fff9c1239afd1b46d8e92d-1242x2208.jpg"]
 ---
 
 # Introduction

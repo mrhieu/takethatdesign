@@ -14,7 +14,7 @@ sellfyUrl: https://sellfy.com/p/r1oO/
 paypalUrl: https://paypal.me/mrhieu/9
 color: "#bc071b"
 thumbnails: ["/images/export/00827117918b114a3120e90a0454788c885cd9a6-1242x2208.jpg","/images/export/a5d1b075ea67e8bb4eeef819f1da2c5023a68cbf-1242x2208.jpg","/images/export/f53b51b0ef54a66bffa11ea4f9bced50ff3d51a9-1242x2208.jpg","/images/export/a112b9655ead8b93adc1a4c78d554c13c2579bf7-1242x2208.jpg"]
-smallThumbnails: ["/images/export/00827117918b114a3120e90a0454788c885cd9a6-1242x2208.jpg","/images/export/a5d1b075ea67e8bb4eeef819f1da2c5023a68cbf-1242x2208.jpg","/images/export/f53b51b0ef54a66bffa11ea4f9bced50ff3d51a9-1242x2208.jpg"]
+smallThumbnails: ["/images/export/small/00827117918b114a3120e90a0454788c885cd9a6-1242x2208.jpg","/images/export/small/a5d1b075ea67e8bb4eeef819f1da2c5023a68cbf-1242x2208.jpg","/images/export/small/f53b51b0ef54a66bffa11ea4f9bced50ff3d51a9-1242x2208.jpg"]
 ---
 
 # Introduction

@@ -13,8 +13,8 @@ gumroadUrl: https://gum.co/ionic-pinterest-2
 sellfyUrl: https://sellfy.com/p/Pqj0/
 paypalUrl: https://paypal.me/mrhieu/24
 color: "#bc081b"
-thumbnails: ["/images/export/9d50543afc966be3caafbbdae4dd5143a313c61a-1242x2208.png","/images/export/8e90fdc185f0cf1f5271e5e8d9306b8cfb6ae7f1-1242x2208.png","/images/export/64826dfa1100f7cd46ca6157a95da89730b113ed-1242x2208.png","/images/export/6791b041bf83853ef9e37c8b20993b6f7fc74c8c-1242x2208.png","/images/export/13c35984fb4722612183f7d01fc56005a9bbfcc6-1242x2208.png","/images/export/c2ed83fc6a8c0c9a34e4c556f589b7d8958d36c5-1242x2208.png","/images/export/8698be89b7507ce92c6d50a0778b5469a4ce97cf-1242x2208.png","/images/export/31cac8526ec8ec62e43e6dd63e389352a0c39d8f-412x734.gif"]
-smallThumbnails: ["/images/export/9d50543afc966be3caafbbdae4dd5143a313c61a-1242x2208.png","/images/export/8e90fdc185f0cf1f5271e5e8d9306b8cfb6ae7f1-1242x2208.png","/images/export/64826dfa1100f7cd46ca6157a95da89730b113ed-1242x2208.png"]
+thumbnails: ["/images/export/9d50543afc966be3caafbbdae4dd5143a313c61a-1242x2208.jpg","/images/export/8e90fdc185f0cf1f5271e5e8d9306b8cfb6ae7f1-1242x2208.jpg","/images/export/64826dfa1100f7cd46ca6157a95da89730b113ed-1242x2208.jpg","/images/export/6791b041bf83853ef9e37c8b20993b6f7fc74c8c-1242x2208.jpg","/images/export/13c35984fb4722612183f7d01fc56005a9bbfcc6-1242x2208.jpg","/images/export/c2ed83fc6a8c0c9a34e4c556f589b7d8958d36c5-1242x2208.jpg","/images/export/8698be89b7507ce92c6d50a0778b5469a4ce97cf-1242x2208.jpg","/images/export/31cac8526ec8ec62e43e6dd63e389352a0c39d8f-412x734.gif"]
+smallThumbnails: ["/images/export/small/9d50543afc966be3caafbbdae4dd5143a313c61a-1242x2208.jpg","/images/export/small/8e90fdc185f0cf1f5271e5e8d9306b8cfb6ae7f1-1242x2208.jpg","/images/export/small/64826dfa1100f7cd46ca6157a95da89730b113ed-1242x2208.jpg"]
 ---
 
 # Introduction
