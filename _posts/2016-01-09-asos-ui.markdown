@@ -5,7 +5,7 @@ shortDescription: E-commerce App Template
 price: 18
 createdAt: 2016-01-09 00:00:00 +0800
 category: Theme
-icon: /images/export/c635cbe777f62b30b08f2821c095ceb4817e0fb0-320x320.png
+icon: /images/export/c635cbe777f62b30b08f2821c095ceb4817e0fb0-320x320.jpg
 tags: ["ecommerce","shopping"]
 framework: Ionic 1
 marketUrl: https://market.ionicframework.com/themes/ionic-asos-ui

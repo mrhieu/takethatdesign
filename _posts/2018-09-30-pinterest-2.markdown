@@ -5,7 +5,7 @@ shortDescription: Photo Sharing Network
 price: 24
 createdAt: 2018-09-30 00:00:00 +0800
 category: Theme
-icon: /images/export/032423b73790ab86f3114034ff06a565a5480d16-1024x1024.png
+icon: /images/export/032423b73790ab86f3114034ff06a565a5480d16-1024x1024.jpg
 tags: ["photo","social network"]
 framework: Ionic 3
 marketUrl: https://market.ionicframework.com/themes/pinterest-ui-2

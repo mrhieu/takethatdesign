@@ -5,7 +5,7 @@ shortDescription: Twitter template
 price: 18
 createdAt: 2016-10-24 00:00:00 +0800
 category: Theme
-icon: /images/export/5930b2cc16235f0fa7c39728c06e223141e0b326-300x300.png
+icon: /images/export/5930b2cc16235f0fa7c39728c06e223141e0b326-300x300.jpg
 tags: ["twitter","social network","messaging"]
 framework: Ionic 1
 marketUrl: https://market.ionicframework.com/themes/ionic-twitter-ui

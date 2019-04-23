@@ -5,7 +5,7 @@ shortDescription: Yahoo messenger template
 price: 6
 createdAt: 2015-12-10 00:00:00 +0800
 category: Theme
-icon: /images/export/cd00349556e4e6ae6853646297126c45c04493b2-574x574.png
+icon: /images/export/cd00349556e4e6ae6853646297126c45c04493b2-574x574.jpg
 tags: ["yahoo","messaging","chat"]
 framework: Ionic 1
 marketUrl: https://market.ionicframework.com/themes/ionic-yahoo-messenger-ui

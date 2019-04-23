@@ -5,7 +5,7 @@ shortDescription: Multi-level sidemenu
 price: 6
 createdAt: 2015-12-12 00:00:00 +0800
 category: Plugin
-icon: /images/export/fe68853adb254ad26ea9db33bd132e451c21713a-303x303.png
+icon: /images/export/fe68853adb254ad26ea9db33bd132e451c21713a-303x303.jpg
 tags: ["menu","sidebar","navigation"]
 framework: Ionic 1
 marketUrl: https://market.ionicframework.com/plugins/ionic-multilevel-sidemenu

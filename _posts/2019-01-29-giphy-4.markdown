@@ -5,7 +5,7 @@ shortDescription: GIF keyboard
 price: 9
 createdAt: 2019-01-29 00:00:00 +0800
 category: Plugin
-icon: /images/export/c971bc027311a6aeb563c8cc6c9e01a92417e038-240x240.png
+icon: /images/export/c971bc027311a6aeb563c8cc6c9e01a92417e038-240x240.jpg
 tags: ["plugin","gif","keyboard","messaging"]
 framework: Ionic 4
 marketUrl: https://market.ionicframework.com/plugins/giphy-4

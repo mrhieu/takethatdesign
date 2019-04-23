@@ -5,7 +5,7 @@ shortDescription: Lockscreen Plugin
 price: 3
 createdAt: 2015-11-27 00:00:00 +0800
 category: Plugin
-icon: /images/export/de0643f737882d61093b8ab1f5ce03a95a048d4c-380x380.png
+icon: /images/export/de0643f737882d61093b8ab1f5ce03a95a048d4c-380x380.jpg
 tags: ["lockscreen","touchID"]
 framework: Ionic 1
 marketUrl: https://market.ionicframework.com/plugins/lockscreen

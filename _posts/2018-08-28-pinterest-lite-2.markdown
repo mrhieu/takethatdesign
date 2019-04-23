@@ -5,7 +5,7 @@ shortDescription: Photo Sharing Network
 price: 9
 createdAt: 2018-08-28 00:00:00 +0800
 category: Theme
-icon: /images/export/fe2e6b8f2591dff1b725f33089662463ff735e2d-1024x1024.png
+icon: /images/export/fe2e6b8f2591dff1b725f33089662463ff735e2d-1024x1024.jpg
 tags: ["photo","messaging"]
 framework: Ionic 3
 marketUrl: https://market.ionicframework.com/themes/ionic-pinterest-lite

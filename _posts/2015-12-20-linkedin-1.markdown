@@ -5,7 +5,7 @@ shortDescription: Social Network for Professionals
 price: 18
 createdAt: 2015-12-20 00:00:00 +0800
 category: Theme
-icon: /images/export/8243b3d2875d30674d033b3d00504185cf3f4430-320x320.png
+icon: /images/export/8243b3d2875d30674d033b3d00504185cf3f4430-320x320.jpg
 tags: ["messaging","social network"]
 framework: Ionic 1
 marketUrl: https://market.ionicframework.com/themes/ionic-linkedin-ui

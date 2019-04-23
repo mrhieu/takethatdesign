@@ -5,7 +5,7 @@ shortDescription: Popular Dating App Template
 price: 18
 createdAt: 2016-05-02 00:00:00 +0800
 category: Theme
-icon: /images/export/b0dbc3b3abf1c60704ede667d14ca389468a806f-450x450.png
+icon: /images/export/b0dbc3b3abf1c60704ede667d14ca389468a806f-450x450.jpg
 tags: ["dating","messaging","swipe"]
 framework: Ionic 1
 marketUrl: https://market.ionicframework.com/themes/ionic-tinder-ui
