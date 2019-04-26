@@ -64,7 +64,7 @@ layout: default
           {%- endif -%}
 
           {%- if page.paypalUrl -%}
-            <a class="dropdown-item" href="{{ page.paypalUrl }}" target="_blank">
+            <a class="dropdown-item" href="{{ page.paypalUrl }}" target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="Please Add a note <br><strong>'{{ page.title }}'</strong><br> during your payment">
               <i class="mdi mdi-open-in-new"></i> Pay via Paypal
             </a>
           {%- endif -%}
