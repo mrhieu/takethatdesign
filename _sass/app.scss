@@ -6,6 +6,16 @@
 body {
   background-color: #f8f8f8;
   // font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+  &.has-announcement {
+    .page-content {
+      padding-top: 92px!important;
+    }
+
+    .header-wrapper {
+      top: 27px;
+    }
+  }
 }
 
 ::selection {
@@ -37,6 +47,24 @@ body {
   .tagline {
     margin-left: 16px;
     display: inline-block;
+  }
+}
+
+.top-announcement {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 4px;
+  font-weight: 700;
+  a {
+    color: white;
+    text-decoration: underline;
   }
 }
 
@@ -142,7 +170,7 @@ $logoSize: 36px;
 
 @media screen and (max-width: 767px) {
   .hero-text {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 
