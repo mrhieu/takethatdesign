@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Ionic Twitter 1
-shortDescription: 6-second video sharing network 
+title: Ionic Vine 1
+shortDescription: Video sharing network 
 price: 18
 createdAt: 2015-12-06 00:00:00 +0800
 category: Theme
 icon: /images/export/29bcdc87145c056947943ce5260e5e16d43312cd-320x320.jpg
-tags: ["video","social network"]
+tags: ["video","social network","vine"]
 framework: Ionic 1
 marketUrl: https://market.ionicframework.com/themes/ionic-vine-ui
 gumroadUrl: https://gumroad.com/l/ionic-vine-ui
@@ -50,19 +50,23 @@ Happy prototyping!
 
 * First version
 
-### v2
+### Update 2
 
 * Small fixes
 * Add Vines suggestion, Authors suggestion, Connect suggestion
 
-### v3
+### Update 3
 
 * Update Login screen
 * Some UI fixes
 
-### v4
+### Update 4
 
 * Compatible with Ionic CLI ~3.4.0
+
+### Update 5
+
+* Compatible with Ionic CLI 4.12.0 and Cordova 9.0.0
 
 
 # Screens
@@ -112,12 +116,26 @@ $ ionic serve
 
 If you want to integrate this plugin into your project, don't forget these dependencies
 
-1. ngCordova `$ bower install ngCordova --save`
-2. Material colors `$ bower install material-colors --save`
-3. `$ ionic plugin add org.apache.cordova.media-capture`
-4. `$ ionic plugin add org.apache.cordova.camera`
-5. Setup SASS `$ ionic setup sass`
-6. Modify the default color theme to match Vine's color in `/www/lib/ionic/scss/_variables.scss`
+1.ngCordova 
+
+```
+$ bower install ionic-native --save
+```
+
+2.Material colors
+
+```
+$ bower install material-colors --save
+```
+
+3.Cordova Plugins 
+
+```
+$ ionic cordova plugin add cordova-plugin-media-capture
+$ ionic cordova plugin add cordova-plugin-camera
+
+```
+4.Modify the default color theme to match Vine's color in `scss/ionic.app.scss`
 
 ```
 // line 9
