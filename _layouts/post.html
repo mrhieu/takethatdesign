@@ -90,7 +90,7 @@ layout: default
   <div class="post-thumbnail-container">
     <ul class="thumbnail-list">
       {% for imageUrl in page.thumbnails %}
-        <li class="thumbnail-item">
+        <li class="thumbnail-item" data-fancybox="gallery" data-caption="Screenshot #{{forloop.index}}" data-src={{imageUrl}}>
           <img src="{{ imageUrl }}" alt="">
         </li>
       {% endfor %}
