@@ -40,6 +40,8 @@ Happy prototyping!
 
 # Changelog
 
+> Note: All updates are on Ionic 3
+
 *Last updated: Jun 25 2018*
 
 ### v1
@@ -49,22 +51,9 @@ Happy prototyping!
 
 # Screens
 
-1. Landing
-2. Login/Signup
-3. Feeds
-4. Pin detail
-5. Comment
-6. Search
-7. Notifications.News
-8. Notifications.You
-9. Notifications.Messages
-10. Notifications.Message
-11. Me
-12. Pin Collection detail
-13. Pin Collection Edit
-14. Settings
-15. Add new pin
-16. Re-pin a pin
+1. List
+2. Detail
+3. Sample Tabs
 
 # Run locally
 1.Install Ionic environment
@@ -89,21 +78,34 @@ $ npm install
 $ ionic serve
 ```
 
-6.Your default browser should now automatically open the app
+6.Your default browser should now automatically open the template
 
 
 # Notes
 
-1. Angular Masonry to make the Pinterest-like grid https://github.com/passy/angular-masonry
-2. Ion-sticky https://github.com/Poordeveloper/ion-sticky
-3. Modify the default color theme to match Pinterest's color in `/scss/ionic.app.scss`
+1.Modify the default theme colors to match Pinterest's colors in `src/theme/variables.scss`
 
 ```
-// line 18
-$assertive:                       #cb2027 !default;
-$stable:                          #EAEBEC !default;
+$colors: (
+  primary:    #084f90,
+  secondary:  #32db64,
+  danger:     #bd081c,// Pinterest primary color
+  light:      #efefef,
+  dark:       #222,
+  white:      #fff,
+  muted:      #b7b4b8
+);
+  ...
 ```
+2.I personally like the look of the app on iOS so I forced the theme to iOS mode. You can change that configuration to suit your need
 
+```
+# in src/app/app.module.ts
+  IonicModule.forRoot(MyApp, {
+      mode: 'ios',
+      backButtonText: '',
+    }),    ...
+```
 
 # Contact
 If you need technical support or have any questions, don't hesitate to send me a message: [mr_hie@yahoo.com](mailto:mr_hie@yahoo.com)
