@@ -35,9 +35,9 @@ pinterest-lite-4_demo.apk](http://bit.ly/2VxMN7i)
 
 **Watch on Youtube**
 
-See how it works on Youtube: 
+See how it works on Youtube: https://youtu.be/oaQl6x19Ph4
 
-(coming soon)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oaQl6x19Ph4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Happy prototyping!

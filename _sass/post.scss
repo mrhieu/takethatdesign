@@ -37,6 +37,19 @@ $sidebarWidth: 240px;
       margin-bottom: 24px;
       padding-left: 36px;
     }
+
+    .tags {
+      margin: 8px 0;
+
+      .mdi.mdi-tag {
+        position: relative;
+        top: -4px;
+      }
+
+      .tag-sm {
+        margin-bottom: 12px;
+      }
+    }
   }
 
   .post-thumbnail-container {
@@ -72,8 +85,12 @@ $sidebarWidth: 240px;
   }
 
   .post-content {
-    h1, h2 {
+    h2 {
       font-weight: 700;
+    }
+
+    hr {
+      margin: 8px 0;
     }
   }
 
@@ -157,8 +174,14 @@ $sidebarWidth: 240px;
       height: 320px;
     }
 
-    .post-content iframe[width][height] {
-      max-width: 100%;
+    .post-content {
+      iframe[width][height] {
+        max-width: 100%;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
     }
   }
 
