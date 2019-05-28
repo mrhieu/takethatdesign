@@ -18,7 +18,7 @@ email: mr_hie@yahoo.com
 description: >- # this means to ignore newlines until "baseurl:"
   Best of Ionic Themes and Plugins
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.takethatdesign.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mrhieu
 github_username:  mrhieu
 google_analytics: UA-26188758-14
