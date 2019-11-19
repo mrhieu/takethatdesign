@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ionic LinkedIn 4 (Ionic React)
-shortDescription: Social Network for Professionals
+shortDescription: Social Network for Professionals 
 price: 30
 createdAt: 2019-11-17 00:00:00 +0800
 category: Theme
@@ -21,18 +21,18 @@ smallThumbnails: ["/images/export/small/a66474b5d37e9dde5cb822ed947ac1934b162ac1
 I've been having a lot of fun creating Ionic (Angular) themes, and from now on I'm going to have even more fun with **[Ionic React](https://ionicframework.com/blog/announcing-ionic-react/)** thanks to Ionic Team. New things always have its learning curve, and believe me, Ionic React does, a little bit though. With this theme, I've covered a lot of common practices that will bring you a smoother journey to Ionic React and kick start your next project.
 ![ionic_react](https://user-images.githubusercontent.com/1593560/69010108-f0ec8c00-0996-11ea-85bc-2ba2f08cb4cc.png)
 
-[LinkedIn](https://www.linkedin.com/) is a networking tool to find connections to recommended job candidates, industry experts and business partners. Its UI has been updated constantly and I really love how it looks nowadays. I've been using it for years and have [my own profile](https://linkedin.com/in/hieupv) there.
+[LinkedIn](https://www.linkedin.com/) is a networking tool to find connections to recommended job candidates, industry experts and business partners. Its UI has been updated constantly and I really love how it looks nowadays. I've been using it for years and have [my own profile](https://linkedin.com/in/hieupv) there. 
 
 I always take it serious to write high quality, clean and self-explained code. When purchasing this, you also get my latest "helper" snippets inside the package to make it even more fun to code.
 
-Plus, when the whole world is going "dark mode" and Linkedin hasn't, this is my chance to make it happen. This is my world.
+Plus, when the whole world is going "dark mode" and Linkedin hasn't, this is my chance to make it happen. This is my world. 
 
 
 # Preview
 
 
 
-**Download APK to preview the theme:**
+**Download APK to preview the theme:** 
 
 [![enter image description here](https://lh3.googleusercontent.com/MIkXV-iIhrxPG5tZn8QTglczrISwLwebr8QmCKcJFN6NL0eNLf5GqWltrefAZwzAwh2r4RPk=w96-h96-e365)
 linkedin-4-react_demo.apk](http://bit.ly/2pRASlQ)
@@ -86,7 +86,7 @@ $ npm install -g ionic@5.4.1
 
 3.Go inside the extracted folder
 
-4.Install all dependencies
+4.Install all dependencies 
 
 ```
 $ npm install
@@ -103,7 +103,7 @@ $ ionic serve
 
 # Notes
 
-1.Modify the default theme colors to match Pinterest's colors in `src/sass/variables.override.scss`
+1.Modify the default theme colors to match LinkedIn's colors in `src/sass/variables.override.scss`
 ```
 :root {
   /** primary **/
@@ -120,12 +120,13 @@ $ ionic serve
 2.I personally like the look of the app on iOS so I forced the theme to iOS mode. You can change that configuration to suit your need
 
 ```
-# in src/app/app.module.ts
-    IonicModule.forRoot({
-      mode: 'ios',
-      backButtonText: '',
-    }),
-    ...
+# in src/App.tsx
+import { setupConfig } from '@ionic/react';
+setupConfig({
+  mode: 'ios',
+  backButtonText: '',
+});
+...
 ```
 3. I've created 15 pages and 29 components when building this UI. It's easier than ever to reuse these components in your existing Ionic 4 projects.
 ![code](https://user-images.githubusercontent.com/1593560/69009999-aae2f880-0995-11ea-927c-9bb8ebca9866.png)

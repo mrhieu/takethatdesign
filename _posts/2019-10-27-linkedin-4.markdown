@@ -101,7 +101,7 @@ $ ionic serve
 
 # Notes
 
-1.Modify the default theme colors to match Pinterest's colors in `src/sass/variables.override.scss`
+1.Modify the default theme colors to match LinkedIn's colors in `src/sass/variables.override.scss`
 ```
 :root {
   /** primary **/
