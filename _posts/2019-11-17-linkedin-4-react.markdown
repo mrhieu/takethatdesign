@@ -35,7 +35,7 @@ Plus, when the whole world is going "dark mode" and Linkedin hasn't, this is my 
 **Download APK to preview the theme:** 
 
 [![enter image description here](https://lh3.googleusercontent.com/MIkXV-iIhrxPG5tZn8QTglczrISwLwebr8QmCKcJFN6NL0eNLf5GqWltrefAZwzAwh2r4RPk=w96-h96-e365)
-linkedin-4-react_demo.apk](http://bit.ly/2pRASlQ)
+linkedin-4-react_demo.apk](http://bit.ly/2KDdcJl)
 
 
 **Watch on Youtube**
