@@ -6,6 +6,10 @@ $sidebarWidth: 240px;
   position: relative;
   padding-left: $sidebarWidth + 32px;
 
+  &.no-sidebar {
+    padding-left: 0;
+  }
+
   .post-summary {
     width: $sidebarWidth;
     position: absolute;
