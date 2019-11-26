@@ -215,3 +215,31 @@ $logoSize: 36px;
     }
   }
 }
+
+.footer-wrapper {
+  background-color: #fff;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.03);
+  border-top: 1px solid #eeeeee;
+  padding: 24px;
+
+  .email-form {
+    max-width: 400px;
+
+    button {
+      background: #000;
+      border: none;
+    }
+  }
+
+  .form-brand {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.12);
+    margin-top: 8px;
+    font-weight: 700;
+
+    a {
+      color: #36a9ae;
+      text-decoration: none;
+    }
+  }
+}
