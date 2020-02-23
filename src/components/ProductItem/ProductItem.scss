@@ -1,0 +1,195 @@
+@import './helper.scss';
+
+$sidebarWidth: 240px;
+
+.post {
+  position: relative;
+  padding-left: $sidebarWidth + 32px;
+
+  &.no-sidebar {
+    padding-left: 0;
+  }
+
+  .post-summary {
+    width: $sidebarWidth;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: right;
+
+    .item-icon {
+      img {
+        width: $sidebarWidth * 0.8;
+        border-radius: 20px;
+      }
+    }
+
+    a.btn-primary {
+      color: #fff;
+    }
+
+    .item-info {
+      margin: 8px 0 40px;
+      font-size: 0.9em;
+      @extend .text-muted;
+    }
+
+    .item-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 24px;
+      padding-left: 36px;
+    }
+
+    .tags {
+      margin: 8px 0;
+
+      .mdi.mdi-tag {
+        position: relative;
+        top: -4px;
+      }
+
+      .tag-sm {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .post-thumbnail-container {
+    height: 600px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+
+    .thumbnail-list {
+      height: 100%;
+      margin: 0;
+    }
+
+    .thumbnail-item {
+      height: 100%;
+      display: inline-block;
+      margin-right: 16px;
+      border: 1px solid rgba(#aaa, .1);
+      list-style: none;
+      cursor: zoom-in;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+
+  }
+
+  .post-content {
+    h2 {
+      font-weight: 700;
+    }
+
+    hr {
+      margin: 8px 0;
+    }
+  }
+
+  .btn-buy .dropdown-menu.show {
+    width: 100%;
+  }
+
+  a.dropdown-item {
+    color: inherit;
+    padding: .65rem 1.5rem;
+  }
+
+  .btn-split {
+    position: relative;
+    padding-right: 80px;
+
+    &:after {
+      display: none;
+    }
+
+    .btn-addon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(0,0,0,.2);
+      height: 100%;
+      width: 64px;
+      padding: 8px 0;
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .post {
+    padding-left: 0;
+
+    .post-summary {
+      position: relative;
+      padding-left: 90px;
+      width: 100%;
+      text-align: left;
+
+      .item-icon {
+        width: 80px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .item-title {
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+
+      .item-info {
+        margin-bottom: 8px;
+      }
+
+      .btn-buy .btn-lg {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        border-radius: .25rem;
+        width: 200px;
+      }
+
+      .btn-split {
+        padding-right: 70px!important;
+
+        .btn-addon {
+          padding: 6px 0;
+        }
+      }
+    }
+
+    .btn-buy .dropdown-menu.show {
+      width: auto;
+    }
+
+    .post-thumbnail-container {
+      height: 320px;
+    }
+
+    .post-content {
+      iframe[width][height] {
+        max-width: 100%;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .at-share-dock-outer {
+    display: none;
+  }
+}

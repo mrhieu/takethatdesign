@@ -1,51 +1,55 @@
-import React from "react"
-import { css } from "@emotion/core"
-import { Link, graphql } from "gatsby"
-import { rhythm } from "../utils/typography"
-import Layout from "../components/layout"
+import React from 'react';
+import { css } from '@emotion/core';
+import { Link, graphql } from 'gatsby';
+import { rhythm } from '../utils/typography';
+import Layout from '../components/Layout';
+import SEO from '../components/Seo/Seo';
 
 export default ({ data }) => {
   return (
-    <Layout>
-      <div>
-        <h1
-          css={css`
-            display: inline-block;
-            border-bottom: 1px solid;
-          `}
-        >
-          Amazing Pandas Eating Things
-        </h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-            <Link
-              to={ `/${node.fields.slug}` }
-              css={css`
-                text-decoration: none;
-                color: inherit;
-              `}
-            >
-              <h3
+    <React.Fragment>
+      <SEO title="Homepage"/>
+      <Layout>
+        <div>
+          <h1
+            css={css`
+              display: inline-block;
+              border-bottom: 1px solid;
+            `}
+          >
+            Amazing Pandas Eating Things
+          </h1>
+          <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div key={node.id}>
+              <Link
+                to={ `/${node.fields.slug}` }
                 css={css`
-                  margin-bottom: ${rhythm(1 / 4)};
+                  text-decoration: none;
+                  color: inherit;
                 `}
               >
-                {node.frontmatter.title}{" "}
-                <span
+                <h3
                   css={css`
-                    color: #555;
+                    margin-bottom: ${rhythm(1 / 4)};
                   `}
                 >
-                  — {node.frontmatter.date}
-                </span>
-              </h3>
-              <p>{node.excerpt}</p>
-            </Link>
-          </div>
-        ))}
-      </div>
-    </Layout>
+                  {node.frontmatter.title}{' '}
+                  <span
+                    css={css`
+                      color: #555;
+                    `}
+                  >
+                    — {node.frontmatter.date}
+                  </span>
+                </h3>
+                <p>{node.excerpt}</p>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </Layout>
+    </React.Fragment>
   )
 }
 
