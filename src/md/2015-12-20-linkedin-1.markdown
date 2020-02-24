@@ -1,0 +1,130 @@
+---
+layout: post
+title: Ionic LinkedIn 1
+shortDescription: Social Network for Professionals 
+price: 18
+createdAt: 2015-12-20 00:00:00 +0800
+category: Theme
+icon: /images/export/8243b3d2875d30674d033b3d00504185cf3f4430-320x320.jpg
+tags: ["messaging","social network"]
+framework: Ionic 1
+marketUrl: https://market.ionicframework.com/themes/ionic-linkedin-ui
+gumroadUrl: https://gumroad.com/l/ionic-linkedin-ui
+sellfyUrl: https://sellfy.com/p/vCDo/
+paypalUrl: https://paypal.me/mrhieu/18
+color: "#24a3e3"
+thumbnails: ["/images/export/c923176f45c174eeb711badb850758a27dce0990-640x1136.jpg","/images/export/571c5c18cc67c1959eebb5619482e2ca9e1ed00e-640x1136.jpg","/images/export/41c8e5c84cc6fb4f534a2cf5c5f4a4c841916b05-640x1136.jpg","/images/export/e1bbc12ab76606767145cb64a3a95902769ab400-640x1136.jpg","/images/export/86af45e3eaae27f5228b2b0fba4ab315771391e5-640x1136.jpg"]
+smallThumbnails: ["/images/export/small/c923176f45c174eeb711badb850758a27dce0990-640x1136.jpg","/images/export/small/571c5c18cc67c1959eebb5619482e2ca9e1ed00e-640x1136.jpg","/images/export/small/41c8e5c84cc6fb4f534a2cf5c5f4a4c841916b05-640x1136.jpg"]
+---
+
+# Introduction
+
+[LinkedIn](https://www.linkedin.com/) is a networking tool to find connections to recommended job candidates, industry experts and business partners. I've been using it for years and have [my own profile](https://linkedin.com/in/hieupv) there. They just updated the UI which is really cool. I'm an UI/UX lover, I see nice UI, I clone. That's it lol.
+
+I always take it serious to keep the code quality high, with clean and self-explained code. When purchasing this, you also get my latest "helper" snippets inside the package to make it more fun to code.
+
+# Preview
+
+
+
+
+**Watch on Youtube**
+
+See how it works on Youtube: https://www.youtube.com/watch?v=aMm4r0rDL1o
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aMm4r0rDL1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+Happy prototyping!
+
+
+# Changelog
+
+*Last updated: Jun 17 2017*
+
+### v1
+
+* First version
+
+### v2
+
+* Add Post detail page
+
+* Add badges in tabs
+
+### v3
+
+* Update latest UI
+* Add angular-elastic to chat page
+
+### v4
+
+* Compatible with Ionic CLI ~3.4.0
+
+# Screens
+
+1. Home (news feed)
+2. Me
+3. Messaging list
+4. Messaging chat
+5. My network (with tinder card style)
+6. Search
+7. Profile
+8. New post/update
+9. Add friend
+10. Settings
+11. Login/Sign up
+12. Introduction slidebox
+13. Sidemenu with zooming effect (pretty cool!)
+14. Post detail
+
+# Run locally
+1.Install Ionic environment
+
+```
+$ npm install -g cordova
+$ npm install -g ionic@4.11.0
+```
+
+2.After purchasing, download the zip file containing the entire demo app and unzip
+
+3.Go inside the extracted folder
+
+4.Install all dependencies
+
+```
+$ npm install
+```
+
+5.Start local server
+```
+$ ionic serve
+```
+
+6.Your default browser should now automatically open the app
+
+
+# Notes
+
+1. Modify the default color theme to match Yahoo's color in `/scss/ionic.app.scss`
+
+```
+// line 18
+$calm:                            #008cc9 !default;
+```
+
+# Contact
+If you need technical support or have any questions, don't hesitate to send me a message: [mr_hie@yahoo.com](mailto:mr_hie@yahoo.com)
+
+Homepage: [https://www.takethatdesign.com](https://www.takethatdesign.com)
+
+
+------------------
+
+`<StartOfPromotion>`
+### [PROMO] Ionic 3 Bundle: 6 in 1
+Proudly introduce the best of my Ionic 3 products: 3 themes + 3 plugins in Studio Pack #2  now on sale with promotion code **19SPEED**. Please click the button below for more information.
+
+[![Purchase Externally](http://bit.ly/2E4p4z3)](https://gum.co/ionic3-ui-bundle)
+
+`</EndOfPromotion>`

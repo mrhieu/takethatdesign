@@ -1,0 +1,105 @@
+---
+layout: post
+title: Ionic Skeleton Loader 4 (Ionic 4)
+shortDescription: Screen Loader 
+price: 0
+createdAt: 2019-09-22 00:00:00 +0800
+category: Plugin
+icon: /images/export/e22d2e158776f6be7980739b5af04de7c0e7cfa5-1024x1024.jpg
+tags: ["skeleton","loader"]
+framework: Ionic 4
+marketUrl: https://market.ionicframework.com/plugins/ionic-skeleton-loader-4
+gumroadUrl: 
+sellfyUrl: 
+paypalUrl: https://paypal.me/mrhieu/0
+color: "#e1e1e1"
+thumbnails: ["/images/export/db9d533866a29a5a207db5b38831710efc56a457-828x1792.jpg","/images/export/9d279e35138602d232e3bd77f97791960a1a98ed-828x1792.jpg","/images/export/0500e13069b3dea28eba61ca889d3cbacc634cbb-828x1792.jpg","/images/export/27a56db8b0f3e2fd44147089980ec49757a2a44b-372x810.gif","/images/export/e4ad4b9652149c02a322581ce2d525ad8038eb04-828x1792.jpg","/images/export/538bb099ba881426811dcdf037e3857631bc3705-828x1792.jpg"]
+smallThumbnails: ["/images/export/small/db9d533866a29a5a207db5b38831710efc56a457-828x1792.jpg","/images/export/small/9d279e35138602d232e3bd77f97791960a1a98ed-828x1792.jpg","/images/export/small/0500e13069b3dea28eba61ca889d3cbacc634cbb-828x1792.jpg"]
+---
+
+# Introduction
+
+After receiving a few suggestions over email, I decided to create the Ionic 4 version of [Skeleton Loader](https://market.ionicframework.com/plugins/ionic-skeleton-loader).
+
+As its previous version, it's very easy to use. And FREE!
+
+# Preview
+
+
+
+
+**Watch on Youtube**
+
+See how it works on Youtube: 
+
+(coming soon)
+
+
+Happy prototyping!
+
+
+# Changelog
+
+> Note: All updates are on Ionic 4
+
+*Last updated: Sept 22 2019*
+
+Github Repository: [https://github.com/mrhieu/ionic-skeleton-loader-4](https://github.com/mrhieu/ionic-skeleton-loader-4)
+
+
+# Screens
+
+1. Skeleton Loader
+2. List
+3. Detail
+4. Facebook
+5. Pinterest
+6. Notifications
+7. Table
+
+# Run locally
+1.Install Ionic environment
+
+```
+$ npm install -g cordova
+$ npm install -g ionic@4.11.0
+```
+
+2.After purchasing, download the zip file containing the entire demo app and unzip
+
+3.Go inside the extracted folder
+
+4.Install all dependencies
+
+```
+$ npm install
+```
+
+5.Start local server
+```
+$ ionic serve
+```
+
+6.Your default browser should now automatically open the template
+
+
+# Notes
+
+Read more at [README](https://github.com/mrhieu/ionic-skeleton-loader-4/blob/master/README.md)
+
+
+# Contact
+If you need technical support or have any questions, don't hesitate to send me a message: [mr_hie@yahoo.com](mailto:mr_hie@yahoo.com)
+
+Homepage: [https://www.takethatdesign.com](https://www.takethatdesign.com)
+
+
+------------------
+
+`<StartOfPromotion>`
+### [PROMO] Ionic 3 Bundle: 6 in 1
+Proudly introduce the best of my Ionic 3 products: 3 themes + 3 plugins in Studio Pack #2  now on sale with promotion code **19SPEED**. Please click the button below for more information.
+
+[![Purchase Externally](http://bit.ly/2E4p4z3)](https://gum.co/ionic3-ui-bundle)
+
+`</EndOfPromotion>`

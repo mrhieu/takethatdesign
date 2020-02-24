@@ -1,52 +1,33 @@
 import React from 'react';
-import { css } from '@emotion/core';
-import { Link, graphql } from 'gatsby';
-import { rhythm } from '../utils/typography';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo/Seo';
+import ProductItem from '../components/ProductItem/ProductItem';
 
 export default ({ data }) => {
   return (
     <React.Fragment>
       <SEO title="Homepage"/>
       <Layout>
-        <div>
-          <h1
-            css={css`
-              display: inline-block;
-              border-bottom: 1px solid;
-            `}
-          >
-            Amazing Pandas Eating Things
-          </h1>
-          <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <div key={node.id}>
-              <Link
-                to={ `/${node.fields.slug}` }
-                css={css`
-                  text-decoration: none;
-                  color: inherit;
-                `}
-              >
-                <h3
-                  css={css`
-                    margin-bottom: ${rhythm(1 / 4)};
-                  `}
-                >
-                  {node.frontmatter.title}{' '}
-                  <span
-                    css={css`
-                      color: #555;
-                    `}
-                  >
-                    — {node.frontmatter.date}
-                  </span>
-                </h3>
-                <p>{node.excerpt}</p>
-              </Link>
-            </div>
-          ))}
+        <div className="hero-text">
+          Best of Ionic Themes & Plugins
+        </div>
+
+        <div className="padder-v text-center text-muted text-sm m-b d-none d-md-block">
+          Based on <a href="https://ionicframework.com/" className="font-bold text-dark" target="_blank" rel="noopener noreferrer">Ionic Framework</a> - My favorite hybrid mobile app framework
+        </div>
+
+        <div className="product-container">
+          <div className="product-items row">
+            {
+              data.allMarkdownRemark.edges.map(({ node }) => (
+                <div key={node.id} className="col-lg-4 col-md-6">
+                  <ProductItem data={node}/>
+                </div>
+              ))
+            }
+          </div>
+          <div className="text-center text-muted">Total: {data.allMarkdownRemark.totalCount} items.</div>
         </div>
       </Layout>
     </React.Fragment>
@@ -62,7 +43,21 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date: createdAt(formatString: "DD MMMM, YYYY")
+            title
+            shortDescription
+            price
+            createdAt(formatString: "DD MMMM, YYYY")
+            category
+            icon
+            tags
+            framework
+            marketUrl
+            gumroadUrl
+            sellfyUrl
+            paypalUrl
+            color
+            thumbnails
+            smallThumbnails
           }
           fields {
             slug

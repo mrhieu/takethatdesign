@@ -16,10 +16,12 @@ export default () => (
     <div className="header-wrapper">
       <div className="container d-flex flex-row align-items-center justify-content-between">
         <div className="navbar-logo d-flex flex-row align-items-center justify-content-between">
-          <Logo />
+          <Link to={'/'}>
+            <Logo />
+          </Link>
           <div className="tagline">
             <span className="color-black font-bold">
-              Take That Design <span className="d-none d-sm-inline">:</span>
+              Take That Design <span className="d-none d-sm-inline">: </span>
             </span>
             <span className="text-muted d-none d-sm-inline">
               Kick start your next <span className="text-dark">Ionic</span> project

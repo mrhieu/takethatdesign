@@ -1,0 +1,135 @@
+---
+layout: post
+title: Ionic Pinterest 2 (Ionic 3)
+shortDescription: Photo Sharing Network 
+price: 24
+createdAt: 2018-09-30 00:00:00 +0800
+category: Theme
+icon: /images/export/032423b73790ab86f3114034ff06a565a5480d16-1024x1024.jpg
+tags: ["photo","social network"]
+framework: Ionic 3
+marketUrl: https://market.ionicframework.com/themes/pinterest-ui-2
+gumroadUrl: https://gum.co/ionic-pinterest-2
+sellfyUrl: https://sellfy.com/p/Pqj0/
+paypalUrl: https://paypal.me/mrhieu/24
+color: "#bc081b"
+thumbnails: ["/images/export/9d50543afc966be3caafbbdae4dd5143a313c61a-1242x2208.jpg","/images/export/8e90fdc185f0cf1f5271e5e8d9306b8cfb6ae7f1-1242x2208.jpg","/images/export/64826dfa1100f7cd46ca6157a95da89730b113ed-1242x2208.jpg","/images/export/6791b041bf83853ef9e37c8b20993b6f7fc74c8c-1242x2208.jpg","/images/export/13c35984fb4722612183f7d01fc56005a9bbfcc6-1242x2208.jpg","/images/export/c2ed83fc6a8c0c9a34e4c556f589b7d8958d36c5-1242x2208.jpg","/images/export/8698be89b7507ce92c6d50a0778b5469a4ce97cf-1242x2208.jpg","/images/export/31cac8526ec8ec62e43e6dd63e389352a0c39d8f-412x734.gif"]
+smallThumbnails: ["/images/export/small/9d50543afc966be3caafbbdae4dd5143a313c61a-1242x2208.jpg","/images/export/small/8e90fdc185f0cf1f5271e5e8d9306b8cfb6ae7f1-1242x2208.jpg","/images/export/small/64826dfa1100f7cd46ca6157a95da89730b113ed-1242x2208.jpg"]
+---
+
+# Introduction
+
+[Pinterest](http://www.pinterest.com/) is the most popular website you want to visit when it comes to ideas or inspiration. I myself cannot tell how much I like Pinterest in terms of the high quality content and the user experience. I visit Pinterest almost everyday to see photos of watches and sunglasses (my hobby), fashion trends, and design ideas. I'm satisfied with its clean, minimal UI and constantly improved UX.
+
+> I'm an UI/UX lover. I see nice UI, I have to challenge myself to reproduce it 
+
+I always take it serious to keep the code quality high, with clean and self-explained code. When purchasing this, you also get my latest "helper" snippets inside the package to make it more fun to code.
+
+# Preview
+
+
+
+
+**Watch on Youtube**
+
+See how it works on Youtube: https://youtu.be/KiR2qfehjLI
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KiR2qfehjLI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+Happy prototyping!
+
+
+# Changelog
+
+*Last updated: Sep 30 2018*
+
+### v1
+
+* First version
+
+
+# Screens
+
+1. Welcome
+2. Login
+3. Home
+4. Pin detail
+5. Save to boards
+6. Search
+7. Following
+8. Notifications
+9. Messaging (including [Giphy 2 plugin](https://market.ionicframework.com/plugins/ionic-giphy-2) woot woot!)
+10. Profile
+11. Settings
+12. Profile Edit
+
+
+# Run locally
+1.Install Ionic environment
+
+```
+$ npm install -g cordova
+$ npm install -g ionic@4.11.0
+```
+
+2.After purchasing, download the zip file containing the entire demo app and unzip
+
+3.Go inside the extracted folder
+
+4.Install all dependencies
+
+```
+$ npm install
+```
+
+5.Start local server
+```
+$ ionic serve
+```
+
+6.Your default browser should now automatically open the app
+
+
+# Notes
+
+1.Modify the default theme colors to match Pinterest's colors in `src/theme/variables.scss`
+
+```
+$colors: (
+  primary:    #084f90,
+  secondary:  #32db64,
+  danger:     #bd081c,// Pinterest primary color
+  light:      #efefef,
+  dark:       #222,
+  white:      #fff,
+  muted:      #b7b4b8,
+  google:     #3d85fc
+  ...
+```
+
+2.I personally like the look on iOS so I forced the theme to iOS mode. You can config that to suit your need
+
+```
+# in src/app/app.module.ts
+IonicModule.forRoot(MyApp, {
+      mode: 'ios',// TODO: to have same iOS look for all platforms
+      backButtonText: '',
+    })
+```
+
+# Contact
+If you need technical support or have any questions, don't hesitate to send me a message: [mr_hie@yahoo.com](mailto:mr_hie@yahoo.com)
+
+Homepage: [https://www.takethatdesign.com](https://www.takethatdesign.com)
+
+
+------------------
+
+`<StartOfPromotion>`
+### [PROMO] Ionic 3 Bundle: 6 in 1
+Proudly introduce the best of my Ionic 3 products: 3 themes + 3 plugins in Studio Pack #2  now on sale with promotion code **19SPEED**. Please click the button below for more information.
+
+[![Purchase Externally](http://bit.ly/2E4p4z3)](https://gum.co/ionic3-ui-bundle)
+
+`</EndOfPromotion>`

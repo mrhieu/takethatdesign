@@ -3,7 +3,7 @@ import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 
 export default ({ children }) => (
-  <div>
+  <React.Fragment>
     <Navbar />
     <main className="page-content" aria-label="Content">
       <div className="container padder-v">
@@ -11,5 +11,5 @@ export default ({ children }) => (
       </div>
     </main>
     <Footer />
-  </div>
+  </React.Fragment>
 )
