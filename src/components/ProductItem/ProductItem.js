@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import './ProductItem.scss';
 
 export default ({ data }) => {
   const { frontmatter: itemData } = data;
@@ -31,13 +32,13 @@ export default ({ data }) => {
       <div className="item-footer">
         <div className="item-info">
           <div className="item-icon">
-            <Link to={ slug } title={ itemData.title }>
+            <Link to={ `/${slug}` } title={ itemData.title }>
               <img src={ itemData.icon } alt="" />
             </Link>
           </div>
 
           <div className="font-bold text-ellipsis">
-            <Link to={ slug } title={ itemData.title }>
+            <Link to={ `/${slug}` } title={ itemData.title }>
               { itemData.title }
             </Link>
           </div>
@@ -54,7 +55,7 @@ export default ({ data }) => {
           </div>
         </div>
 
-        <a href={ slug } target="_blank" rel="noopener noreferrer" data-title={ itemData.title } className="item-price">
+        <Link to={ `/${slug}` } title={ itemData.title } className="item-price">
           {
             itemData.price === 0 &&
             <span className="text-danger">Free</span>
@@ -66,7 +67,7 @@ export default ({ data }) => {
               ${ itemData.price }
             </span>
           }
-        </a>
+        </Link>
       </div>
     </div>
   )

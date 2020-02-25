@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import './helper.scss';
+@import './productDetail.scss';
 
 body {
   background-color: #f8f8f8;
@@ -23,6 +24,7 @@ body {
 
 .page-content {
   padding-top: 65px!important;
+  padding-bottom: 30px;
 }
 
 /**
@@ -109,4 +111,9 @@ body {
       display: none;
     }
   }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
 }
