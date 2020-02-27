@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
+import FbChat from './FbChat/FbChat';
 
 export default ({ children }) => (
   <React.Fragment>
@@ -11,5 +12,6 @@ export default ({ children }) => (
       </div>
     </main>
     <Footer />
+    <FbChat />
   </React.Fragment>
 )
