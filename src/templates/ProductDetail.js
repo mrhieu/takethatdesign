@@ -7,12 +7,12 @@ import Layout from '../components/Layout';
 import SEO from '../components/Seo/Seo';
 
 export default ({ data }) => {
-  const { html: htmlContent, excerpt } = data.markdownRemark;
+  const { html: htmlContent } = data.markdownRemark;
   const { frontmatter: metadata } = data.markdownRemark;
 
   return (
     <Layout>
-      <SEO title={metadata.title} description={excerpt} />
+      <SEO title={metadata.title} />
 
       <React.Fragment>
         <div className="product-toolbar m-b">

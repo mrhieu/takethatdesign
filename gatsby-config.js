@@ -52,5 +52,11 @@ module.exports = {
         defaultDataLayer: { platform: 'gatsby' },
       },
     },
+    {
+      resolve: 'gatsby-plugin-fullstory',
+      options: {
+        fs_org: 'GQ0RN',
+      },
+    },
   ],
 }
