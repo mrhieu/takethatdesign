@@ -12,6 +12,9 @@ export default ({ children }) => (
       </div>
     </main>
     <Footer />
-    <FbChat />
+    {
+      process.env.NODE_ENV === 'production' &&
+      <FbChat />
+    }
   </React.Fragment>
 )

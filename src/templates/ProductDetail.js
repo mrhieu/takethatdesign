@@ -12,7 +12,10 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={metadata.title} />
+      <SEO
+        title={metadata.title}
+        thumbnail={metadata.icon}
+      />
 
       <React.Fragment>
         <div className="product-toolbar m-b">

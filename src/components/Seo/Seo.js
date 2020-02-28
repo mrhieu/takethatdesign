@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ description, lang, meta, title }) => {
+const SEO = ({ description, lang, meta, title, thumbnail }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +19,7 @@ const SEO = ({ description, lang, meta, title }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description;
+  const metaThumbnail = thumbnail || '/images/market/banner.png';
   const googleMetaTags = [
     {
       name: 'description',
@@ -49,11 +50,11 @@ const SEO = ({ description, lang, meta, title }) => {
     },
     {
       property: 'og:image',
-      content: 'website',
+      content: metaThumbnail,
     },
     {
       property: 'og:url',
-      content: 'website',
+      content: window.location.href,
     },
   ]
 
@@ -76,7 +77,7 @@ const SEO = ({ description, lang, meta, title }) => {
     },
     {
       name: 'twitter:image',
-      content: ''
+      content: metaThumbnail,
     }
   ]
 
@@ -100,8 +101,12 @@ const SEO = ({ description, lang, meta, title }) => {
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" />
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" />
+
+      {/* Fancybox */}
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
       <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" />
+
+      {/* Addthis widget */}
       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e72fd7107058ce5"></script>
     </Helmet>
   )
