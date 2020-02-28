@@ -10,6 +10,7 @@ module.exports = {
     description: 'Best of Ionic Themes and Plugins',
     author: 'Hieu Pham',
   },
+  pathPrefix: '/gatsby',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
