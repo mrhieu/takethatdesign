@@ -9,7 +9,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo/Seo';
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const { html: htmlContent } = data.markdownRemark;
   const { frontmatter: metadata } = data.markdownRemark;
 
@@ -18,6 +18,7 @@ export default ({ data }) => {
       <SEO
         title={metadata.title}
         thumbnail={metadata.icon}
+        location={location}
       />
 
       <React.Fragment>

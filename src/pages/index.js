@@ -3,10 +3,10 @@ import Layout from '../components/Layout';
 import SEO from '../components/Seo/Seo';
 import ProductList from '../components/ProductList/ProductList';
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   return (
     <React.Fragment>
-      <SEO title="Homepage"/>
+      <SEO title="Homepage" location={location} />
       <Layout>
         <div className="hero-text">
           Best of Ionic Themes & Plugins
