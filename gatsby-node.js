@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -50,5 +51,23 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         slug: node.fields.slug,
       },
     })
+  })
+}
+
+exports.onCreateWebpackConfig = ({
+  stage,
+  rules,
+  loaders,
+  plugins,
+  actions,
+}) => {
+  actions.setWebpackConfig({
+    plugins: [
+      new webpack.ProvidePlugin( {
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+      } )
+    ]
   })
 }

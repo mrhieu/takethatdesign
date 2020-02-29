@@ -3,6 +3,10 @@ import { Link, graphql } from 'gatsby';
 import format from 'date-fns/format';
 import Icon from '@mdi/react';
 import { mdiChevronLeft, mdiOpenInNew, mdiTag } from '@mdi/js';
+import Dropdown from 'react-bootstrap/Dropdown';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
+import '@fancyapps/fancybox';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo/Seo';
 
@@ -47,46 +51,59 @@ export default ({ data }) => {
               </div>
             </div>
 
-            <div>
-              <div className="btn-group m-b btn-block btn-buy">
-                <button type="button" className="btn btn-dark btn-block btn-lg dropdown-toggle btn-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Buy now
+            <div className="mb-4">
+              <Dropdown>
+                <Dropdown.Toggle variant="dark" size="lg" block className="btn-split">
+                  { metadata.price > 0 ? 'Buy now' : 'Free Download' }
                   <div className="btn-addon" title={`USD$${ metadata.price }`}>
                     ${ metadata.price }
                   </div>
-                </button>
-                <div className="dropdown-menu">
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
                   {
                     metadata.gumroadUrl &&
-                    <a className="dropdown-item" href={ metadata.gumroadUrl } target="_blank" rel="noopener noreferrer">
+                    <Dropdown.Item href={ metadata.gumroadUrl } target="_blank" rel="noopener noreferrer">
                       <Icon className="icon-sm" path={mdiOpenInNew} /> Pay via Gumroad
-                    </a>
+                    </Dropdown.Item>
                   }
 
                   {
                     metadata.paypalUrl &&
-                    <a className="dropdown-item" href={ metadata.paypalUrl } target="_blank" data-toggle="tooltip" data-placement="top" data-html="true" title="Please Add a note <br><strong>'{{ metadata.title }}'</strong><br> during your payment" rel="noopener noreferrer">
-                      <Icon className="icon-sm" path={mdiOpenInNew} /> Pay via Paypal
-                    </a>
+                    <Dropdown.Item href={ metadata.paypalUrl } target="_blank" rel="noopener noreferrer">
+                      <OverlayTrigger
+                        placement="right"
+                        overlay={
+                          <Tooltip>
+                            Please Add a note <br/><strong>{ metadata.title }</strong><br/> during your payment
+                          </Tooltip>
+                        }
+                      >
+                        <div>
+                          <Icon className="icon-sm" path={mdiOpenInNew} /> Pay via Paypal
+                        </div>
+                      </OverlayTrigger>
+                    </Dropdown.Item>
                   }
 
                   <div className="dropdown-divider"></div>
 
                   {
                     metadata.githubUrl &&
-                    <a className="dropdown-item" href={ metadata.githubUrl } target="_blank" rel="noopener noreferrer">
+                    <Dropdown.Item href={ metadata.githubUrl } target="_blank" rel="noopener noreferrer">
                       <Icon className="icon-sm" path={mdiOpenInNew} /> View on Github
-                    </a>
+                    </Dropdown.Item>
                   }
 
                   {
                     metadata.marketUrl &&
-                    <a className="dropdown-item" href={ metadata.marketUrl } target="_blank" rel="noopener noreferrer">
+                    <Dropdown.Item href={ metadata.marketUrl } target="_blank" rel="noopener noreferrer">
                       <Icon className="icon-sm" path={mdiOpenInNew} /> View on Ionic Market
-                    </a>
+                    </Dropdown.Item>
                   }
-                </div>
-              </div>
+
+                </Dropdown.Menu>
+              </Dropdown>
             </div>
           </div>
 
