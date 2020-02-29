@@ -98,6 +98,11 @@ const SEO = ({ description, lang, meta, title, thumbnail, url }) => {
         ...twitterMetaTags,
       ].concat(meta)}
     >
+      {/* Fancybox */}
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" />
+
       {/* Addthis widget */}
       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e72fd7107058ce5"></script>
     </Helmet>

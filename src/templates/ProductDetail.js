@@ -6,7 +6,6 @@ import { mdiChevronLeft, mdiOpenInNew, mdiTag } from '@mdi/js';
 import Dropdown from 'react-bootstrap/Dropdown';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import '@fancyapps/fancybox';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo/Seo';
 
