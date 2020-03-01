@@ -20,7 +20,6 @@ module.exports = {
       }
     },
     'gatsby-transformer-remark',
-    'gatsby-plugin-emotion',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -57,6 +56,15 @@ module.exports = {
       resolve: 'gatsby-plugin-fullstory',
       options: {
         fs_org: 'GQ0RN',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-facebook-sdk',
+      options: {
+        appId: '272354566715786',
+        status: true,
+        xfbml: true,
+        version: 'v3.2',
       },
     },
   ],

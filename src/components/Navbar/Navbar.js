@@ -16,7 +16,7 @@ export default () => (
     <div className="header-wrapper">
       <div className="container d-flex flex-row align-items-center justify-content-between">
         <div className="navbar-logo d-flex flex-row align-items-center justify-content-between">
-          <Link to={'/'}>
+          <Link to="/">
             <Logo />
           </Link>
           <div className="tagline">
@@ -30,7 +30,7 @@ export default () => (
         </div>
         <div className="navbar-menu">
           <div className="menu-item">
-            <Link to={`/about`}>About</Link>
+            <Link to="/about">About</Link>
           </div>
         </div>
       </div>

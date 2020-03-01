@@ -18,7 +18,7 @@ export default ({ data, location }) => {
       <SEO
         title={metadata.title}
         thumbnail={metadata.icon}
-        location={location}
+        pageUrl={location.href}
       />
 
       <React.Fragment>

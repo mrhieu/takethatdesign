@@ -18,7 +18,7 @@ export default () => (
           ┐( ˘_˘ )┌
         </div>
         <div className="text-center text-xxs text-muted">
-          2019, by <a href="https://hieugoesto.com" className="font-bold text-dark">Hieu Pham</a>
+          {new Date().getFullYear()}, by <a href="https://hieugoesto.com" className="font-bold text-dark">Hieu Pham</a>
         </div>
       </div>
     </div>

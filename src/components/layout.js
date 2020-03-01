@@ -4,7 +4,7 @@ import Footer from './Footer/Footer';
 import FbChat from './FbChat/FbChat';
 
 export default ({ children }) => (
-  <React.Fragment>
+  <div className="layout-container">
     <Navbar />
     <main className="page-content" aria-label="Content">
       <div className="container padder-v">
@@ -16,5 +16,5 @@ export default ({ children }) => (
       process.env.NODE_ENV === 'production' &&
       <FbChat />
     }
-  </React.Fragment>
+  </div>
 )

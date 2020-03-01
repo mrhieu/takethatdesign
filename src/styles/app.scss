@@ -22,9 +22,15 @@ body {
   color: #fff;
 }
 
+.layout-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-content {
   padding-top: 65px!important;
   padding-bottom: 30px;
+  flex: 1 1 auto;
 }
 
 /**

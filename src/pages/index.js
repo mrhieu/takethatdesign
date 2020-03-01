@@ -6,7 +6,7 @@ import ProductList from '../components/ProductList/ProductList';
 export default ({ data, location }) => {
   return (
     <React.Fragment>
-      <SEO title="Homepage" location={location} />
+      <SEO title="Homepage" pageUrl={location.href} />
       <Layout>
         <div className="hero-text">
           Best of Ionic Themes & Plugins
