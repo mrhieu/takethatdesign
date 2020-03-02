@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ description, lang, meta, title, thumbnail, pageUrl }) => {
+const SEO = ({ metaTags }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -18,6 +18,14 @@ const SEO = ({ description, lang, meta, title, thumbnail, pageUrl }) => {
     `
   )
 
+  const {
+    description = 'Best of Ionic Themes and Plugins',
+    lang = 'en',
+    meta = [],
+    title = 'Take That Design',
+    thumbnail,
+    pageUrl
+  } = metaTags;
   const metaDescription = description || site.siteMetadata.description;
   const metaThumbnail = thumbnail || '/images/market/banner.png';
   const metaUrl = pageUrl || 'https://takethatdesign.com';
@@ -110,16 +118,11 @@ const SEO = ({ description, lang, meta, title, thumbnail, pageUrl }) => {
 }
 
 SEO.defaultProps = {
-  lang: 'en',
-  meta: [],
-  description: '',
+  metaTags: {},
 }
 
 SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  metaTags: PropTypes.object
 }
 
-export default SEO
+export default SEO;
