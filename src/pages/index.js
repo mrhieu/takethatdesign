@@ -14,7 +14,7 @@ export default ({ data, location }) => {
         Best of Ionic Themes & Plugins
       </div>
 
-      <div className="padder-v text-center text-muted text-sm m-b d-none d-md-block">
+      <div className="padder-v text-center text-muted text-sm d-none d-md-block">
         Based on <a href="https://ionicframework.com/" className="font-bold text-dark" target="_blank" rel="noopener noreferrer">Ionic Framework</a> - My favorite hybrid mobile app framework
       </div>
 
