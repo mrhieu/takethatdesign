@@ -4763,10 +4763,10 @@ gatsby-page-utils@^0.0.39:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-facebook-sdk@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-facebook-sdk/-/gatsby-plugin-facebook-sdk-1.0.6.tgz#dbfe122cc7739a6db80ccfeb4a624eaf8dcd80a8"
-  integrity sha512-wGK+mJwYBxK2DdIbjN8r4ovrgUOsCWj9UEDGdoTOzJvI6A1/ZoMW8tc8tFyP0q+P0B0VjcOSUZFzipFodHh/OA==
+gatsby-plugin-facebook-customer-chat@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-facebook-customer-chat/-/gatsby-plugin-facebook-customer-chat-1.0.2.tgz#41ee617f2169564bc5cc5ec93bcb72b343b25422"
+  integrity sha512-geML3xjvsIw92rvBcAQZMPoNEdyt8BQuPGcE0xYjwlxI29Z0rvJvt5CJNn/wgztKn/gg1aYityX8OeSQAzRaqQ==
   dependencies:
     common-tags "^1.6.0"
 

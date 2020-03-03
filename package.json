@@ -13,7 +13,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "dev": "npm run develop",
-    "deploy": "gatsby build && gh-pages -d public"
+    "deploy": "gatsby build && cp CNAME public/ && cp robots.txt public/ && gh-pages -d public"
   },
   "dependencies": {
     "@mdi/js": "^4.9.95",
@@ -21,7 +21,7 @@
     "bootstrap": "^4.4.1",
     "date-fns": "^2.10.0",
     "gatsby": "^2.19.23",
-    "gatsby-plugin-facebook-sdk": "^1.0.6",
+    "gatsby-plugin-facebook-customer-chat": "^1.0.2",
     "gatsby-plugin-fullstory": "^2.1.21",
     "gatsby-plugin-google-tagmanager": "^2.1.25",
     "gatsby-plugin-manifest": "^2.2.42",

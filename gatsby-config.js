@@ -59,12 +59,18 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-facebook-sdk',
+      resolve: 'gatsby-plugin-facebook-customer-chat',
       options: {
-        appId: '272354566715786',
-        status: true,
-        xfbml: true,
-        version: 'v3.2',
+        sdk: {
+          status: true,
+          xfbml: true,
+          version: 'v3.2',
+        },
+        chat: {
+          pageId: '272354566715786',
+          loggedInGreeting: 'Hi! How can I help you?',
+          loggedOutGreeting: 'Hi! How can I help you?',
+        }
       },
     },
   ],
