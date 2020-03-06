@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import ProductList from '../components/ProductList/ProductList';
 
-export default ({ data, location }) => {
+export default ({ location }) => {
   return (
     <Layout
       metaTags={{
@@ -19,7 +19,7 @@ export default ({ data, location }) => {
       </div>
 
       <div className="product-container">
-        <ProductList />
+        <ProductList location={location}/>
       </div>
     </Layout>
   )

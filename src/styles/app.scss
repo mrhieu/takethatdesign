@@ -59,6 +59,8 @@ body {
   transition: box-shadow 350ms ease-in-out;
   background-color: #fff;
   vertical-align: middle;
+  cursor: pointer;
+  
   & + .tag {
     margin-left: 16px;
   }

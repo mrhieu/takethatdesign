@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, navigate } from 'gatsby';
 import Icon from '@mdi/react';
 import { mdiMagnify, mdiCloseCircle } from '@mdi/js';
+import queryString from 'query-string';
 import ProductItem from '../ProductItem/ProductItem';
 import './ProductList.scss';
 
-export default () => {
-  const [ searchQuery, setSearchQuery ] = useState('');
+export default ({location}) => {
+  const [ searchQuery, setSearchQuery ] = useState(queryString.parse(location.search).q || '');
 
   const data = useStaticQuery(
     graphql`
@@ -63,13 +64,18 @@ export default () => {
     setSearchQuery('');
   }
 
+  const searchTag = tag => {
+    navigate(`/?q=${tag.name}`);
+    setSearchQuery(tag.name);
+  }
+
   const { edges: productList } = data.allMarkdownRemark;
 
   return (
     <React.Fragment>
       <div className="search-bar row mb-2">
         <div className="form-group col-lg-8 offset-lg-2">
-          <Icon className="search-icon" path={ mdiMagnify } />
+          <Icon className="search-icon" path={ mdiMagnify } color="#aaa" />
           {
             searchQuery.length > 1 &&
             <Icon
@@ -89,19 +95,32 @@ export default () => {
         </div>
       </div>
 
+      {
+        searchQuery.length > 0 &&
+        <h4 className="text-center mb-4 font-bold">
+          - Showing { filteredProductlist().length } results -
+        </h4>
+      }
+
       <div className="product-items row">
         {
           filteredProductlist()
             .map(({ node }) => (
               <div key={ node.id } className="col-lg-4 col-md-6">
-                <ProductItem data={ node }/>
+                <ProductItem
+                  data={ node }
+                  onTagClick={searchTag}
+                />
               </div>
             ))
         }
       </div>
-      <div className="text-center text-muted">
-        Total: { searchQuery.length > 0 ? filteredProductlist().length : data.allMarkdownRemark.totalCount } items.
-      </div>
+      {
+        searchQuery.length === 0 &&
+        <div className="text-center text-muted">
+          Total: { data.allMarkdownRemark.totalCount } items.
+        </div>
+      }
     </React.Fragment>
   )
 }

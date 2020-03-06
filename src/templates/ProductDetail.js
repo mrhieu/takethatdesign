@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import format from 'date-fns/format';
 import Icon from '@mdi/react';
-import { mdiChevronLeft, mdiOpenInNew, mdiTag } from '@mdi/js';
+import { mdiChevronLeft, mdiOpenInNew } from '@mdi/js';
 import Dropdown from 'react-bootstrap/Dropdown';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
@@ -36,14 +36,19 @@ export default ({ data, location }) => {
               { metadata.title }
             </div>
 
-            <div>Created on { format(new Date(metadata.createdAt), 'MMM dd, yyyy') }</div>
-            <div>{ metadata.framework } · { metadata.category }</div>
+            <div><span className="text-muted">Created on </span>{ format(new Date(metadata.createdAt), 'MMM dd, yyyy') }</div>
+            <div><span className="text-muted">Framework </span>{ metadata.framework }</div>
+            <div><span className="text-muted">Category </span>{ metadata.category }</div>
             <div className="tags">
-              <Icon className="icon-sm mb-2 mr-2" path={mdiTag} />
-
               {
                 metadata.tags.map(tag => (
-                  <div key={tag} className="tag tag-sm">{tag}</div>
+                  <Link
+                    key={tag}
+                    className="tag tag-sm"
+                    to={`/?q=${tag}`}
+                  >
+                    {tag}
+                  </Link>
                 ))
               }
             </div>

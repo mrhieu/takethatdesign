@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 import './ProductItem.scss';
 
-export default ({ data }) => {
+export default ({ data, onTagClick }) => {
   const { frontmatter: itemData } = data;
   const { slug } = data.fields;
+
+  const handleTagClick = (type, name) => {
+    onTagClick({type, name});
+  }
 
   return (
     <div className="product-item">
@@ -46,12 +52,29 @@ export default ({ data }) => {
             { itemData.shortDescription }
           </div>
           <div className="item-tags">
-            <div className="tag tag-sm">
-              { itemData.framework }
-            </div>
-            <div className="tag tag-sm">
-              { itemData.category }
-            </div>
+            <OverlayTrigger
+              overlay={
+                <Tooltip>
+                  Framework
+                </Tooltip>
+              }
+            >
+              <button onClick={() => handleTagClick('framework', itemData.framework)} className="tag tag-sm">
+                { itemData.framework }
+              </button>
+            </OverlayTrigger>
+
+            <OverlayTrigger
+              overlay={
+                <Tooltip>
+                  Category
+                </Tooltip>
+              }
+            >
+              <button onClick={() => handleTagClick('category', itemData.category)} className="tag tag-sm">
+                { itemData.category }
+              </button>
+            </OverlayTrigger>
           </div>
         </div>
 

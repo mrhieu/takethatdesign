@@ -40,7 +40,6 @@ $sidebarWidth: 240px;
     .item-info {
       margin: 8px 0 40px;
       font-size: 0.9em;
-      @extend .text-muted;
     }
 
     .item-title {
@@ -61,6 +60,14 @@ $sidebarWidth: 240px;
 
       .tag-sm {
         margin-bottom: 12px;
+      }
+
+      .tag {
+        text-decoration: none;
+
+        &:hover {
+          color: inherit;
+        }
       }
     }
   }

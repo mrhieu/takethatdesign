@@ -122,4 +122,17 @@
       }
     }
   }
+
+  .tag {
+    text-decoration: none;
+
+    &:hover {
+      background-color: $textPrimary;
+      color: #fff;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
