@@ -23,9 +23,18 @@ export default ({ data }) => {
             { metadata.title }
           </div>
 
-          <div><span className="text-muted">Created on </span>{ format(new Date(metadata.createdAt), 'MMM dd, yyyy') }</div>
-          <div><span className="text-muted">Framework </span>{ metadata.framework }</div>
-          <div><span className="text-muted">Category </span>{ metadata.category }</div>
+          <div>
+            <span className="text-muted">Created on </span>
+            { format(new Date(metadata.createdAt), 'MMM dd, yyyy') }
+          </div>
+          <div>
+            <span className="text-muted">Framework </span>
+            <Link to={`/?q=${metadata.framework}`} className="tag tag-sm">{ metadata.framework }</Link>
+          </div>
+          <div>
+            <span className="text-muted">Category </span>
+            <Link to={`/?q=${metadata.category}`} className="tag tag-sm">{ metadata.category }</Link>
+          </div>
           <div className="tags">
             {
               metadata.tags.map(tag => (
