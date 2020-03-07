@@ -19,6 +19,11 @@ $sidebarWidth: 240px;
     padding-left: 0;
   }
 
+  &.embedded {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
   .product-summary {
     width: $sidebarWidth;
     position: absolute;
