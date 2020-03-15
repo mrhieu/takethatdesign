@@ -48,26 +48,29 @@ export default ({ itemData }) => {
       .filter(({ node }) => {
         const { title, category, framework, tags } = node.frontmatter;
         const itemKey = `${title}${category}${framework}${tags.join('')}`;
-        return itemKey.toUpperCase().indexOf(itemData.framework.toUpperCase()) > -1;
+        return title !== itemData.title
+          && itemKey.toUpperCase().indexOf(itemData.framework.toUpperCase()) > -1;
       })
       .slice(0, 4);
   }
 
-  return (
-    <div className="product-recommendation">
-      <h4>More Like This</h4>
-      <div className="row">
-        {
-          filteredProductlist()
-            .map(({ node }) => (
-              <div key={ node.id } className="col-lg-3 col-md-6">
-                <ProductItem
-                  data={ node }
-                />
-              </div>
-            ))
-        }
+  return filteredProductlist().length > 0
+    ? (
+      <div className="product-recommendation">
+        <h4>More Like This</h4>
+        <div className="row">
+          {
+            filteredProductlist()
+              .map(({ node }) => (
+                <div key={ node.id } className="col-lg-3 col-md-6">
+                  <ProductItem
+                    data={ node }
+                  />
+                </div>
+              ))
+          }
+        </div>
       </div>
-    </div>
-  )
+    )
+    : null;
 }
