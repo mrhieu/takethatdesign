@@ -1,0 +1,11 @@
+.product-recommendation {
+  .product-item {
+    .item-image-stack, .item-tags {
+      display: none;
+    }
+
+    .item-icon {
+      top: 4px;
+    }
+  }
+}

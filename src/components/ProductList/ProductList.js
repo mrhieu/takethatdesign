@@ -19,7 +19,6 @@ export default ({location}) => {
               id
               frontmatter {
                 title
-                title
                 shortDescription
                 price
                 createdAt(formatString: "DD MMMM, YYYY")
