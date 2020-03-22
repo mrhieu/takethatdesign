@@ -27,8 +27,8 @@ const SEO = ({ metaTags }) => {
     pageUrl
   } = metaTags;
   const metaDescription = description || site.siteMetadata.description;
-  const metaThumbnail = thumbnail || 'https://takethatdesign.com/images/market/banner.png';
-  const metaUrl = pageUrl || 'https://takethatdesign.com';
+  const metaThumbnail = thumbnail || 'https://www.takethatdesign.com/images/market/banner.png';
+  const metaUrl = pageUrl || 'https://www.takethatdesign.com';
 
   const googleMetaTags = [
     {
