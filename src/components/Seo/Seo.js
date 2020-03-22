@@ -27,8 +27,9 @@ const SEO = ({ metaTags }) => {
     pageUrl
   } = metaTags;
   const metaDescription = description || site.siteMetadata.description;
-  const metaThumbnail = thumbnail || '/images/market/banner.png';
+  const metaThumbnail = thumbnail || 'https://takethatdesign.com/images/market/banner.png';
   const metaUrl = pageUrl || 'https://takethatdesign.com';
+
   const googleMetaTags = [
     {
       name: 'description',
@@ -105,6 +106,13 @@ const SEO = ({ metaTags }) => {
         ...facebookMetaTags,
         ...twitterMetaTags,
       ].concat(meta)}
+      link={
+        [{
+          rel: 'canonical',
+          key: pageUrl,
+          href: pageUrl
+        }]
+      }
     >
       {/* Fancybox */}
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" />

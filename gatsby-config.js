@@ -36,6 +36,12 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-react-helmet-canonical-urls',
+      options: {
+        siteUrl: 'https://www.takethatdesign.com',
+      },
+    },
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-google-tagmanager',

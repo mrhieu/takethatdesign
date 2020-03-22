@@ -6,7 +6,6 @@ export default ({ location }) => {
   return (
     <Layout
       metaTags={{
-        title: 'Homepage',
         pageUrl: location.href,
       }}
     >
