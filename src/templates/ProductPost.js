@@ -15,7 +15,6 @@ export default ({ data, location }) => {
   const { frontmatter: metadata } = data.markdownRemark;
 
   if (queryString.parse(location.search).type === 'embedded') {
-    console.log('IFRAME'); // eslint-disable-line
     return (
       <ProductIframe
         data={data}
