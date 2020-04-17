@@ -1,27 +1,12 @@
-/*
-  add ?type="embedded to be served as iFrame
-*/
-
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import ProductDetail from '../components/ProductDetail/ProductDetail';
+import ProductIframe from '../components/ProductIframe/ProductIframe';
 
-export default ({ data, location }) => {
-  const { frontmatter: metadata } = data.markdownRemark;
-
+export default ({ data }) => {
   return (
-    <Layout
-      metaTags={{
-        title: metadata.title,
-        thumbnail: metadata.icon,
-        pageUrl: location.href,
-      }}
-    >
-      <ProductDetail
-        data={data}
-      />
-    </Layout>
+    <ProductIframe
+      data={data}
+    />
   )
 }
 

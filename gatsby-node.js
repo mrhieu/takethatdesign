@@ -51,5 +51,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         slug: node.fields.slug,
       },
     })
+
+    // For iFrame Embedded
+    createPage({
+      path: `embedded/${node.fields.slug}`,
+      component: path.resolve('./src/templates/ProductPostEmbedded.js'),
+      context: {
+        // Data passed to context is available
+        // in page queries as GraphQL variables.
+        slug: node.fields.slug,
+      },
+    })
   })
 }

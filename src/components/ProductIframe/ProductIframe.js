@@ -11,6 +11,9 @@ export default ({ data }) => {
   return (
     <article className="product-detail no-sidebar h-entry embedded" itemScope itemType="http://schema.org/BlogPosting">
       <ProductAnnouncement />
+
+      <h1>{metadata.title}</h1>
+
       {
         metadata.price > 0 &&
         <div className="mb-4">
@@ -36,6 +39,7 @@ export default ({ data }) => {
           </div>
         </div>
       }
+
       <div
         className="product-content e-content"
         itemProp="articleBody"
