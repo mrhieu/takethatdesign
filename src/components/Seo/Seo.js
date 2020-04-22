@@ -27,7 +27,7 @@ const SEO = ({ metaTags }) => {
     pageUrl
   } = metaTags;
   const metaDescription = description || site.siteMetadata.description;
-  const metaThumbnail = `https://www.takethatdesign.com${thumbnail}` || 'https://www.takethatdesign.com/images/market/banner.png';
+  const metaThumbnail = thumbnail ? `https://www.takethatdesign.com${thumbnail}` : 'https://www.takethatdesign.com/images/market/banner.png';
   const metaUrl = pageUrl || 'https://www.takethatdesign.com';
 
   const googleMetaTags = [
@@ -66,6 +66,10 @@ const SEO = ({ metaTags }) => {
       property: 'og:url',
       content: metaUrl,
     },
+    {
+      property: 'fb:app_id',
+      content: '719535605519260',
+    }
   ]
 
   const twitterMetaTags = [
@@ -121,6 +125,8 @@ const SEO = ({ metaTags }) => {
 
       {/* Addthis widget */}
       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e72fd7107058ce5"></script>
+
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet" />
     </Helmet>
   )
 }

@@ -21,7 +21,10 @@ export default () => (
           </Link>
           <div className="tagline">
             <span className="color-black font-bold">
-              Take That Design <span className="d-none d-sm-inline">: </span>
+              <Link to="/">
+                Take That Design
+              </Link>
+              <span className="d-none d-sm-inline">: </span>
             </span>
             <span className="text-muted d-none d-sm-inline">
               Kick start your next <span className="text-dark">Ionic</span> project
