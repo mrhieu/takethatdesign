@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Ionic Tinder UI 2020 (Ionic 4)
-shortDescription: Dating App 
-price: 30
+shortDescription: Dating App
+price: 24
 createdAt: 2019-12-09 00:00:00 +0800
 category: Theme
 icon: /images/export/7d3a357134826d79de8761f233811cebc9eb2341-1024x1024.jpg
@@ -11,7 +11,7 @@ framework: Ionic 4
 marketUrl: https://market.ionicframework.com/themes/tinder-ui-2020
 gumroadUrl: https://gum.co/ionic-tinder-2020
 sellfyUrl: https://sellfy.com/p/5powkh/
-paypalUrl: https://paypal.me/mrhieu/30
+paypalUrl: https://paypal.me/mrhieu/24
 color: "#fd5068"
 thumbnails: ["/images/export/fc7a6eb9c8bf3f3a6e9e359c3eb80a4c0ce957b3-828x1792.jpg","/images/export/4467788267f1391cafb0f5f753ee96297bd9a076-828x1792.jpg","/images/export/0ac4e46fdb2b4913714f7732e086f47b2211e7d2-828x1792.jpg","/images/export/ce52764618a13123b17df0a29527a846ddae9bf2-828x1792.jpg","/images/export/9b1ddee18e24c77c1e0e2785c1d6e56440d0821f-828x1792.jpg","/images/export/a579cfbac805443af58ef968e5ce678c4cae5a7d-828x1792.jpg","/images/export/932a4a3dd9663cc6089def67fc4fcd45e6f39378-828x1792.jpg","/images/export/af60f7e20ca058aae049d95fda1dd9d12455384f-828x1792.jpg","/images/export/e201ea44c9d683cffad345f773dbda72b9a38276-828x1792.jpg","/images/export/6f32dea4054bc27b5e1588ae271f7edc4a984143-828x1792.jpg"]
 smallThumbnails: ["/images/export/small/fc7a6eb9c8bf3f3a6e9e359c3eb80a4c0ce957b3-828x1792.jpg","/images/export/small/4467788267f1391cafb0f5f753ee96297bd9a076-828x1792.jpg","/images/export/small/0ac4e46fdb2b4913714f7732e086f47b2211e7d2-828x1792.jpg"]
@@ -29,7 +29,7 @@ I always take it serious to keep the code quality high, with clean and self-expl
 
 
 
-**Download APK to preview the theme:** 
+**Download APK to preview the theme:**
 
 [![enter image description here](https://lh3.googleusercontent.com/MIkXV-iIhrxPG5tZn8QTglczrISwLwebr8QmCKcJFN6NL0eNLf5GqWltrefAZwzAwh2r4RPk=w96-h96-e365)
 tinder-ui-2020_demo.apk](http://bit.ly/2RDyGtR)
@@ -66,7 +66,7 @@ Happy prototyping!
 7. Profile Edit
 8. Top picks
 9. Messaging
-10. Feed 
+10. Feed
 11. Chat ( including [Giphy-4 plugin](https://market.ionicframework.com/plugins/giphy-4) for FREE! )
 
 All, available in Dark Mode!

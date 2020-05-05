@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Ionic LinkedIn 4 (Ionic 4)
-shortDescription: Social Network for Professionals 
-price: 30
+shortDescription: Social Network for Professionals
+price: 24
 createdAt: 2019-10-27 00:00:00 +0800
 category: Theme
 icon: /images/export/61e11d7add7b61e83525c7e2ae09e7584ee9c98d-1024x1024.jpg
@@ -11,7 +11,7 @@ framework: Ionic 4
 marketUrl: https://market.ionicframework.com/themes/ionic-linkedin-4
 gumroadUrl: https://gum.co/ionic-linkedin-4
 sellfyUrl: https://sellfy.com/p/cstq4x/
-paypalUrl: https://paypal.me/mrhieu/30
+paypalUrl: https://paypal.me/mrhieu/24
 color: "#0077b5"
 thumbnails: ["/images/export/a66474b5d37e9dde5cb822ed947ac1934b162ac1-828x1792.jpg","/images/export/41696c01f9a8a5e44ba85d62765899ae703f33e1-828x1792.jpg","/images/export/db003a24027fffde17b56f60dd0735d45c5b11a7-828x1792.jpg","/images/export/2368cf1225912567f1bfd2f95dfe344709e784ef-828x1792.jpg","/images/export/6b116b8d7c7cd1d485684b3b517dfec30c20043b-828x1792.jpg","/images/export/9b007b7c422fd7fbc6e435c511cafe0a734a1cc1-828x1792.jpg","/images/export/79e42d7628ba1d116db5cdc903d8284fa97181eb-828x1792.jpg","/images/export/fedc719e2885e93f778d3631547b4c281c6cefc7-374x668.gif"]
 smallThumbnails: ["/images/export/small/a66474b5d37e9dde5cb822ed947ac1934b162ac1-828x1792.jpg","/images/export/small/41696c01f9a8a5e44ba85d62765899ae703f33e1-828x1792.jpg","/images/export/small/db003a24027fffde17b56f60dd0735d45c5b11a7-828x1792.jpg"]
@@ -19,18 +19,18 @@ smallThumbnails: ["/images/export/small/a66474b5d37e9dde5cb822ed947ac1934b162ac1
 
 # Introduction
 
-[LinkedIn](https://www.linkedin.com/) is a networking tool to find connections to recommended job candidates, industry experts and business partners. Its UI has been updated constantly and I really love how it looks nowadays. I've been using it for years and have [my own profile](https://linkedin.com/in/hieupv) there. 
+[LinkedIn](https://www.linkedin.com/) is a networking tool to find connections to recommended job candidates, industry experts and business partners. Its UI has been updated constantly and I really love how it looks nowadays. I've been using it for years and have [my own profile](https://linkedin.com/in/hieupv) there.
 
 I always take it serious to write high quality, clean and self-explained code. When purchasing this, you also get my latest "helper" snippets inside the package to make it even more fun to code.
 
-Plus, when the whole world is going "dark mode" and Linkedin hasn't, this is my chance to make it happen. This is my world. 
+Plus, when the whole world is going "dark mode" and Linkedin hasn't, this is my chance to make it happen. This is my world.
 
 
 # Preview
 
 
 
-**Download APK to preview the theme:** 
+**Download APK to preview the theme:**
 
 [![enter image description here](https://lh3.googleusercontent.com/MIkXV-iIhrxPG5tZn8QTglczrISwLwebr8QmCKcJFN6NL0eNLf5GqWltrefAZwzAwh2r4RPk=w96-h96-e365)
 linkedin-4_demo.apk](http://bit.ly/2pRASlQ)

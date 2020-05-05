@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Ionic LinkedIn 4 (Ionic React)
-shortDescription: Social Network for Professionals 
-price: 30
+shortDescription: Social Network for Professionals
+price: 24
 createdAt: 2019-11-17 00:00:00 +0800
 category: Theme
 icon: /images/export/0e52346e15aa433a76431d2e6fe0d65968410625-1024x1024.jpg
@@ -11,7 +11,7 @@ framework: Ionic React
 marketUrl: https://market.ionicframework.com/themes/ionic-linkedin-4
 gumroadUrl: https://gum.co/ionic-react-linkedin
 sellfyUrl: https://sellfy.com/p/yl18cw/
-paypalUrl: https://paypal.me/mrhieu/30
+paypalUrl: https://paypal.me/mrhieu/24
 color: "#0077b5"
 thumbnails: ["/images/export/a66474b5d37e9dde5cb822ed947ac1934b162ac1-828x1792.jpg","/images/export/41696c01f9a8a5e44ba85d62765899ae703f33e1-828x1792.jpg","/images/export/db003a24027fffde17b56f60dd0735d45c5b11a7-828x1792.jpg","/images/export/464c7a5038b1cad7b9595b4e64c92b05ef8158a4-828x1792.jpg","/images/export/2368cf1225912567f1bfd2f95dfe344709e784ef-828x1792.jpg","/images/export/6b116b8d7c7cd1d485684b3b517dfec30c20043b-828x1792.jpg","/images/export/9b007b7c422fd7fbc6e435c511cafe0a734a1cc1-828x1792.jpg","/images/export/79e42d7628ba1d116db5cdc903d8284fa97181eb-828x1792.jpg","/images/export/fedc719e2885e93f778d3631547b4c281c6cefc7-374x668.gif"]
 smallThumbnails: ["/images/export/small/a66474b5d37e9dde5cb822ed947ac1934b162ac1-828x1792.jpg","/images/export/small/41696c01f9a8a5e44ba85d62765899ae703f33e1-828x1792.jpg","/images/export/small/db003a24027fffde17b56f60dd0735d45c5b11a7-828x1792.jpg"]
@@ -21,18 +21,18 @@ smallThumbnails: ["/images/export/small/a66474b5d37e9dde5cb822ed947ac1934b162ac1
 I've been having a lot of fun creating Ionic (Angular) themes, and from now on I'm going to have even more fun with **[Ionic React](https://ionicframework.com/blog/announcing-ionic-react/)** thanks to Ionic Team. New things always have its learning curve, and believe me, Ionic React does, a little bit though. With this theme, I've covered a lot of common practices that will bring you a smoother journey to Ionic React and kick start your next project.
 ![ionic_react](https://user-images.githubusercontent.com/1593560/69010108-f0ec8c00-0996-11ea-85bc-2ba2f08cb4cc.png)
 
-[LinkedIn](https://www.linkedin.com/) is a networking tool to find connections to recommended job candidates, industry experts and business partners. Its UI has been updated constantly and I really love how it looks nowadays. I've been using it for years and have [my own profile](https://linkedin.com/in/hieupv) there. 
+[LinkedIn](https://www.linkedin.com/) is a networking tool to find connections to recommended job candidates, industry experts and business partners. Its UI has been updated constantly and I really love how it looks nowadays. I've been using it for years and have [my own profile](https://linkedin.com/in/hieupv) there.
 
 I always take it serious to write high quality, clean and self-explained code. When purchasing this, you also get my latest "helper" snippets inside the package to make it even more fun to code.
 
-Plus, when the whole world is going "dark mode" and Linkedin hasn't, this is my chance to make it happen. This is my world. 
+Plus, when the whole world is going "dark mode" and Linkedin hasn't, this is my chance to make it happen. This is my world.
 
 
 # Preview
 
 
 
-**Download APK to preview the theme:** 
+**Download APK to preview the theme:**
 
 [![enter image description here](https://lh3.googleusercontent.com/MIkXV-iIhrxPG5tZn8QTglczrISwLwebr8QmCKcJFN6NL0eNLf5GqWltrefAZwzAwh2r4RPk=w96-h96-e365)
 linkedin-4-react_demo.apk](http://bit.ly/2KDdcJl)
@@ -86,7 +86,7 @@ $ npm install -g ionic@5.4.1
 
 3.Go inside the extracted folder
 
-4.Install all dependencies 
+4.Install all dependencies
 
 ```
 $ npm install
