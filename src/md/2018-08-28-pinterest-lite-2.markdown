@@ -2,7 +2,7 @@
 layout: post
 title: Ionic Pinterest Lite 2 (Ionic 3)
 shortDescription: Photo Sharing Network 
-price: 9
+price: 6
 createdAt: 2018-08-28 00:00:00 +0800
 category: Theme
 icon: /images/export/fe2e6b8f2591dff1b725f33089662463ff735e2d-1024x1024.jpg
@@ -11,7 +11,7 @@ framework: Ionic 3
 marketUrl: https://market.ionicframework.com/themes/ionic-pinterest-lite
 gumroadUrl: https://gum.co/ionic-pinterest-lite
 sellfyUrl: https://sellfy.com/p/r1oO/
-paypalUrl: https://paypal.me/mrhieu/9
+paypalUrl: https://paypal.me/mrhieu/6
 color: "#bc071b"
 thumbnails: ["/images/export/00827117918b114a3120e90a0454788c885cd9a6-1242x2208.jpg","/images/export/a5d1b075ea67e8bb4eeef819f1da2c5023a68cbf-1242x2208.jpg","/images/export/f53b51b0ef54a66bffa11ea4f9bced50ff3d51a9-1242x2208.jpg","/images/export/a112b9655ead8b93adc1a4c78d554c13c2579bf7-1242x2208.jpg"]
 smallThumbnails: ["/images/export/small/00827117918b114a3120e90a0454788c885cd9a6-1242x2208.jpg","/images/export/small/a5d1b075ea67e8bb4eeef819f1da2c5023a68cbf-1242x2208.jpg","/images/export/small/f53b51b0ef54a66bffa11ea4f9bced50ff3d51a9-1242x2208.jpg"]
@@ -60,7 +60,7 @@ Happy prototyping!
 
 ```
 $ npm install -g cordova
-$ npm install -g ionic@4.11.0
+$ npm install -g ionic@5.4.1
 ```
 
 2.After purchasing, download the zip file containing the entire demo app and unzip

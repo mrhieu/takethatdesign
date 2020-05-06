@@ -2,7 +2,7 @@
 layout: post
 title: Ionic Tinder 1
 shortDescription: Popular Dating App Template 
-price: 18
+price: 12
 createdAt: 2016-05-02 00:00:00 +0800
 category: Theme
 icon: /images/export/b0dbc3b3abf1c60704ede667d14ca389468a806f-450x450.jpg
@@ -11,7 +11,7 @@ framework: Ionic 1
 marketUrl: https://market.ionicframework.com/themes/ionic-tinder-ui
 gumroadUrl: https://gum.co/ionic-tinder-ui
 sellfyUrl: https://sellfy.com/p/7vyu/
-paypalUrl: https://paypal.me/mrhieu/18
+paypalUrl: https://paypal.me/mrhieu/12
 color: "#fd4f68"
 thumbnails: ["/images/export/735ac16193944008ebd7600f1924a0449885cdf8-665x1182.jpg","/images/export/b9c0d996817b1c0d7885f82d49a29514c1447fcd-665x1182.jpg","/images/export/49fe922c4721f3e927508cd1a3ff55c0b054457e-665x1182.jpg","/images/export/3f71f825c58d22248421e4a573e6b1e88d36a371-665x1182.jpg","/images/export/d51d991c5cc59b0f4a7a0d3e870c9398b6130c32-640x1136.jpg"]
 smallThumbnails: ["/images/export/small/735ac16193944008ebd7600f1924a0449885cdf8-665x1182.jpg","/images/export/small/b9c0d996817b1c0d7885f82d49a29514c1447fcd-665x1182.jpg","/images/export/small/49fe922c4721f3e927508cd1a3ff55c0b054457e-665x1182.jpg"]
@@ -39,6 +39,8 @@ Happy prototyping!
 
 
 # Changelog
+
+> Note: All updates are on Ionic 1
 
 *Last updated: Jun 17 2017*
 
@@ -78,7 +80,7 @@ Happy prototyping!
 
 ```
 $ npm install -g cordova
-$ npm install -g ionic@4.11.0
+$ npm install -g ionic@5.4.1
 ```
 
 2.After purchasing, download the zip file containing the entire demo app and unzip
@@ -96,7 +98,7 @@ $ npm install
 $ ionic serve
 ```
 
-6.Your default browser should now automatically open the app
+6.Your default browser should now automatically open the template
 
 
 # Notes

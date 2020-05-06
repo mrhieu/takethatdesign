@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Ionic LinkedIn 4 (Ionic 4)
-shortDescription: Social Network for Professionals
+shortDescription: Social Network for Professionals 
 price: 24
 createdAt: 2019-10-27 00:00:00 +0800
 category: Theme
 icon: /images/export/61e11d7add7b61e83525c7e2ae09e7584ee9c98d-1024x1024.jpg
-tags: ["messaging","social network","job"]
+tags: ["messaging","social network","job","linkedin","capacitor"]
 framework: Ionic 4
 marketUrl: https://market.ionicframework.com/themes/ionic-linkedin-4
 gumroadUrl: https://gum.co/ionic-linkedin-4
@@ -19,18 +19,18 @@ smallThumbnails: ["/images/export/small/a66474b5d37e9dde5cb822ed947ac1934b162ac1
 
 # Introduction
 
-[LinkedIn](https://www.linkedin.com/) is a networking tool to find connections to recommended job candidates, industry experts and business partners. Its UI has been updated constantly and I really love how it looks nowadays. I've been using it for years and have [my own profile](https://linkedin.com/in/hieupv) there.
+[LinkedIn](https://www.linkedin.com/) is a networking tool to find connections to recommended job candidates, industry experts and business partners. Its UI has been updated constantly and I really love how it looks nowadays. I've been using it for years and have [my own profile](https://linkedin.com/in/hieupv) there. 
 
 I always take it serious to write high quality, clean and self-explained code. When purchasing this, you also get my latest "helper" snippets inside the package to make it even more fun to code.
 
-Plus, when the whole world is going "dark mode" and Linkedin hasn't, this is my chance to make it happen. This is my world.
+Plus, when the whole world is going "dark mode" and Linkedin hasn't, this is my chance to make it happen. This is my world. 
 
 
 # Preview
 
 
 
-**Download APK to preview the theme:**
+**Download APK to preview the theme:** 
 
 [![enter image description here](https://lh3.googleusercontent.com/MIkXV-iIhrxPG5tZn8QTglczrISwLwebr8QmCKcJFN6NL0eNLf5GqWltrefAZwzAwh2r4RPk=w96-h96-e365)
 linkedin-4_demo.apk](http://bit.ly/2pRASlQ)
@@ -50,11 +50,19 @@ Happy prototyping!
 
 > Note: All updates are on Ionic 4
 
-*Last updated: Oct 27 2019*
+*Last updated: Mar 21 2020*
 
-### v1
+### v1 (Oct 27 2019)
 
 * First version
+
+### v2 (Dec 8 2019)
+
+* Fix: use light color statusBar in dark mode
+
+### v3 (Mar 21 2020)
+
+* Integrate with Capacitor
 
 # Screens
 
@@ -125,9 +133,42 @@ $ ionic serve
     }),
     ...
 ```
-3. I've created 15 pages and 29 components when building this UI. It's easier than ever to reuse these components in your existing Ionic 4 projects.
+
+3.I've created 15 pages and 29 components when building this UI. It's easier than ever to reuse these components in your existing Ionic 4 projects.
 ![code](https://user-images.githubusercontent.com/1593560/67623506-6b266680-f858-11e9-8e8e-085e4855bee3.png)
 
+
+4.Build with capacitor
+
+First of all, make sure that you can **Run Locally** (see the instruction above).
+
+```
+# build web asset (to folder www)
+$ ionic build
+
+# add platform (ios or android)
+$ ionic capacitor add ios
+
+# prepare app icons and splash images
+$ npm run resources
+
+# copy web assets into the native project
+$ ionic capacitor copy ios
+
+# open Xcode, then build the native app from there
+$ ionic capacitor open ios
+
+# OR run in live-reload mode
+$ ionic capacitor run ios -l --external
+```
+
+See more: 
+
+[Ionic - iOS Development](https://ionicframework.com/docs/building/ios)
+
+[Ionic - Android Development](https://ionicframework.com/docs/building/android)
+
+[Migrating a Web App Using Cordova to Capacitor](https://capacitor.ionicframework.com/docs/cordova/migrating-from-cordova-to-capacitor/)
 
 # Contact
 If you need technical support or have any questions, don't hesitate to send me a message: [mr_hie@yahoo.com](mailto:mr_hie@yahoo.com)

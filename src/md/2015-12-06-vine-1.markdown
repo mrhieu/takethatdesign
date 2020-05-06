@@ -2,7 +2,7 @@
 layout: post
 title: Ionic Vine 1
 shortDescription: Video sharing network 
-price: 18
+price: 12
 createdAt: 2015-12-06 00:00:00 +0800
 category: Theme
 icon: /images/export/29bcdc87145c056947943ce5260e5e16d43312cd-320x320.jpg
@@ -11,7 +11,7 @@ framework: Ionic 1
 marketUrl: https://market.ionicframework.com/themes/ionic-vine-ui
 gumroadUrl: https://gumroad.com/l/ionic-vine-ui
 sellfyUrl: https://sellfy.com/p/w3uZ/
-paypalUrl: https://paypal.me/mrhieu/18
+paypalUrl: https://paypal.me/mrhieu/12
 color: "#00bf8e"
 thumbnails: ["/images/export/6db94a1c8047140041e900f5fa573cd48dbedc27-640x1136.jpg","/images/export/97877450eb0554479128993140363e09c0883b2c-640x1136.jpg","/images/export/8ec5715d455805d4db836fca6d8b3b658e41ddfb-640x1136.jpg","/images/export/cc11accb352dd7460e37148d99379f8fd90cab1a-640x1136.jpg","/images/export/fe86a984e4c40c8f420cb259564505e90d49868f-640x1136.jpg"]
 smallThumbnails: ["/images/export/small/6db94a1c8047140041e900f5fa573cd48dbedc27-640x1136.jpg","/images/export/small/97877450eb0554479128993140363e09c0883b2c-640x1136.jpg","/images/export/small/8ec5715d455805d4db836fca6d8b3b658e41ddfb-640x1136.jpg"]
@@ -44,27 +44,29 @@ Happy prototyping!
 
 # Changelog
 
-*Last updated: Jun 17 2017*
+> Note: All updates are on Ionic 1
+
+*Last updated: May 5 2019*
 
 ### v1
 
 * First version
 
-### Update 2
+### v2
 
 * Small fixes
 * Add Vines suggestion, Authors suggestion, Connect suggestion
 
-### Update 3
+### v3
 
 * Update Login screen
 * Some UI fixes
 
-### Update 4
+### v4
 
 * Compatible with Ionic CLI ~3.4.0
 
-### Update 5
+### v5
 
 * Compatible with Ionic CLI 4.12.0 and Cordova 9.0.0
 
@@ -91,7 +93,7 @@ Happy prototyping!
 
 ```
 $ npm install -g cordova
-$ npm install -g ionic@4.11.0
+$ npm install -g ionic@5.4.1
 ```
 
 2.After purchasing, download the zip file containing the entire demo app and unzip
@@ -109,7 +111,7 @@ $ npm install
 $ ionic serve
 ```
 
-6.Your default browser should now automatically open the app
+6.Your default browser should now automatically open the template
 
 
 # Notes

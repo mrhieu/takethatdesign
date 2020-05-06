@@ -2,7 +2,7 @@
 layout: post
 title: Ionic LinkedIn 2 (Ionic 3)
 shortDescription: Social Network for Professionals 
-price: 24
+price: 18
 createdAt: 2017-10-15 00:00:00 +0800
 category: Theme
 icon: /images/export/7971d54b505858b5490cee6179ea42f4aeafaad0-320x320.jpg
@@ -11,7 +11,7 @@ framework: Ionic 3
 marketUrl: https://market.ionicframework.com/themes/ionic-linkedin-2
 gumroadUrl: https://gum.co/ionic-linkedin-2
 sellfyUrl: https://sellfy.com/p/Rjia/
-paypalUrl: https://paypal.me/mrhieu/24
+paypalUrl: https://paypal.me/mrhieu/18
 color: "#24a3e3"
 thumbnails: ["/images/export/62555d8b50d88b5c2cdaefcbb5693e5d9ff97d70-665x1182.jpg","/images/export/66d7a2c618829f89efe4c0d16d2d2ebc3d889fcd-665x1182.jpg","/images/export/5bdf3ceeeaf01c3cdcde5ec2aae499e2dd69b393-665x1182.jpg","/images/export/575bb95bd2cffc3cbd32804f422d5edfac482eab-665x1182.jpg","/images/export/a013cac5579046c7640ed349e9d752b14c020f4b-665x1182.jpg"]
 smallThumbnails: ["/images/export/small/62555d8b50d88b5c2cdaefcbb5693e5d9ff97d70-665x1182.jpg","/images/export/small/66d7a2c618829f89efe4c0d16d2d2ebc3d889fcd-665x1182.jpg","/images/export/small/5bdf3ceeeaf01c3cdcde5ec2aae499e2dd69b393-665x1182.jpg"]
@@ -45,6 +45,8 @@ Happy prototyping!
 
 
 # Changelog
+
+> Note: All updates are on Ionic 3
 
 *Last updated: Oct 15 2017*
 
@@ -80,7 +82,7 @@ Happy prototyping!
 
 ```
 $ npm install -g cordova
-$ npm install -g ionic@4.11.0
+$ npm install -g ionic@5.4.1
 ```
 
 2.After purchasing, download the zip file containing the entire demo app and unzip
@@ -98,7 +100,7 @@ $ npm install
 $ ionic serve
 ```
 
-6.Your default browser should now automatically open the app
+6.Your default browser should now automatically open the template
 
 
 # Notes

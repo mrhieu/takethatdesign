@@ -2,7 +2,7 @@
 layout: post
 title: Ionic Twitter 1
 shortDescription: Twitter template 
-price: 18
+price: 12
 createdAt: 2016-10-24 00:00:00 +0800
 category: Theme
 icon: /images/export/5930b2cc16235f0fa7c39728c06e223141e0b326-300x300.jpg
@@ -11,7 +11,7 @@ framework: Ionic 1
 marketUrl: https://market.ionicframework.com/themes/ionic-twitter-ui
 gumroadUrl: https://gum.co/ionic-twitter-ui
 sellfyUrl: https://sellfy.com/p/vzMo/
-paypalUrl: https://paypal.me/mrhieu/18
+paypalUrl: https://paypal.me/mrhieu/12
 color: "#308eef"
 thumbnails: ["/images/export/14dab9ad1e64493ad9056d9b5401e0749640b287-665x1182.jpg","/images/export/efd0144d3d4dc4ad0ba8c5618d31431de502f05b-665x1182.jpg","/images/export/467e1bb67af60d384e48d0a4365ceff4e0d7eaea-665x1182.jpg","/images/export/b26b7a1f1851af3f0ed7ea47c59f69ea822c0f0b-665x1182.jpg","/images/export/bd6e4554fa05bb2a41606793a5eab17266cae6ca-665x1182.jpg","/images/export/c17300b19e8e9b3996a218620be9b3438e7667d2-665x1182.jpg"]
 smallThumbnails: ["/images/export/small/14dab9ad1e64493ad9056d9b5401e0749640b287-665x1182.jpg","/images/export/small/efd0144d3d4dc4ad0ba8c5618d31431de502f05b-665x1182.jpg","/images/export/small/467e1bb67af60d384e48d0a4365ceff4e0d7eaea-665x1182.jpg"]
@@ -44,6 +44,8 @@ Happy prototyping!
 
 # Changelog
 
+> Note: All updates are on Ionic 1
+
 *Last updated: Jun 17 2017*
 
 ### v1
@@ -71,7 +73,7 @@ Happy prototyping!
 
 ```
 $ npm install -g cordova
-$ npm install -g ionic@4.11.0
+$ npm install -g ionic@5.4.1
 ```
 
 2.After purchasing, download the zip file containing the entire demo app and unzip
@@ -89,7 +91,7 @@ $ npm install
 $ ionic serve
 ```
 
-6.Your default browser should now automatically open the app
+6.Your default browser should now automatically open the template
 
 
 # Notes

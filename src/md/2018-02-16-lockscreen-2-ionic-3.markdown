@@ -2,7 +2,7 @@
 layout: post
 title: Ionic Lockscreen 2 (Ionic 3)
 shortDescription: Lockscreen Plugin 
-price: 4
+price: 3
 createdAt: 2018-02-16 00:00:00 +0800
 category: Plugin
 icon: /images/export/c74eef87fd8c06731ad9e1f87bf19f2c20afba6c-1024x1024.jpg
@@ -11,7 +11,7 @@ framework: Ionic 3
 marketUrl: https://market.ionicframework.com/plugins/ionic-lockscreen-2
 gumroadUrl: https://gum.co/ionic-lockscreen-2
 sellfyUrl: https://sellfy.com/p/5LNc/
-paypalUrl: https://paypal.me/mrhieu/4
+paypalUrl: https://paypal.me/mrhieu/3
 color: "#e1e1e1"
 thumbnails: ["/images/export/293c9e9f534b5ecb3c765715920854de0536c4a4-1242x2208.jpg","/images/export/2afa760c74288b53351e737fd8cfb8fc0cf7d06c-1242x2208.jpg","/images/export/f18fad4865c77a345bade8455dad05efdcda379e-1242x2208.jpg"]
 smallThumbnails: ["/images/export/small/293c9e9f534b5ecb3c765715920854de0536c4a4-1242x2208.jpg","/images/export/small/2afa760c74288b53351e737fd8cfb8fc0cf7d06c-1242x2208.jpg","/images/export/small/f18fad4865c77a345bade8455dad05efdcda379e-1242x2208.jpg"]
@@ -44,6 +44,8 @@ Happy prototyping!
 
 # Changelog
 
+> Note: All updates are on Ionic 3
+
 *Last updated: Feb 16 2018*
 
 ### v1
@@ -65,7 +67,7 @@ Happy prototyping!
 
 ```
 $ npm install -g cordova
-$ npm install -g ionic@4.11.0
+$ npm install -g ionic@5.4.1
 ```
 
 2.After purchasing, download the zip file containing the entire demo app and unzip
@@ -83,7 +85,7 @@ $ npm install
 $ ionic serve
 ```
 
-6.Your default browser should now automatically open the app
+6.Your default browser should now automatically open the template
 
 
 # Notes

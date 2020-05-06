@@ -38,6 +38,8 @@ Happy prototyping!
 
 # Changelog
 
+> Note: All updates are on Ionic 3
+
 *Last updated: Jul 13 2018*
 
 Github Repository: [https://github.com/mrhieu/ionic-skeleton-loader](https://github.com/mrhieu/ionic-skeleton-loader)
@@ -58,7 +60,7 @@ Github Repository: [https://github.com/mrhieu/ionic-skeleton-loader](https://git
 
 ```
 $ npm install -g cordova
-$ npm install -g ionic@4.11.0
+$ npm install -g ionic@5.4.1
 ```
 
 2.After purchasing, download the zip file containing the entire demo app and unzip
@@ -76,7 +78,7 @@ $ npm install
 $ ionic serve
 ```
 
-6.Your default browser should now automatically open the app
+6.Your default browser should now automatically open the template
 
 
 # Notes

@@ -2,7 +2,7 @@
 layout: post
 title: Ionic ASOS UI
 shortDescription: E-commerce App Template 
-price: 18
+price: 12
 createdAt: 2016-01-09 00:00:00 +0800
 category: Theme
 icon: /images/export/c635cbe777f62b30b08f2821c095ceb4817e0fb0-320x320.jpg
@@ -11,7 +11,7 @@ framework: Ionic 1
 marketUrl: https://market.ionicframework.com/themes/ionic-asos-ui
 gumroadUrl: https://gumroad.com/l/ionic-asos-ui
 sellfyUrl: https://sellfy.com/p/0FSm/
-paypalUrl: https://paypal.me/mrhieu/18
+paypalUrl: https://paypal.me/mrhieu/12
 color: "#2e2e2e"
 thumbnails: ["/images/export/e2ced226d107cf6632b25ab57a9ae9398dec5f7e-640x1136.jpg","/images/export/c56b6d54736b6068972e5a6998fc2f743ba34250-640x1136.jpg","/images/export/8d6faff83d06fd26cb012d214332eca010b88adf-640x1136.jpg","/images/export/4dbd6eb2c1bc6c2056c1170dfb44b519965d1a5e-640x1136.jpg","/images/export/43f4d1945a32f1fdac0fa5eb9d23550222d04c77-640x1136.jpg","/images/export/3bce1c0fec61d0b1a59981d9ba1b2671c650b014-640x1136.jpg"]
 smallThumbnails: ["/images/export/small/e2ced226d107cf6632b25ab57a9ae9398dec5f7e-640x1136.jpg","/images/export/small/c56b6d54736b6068972e5a6998fc2f743ba34250-640x1136.jpg","/images/export/small/8d6faff83d06fd26cb012d214332eca010b88adf-640x1136.jpg"]
@@ -40,6 +40,8 @@ Happy prototyping!
 
 
 # Changelog
+
+> Note: All updates are on Ionic 1
 
 *Last updated: Jun 17 2017*
 
@@ -78,7 +80,7 @@ Happy prototyping!
 
 ```
 $ npm install -g cordova
-$ npm install -g ionic@4.11.0
+$ npm install -g ionic@5.4.1
 ```
 
 2.After purchasing, download the zip file containing the entire demo app and unzip
@@ -96,7 +98,7 @@ $ npm install
 $ ionic serve
 ```
 
-6.Your default browser should now automatically open the app
+6.Your default browser should now automatically open the template
 
 
 # Notes

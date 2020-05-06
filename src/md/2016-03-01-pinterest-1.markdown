@@ -2,7 +2,7 @@
 layout: post
 title: Ionic Pinterest 1
 shortDescription: Photo Sharing Network 
-price: 18
+price: 12
 createdAt: 2016-03-01 00:00:00 +0800
 category: Theme
 icon: /images/export/414428bf2e596aefe65a591fe7a6fdb287588b70-465x463.jpg
@@ -11,7 +11,7 @@ framework: Ionic 1
 marketUrl: https://market.ionicframework.com/themes/ionic-pinterest-ui
 gumroadUrl: https://gum.co/ionic-pinterest-ui
 sellfyUrl: https://sellfy.com/p/YWDX/
-paypalUrl: https://paypal.me/mrhieu/18
+paypalUrl: https://paypal.me/mrhieu/12
 color: "#bc071b"
 thumbnails: ["/images/export/048238d98187cb0cbffa2bd53d54445da5746c55-665x1182.jpg","/images/export/a6b8bf6610f61421351edeccf84f9394b6fbd3e3-665x1182.jpg","/images/export/afebc0ca422e8016ebb2c5588479370988bd07ef-665x1182.jpg","/images/export/9f10e1b0dd8c7f5356093d42eb717ff47b8ff5ff-665x1182.jpg","/images/export/b6e3e783f5152129512f363f444bc6201602dd1b-665x1182.jpg","/images/export/cacccd486bcb2f0c1a79d4ec63b2148d774bc852-665x1182.jpg"]
 smallThumbnails: ["/images/export/small/048238d98187cb0cbffa2bd53d54445da5746c55-665x1182.jpg","/images/export/small/a6b8bf6610f61421351edeccf84f9394b6fbd3e3-665x1182.jpg","/images/export/small/afebc0ca422e8016ebb2c5588479370988bd07ef-665x1182.jpg"]
@@ -42,6 +42,8 @@ Happy prototyping!
 
 
 # Changelog
+
+> Note: All updates are on Ionic 1
 
 *Last updated: Jun 17 2017*
 
@@ -83,7 +85,7 @@ Happy prototyping!
 
 ```
 $ npm install -g cordova
-$ npm install -g ionic@4.11.0
+$ npm install -g ionic@5.4.1
 ```
 
 2.After purchasing, download the zip file containing the entire demo app and unzip
@@ -101,7 +103,7 @@ $ npm install
 $ ionic serve
 ```
 
-6.Your default browser should now automatically open the app
+6.Your default browser should now automatically open the template
 
 
 # Notes
