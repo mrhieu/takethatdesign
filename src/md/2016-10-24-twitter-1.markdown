@@ -127,14 +127,3 @@ More over, thanks to `gulp-inject` , we will never forget to include the js file
 If you need technical support or have any questions, don't hesitate to send me a message: [mr_hie@yahoo.com](mailto:mr_hie@yahoo.com)
 
 Homepage: [https://www.takethatdesign.com](https://www.takethatdesign.com)
-
-
-------------------
-
-`<StartOfPromotion>`
-### [PROMO] Ionic 3 Bundle: 6 in 1
-Proudly introduce the best of my Ionic 3 products: 3 themes + 3 plugins in Studio Pack #2  now on sale with promotion code **19SPEED**. Please click the button below for more information.
-
-[![Purchase Externally](http://bit.ly/2E4p4z3)](https://gum.co/ionic3-ui-bundle)
-
-`</EndOfPromotion>`

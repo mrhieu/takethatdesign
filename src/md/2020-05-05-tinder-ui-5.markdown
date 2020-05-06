@@ -13,7 +13,7 @@ gumroadUrl: https://gum.co/ionic-tinder-5
 sellfyUrl: 
 paypalUrl: https://paypal.me/mrhieu/24
 color: "#fd5068"
-thumbnails: ["/images/export/06626e91e21696cc268e2b46459d349cae02030e-828x1792.jpg","/images/export/96e561c66d8410909239d1e1888a5a7e3160b218-828x1792.jpg","/images/export/a2db366cd0c4d3d00730121e5ce19c83c272f6fe-828x1792.jpg","/images/export/008b4cc583de449dea3e854044c0ce04ddef5572-828x1792.jpg","/images/export/e996709f0f90571bc5c113581654993373df89e8-828x1792.jpg","/images/export/27cef51e89f9fee9059cfc2394c854f1b9f835b8-828x1792.jpg","/images/export/b79eaa9cf486c3957167bd8f1e773347f5c48666-828x1792.jpg","/images/export/ca0c6712649ef62a048b468ed7c94a074ed94e53-828x1792.jpg","/images/export/50f305a208e8e70f832527e9079d827c5108ecf4-828x1792.jpg","/images/export/89da4539429368bc8aad3f372819eef71ca97db8-828x1792.jpg","/images/export/64a42d58af97843a18eff7703b6e4faa3419029b-828x1792.jpg","/images/export/06626e91e21696cc268e2b46459d349cae02030e-828x1792.jpg"]
+thumbnails: ["/images/export/06626e91e21696cc268e2b46459d349cae02030e-828x1792.jpg","/images/export/96e561c66d8410909239d1e1888a5a7e3160b218-828x1792.jpg","/images/export/a2db366cd0c4d3d00730121e5ce19c83c272f6fe-828x1792.jpg","/images/export/008b4cc583de449dea3e854044c0ce04ddef5572-828x1792.jpg","/images/export/e996709f0f90571bc5c113581654993373df89e8-828x1792.jpg","/images/export/27cef51e89f9fee9059cfc2394c854f1b9f835b8-828x1792.jpg","/images/export/b79eaa9cf486c3957167bd8f1e773347f5c48666-828x1792.jpg","/images/export/ca0c6712649ef62a048b468ed7c94a074ed94e53-828x1792.jpg","/images/export/50f305a208e8e70f832527e9079d827c5108ecf4-828x1792.jpg","/images/export/89da4539429368bc8aad3f372819eef71ca97db8-828x1792.jpg","/images/export/64a42d58af97843a18eff7703b6e4faa3419029b-828x1792.jpg"]
 smallThumbnails: ["/images/export/small/06626e91e21696cc268e2b46459d349cae02030e-828x1792.jpg","/images/export/small/96e561c66d8410909239d1e1888a5a7e3160b218-828x1792.jpg","/images/export/small/a2db366cd0c4d3d00730121e5ce19c83c272f6fe-828x1792.jpg"]
 ---
 
@@ -176,14 +176,3 @@ See more:
 If you need technical support or have any questions, don't hesitate to send me a message: [mr_hie@yahoo.com](mailto:mr_hie@yahoo.com)
 
 Homepage: [https://www.takethatdesign.com](https://www.takethatdesign.com)
-
-
-------------------
-
-`<StartOfPromotion>`
-### [PROMO] Ionic 3 Bundle: 6 in 1
-Proudly introduce the best of my Ionic 3 products: 3 themes + 3 plugins in Studio Pack #2  now on sale with promotion code **19SPEED**. Please click the button below for more information.
-
-[![Purchase Externally](http://bit.ly/2E4p4z3)](https://gum.co/ionic3-ui-bundle)
-
-`</EndOfPromotion>`

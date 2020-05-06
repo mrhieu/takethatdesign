@@ -8,6 +8,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import './ProductDetail.scss';
 import ProductRecommendation from '../ProductRecommendation/ProductRecommendation';
+import ProductPromotion from '../ProductPromotion/ProductPromotion';
 
 export default ({ data }) => {
   const { html: htmlContent } = data.markdownRemark;
@@ -126,6 +127,10 @@ export default ({ data }) => {
           dangerouslySetInnerHTML={{ __html: htmlContent }}
         />
       </article>
+
+      <div className="mt-5">
+        <ProductPromotion />
+      </div>
 
       <div className="mt-5">
         <ProductRecommendation
