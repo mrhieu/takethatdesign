@@ -79,7 +79,7 @@ Happy prototyping!
 1.Install Ionic environment
 
 ```
-$ npm install -g ionic@5.4.1
+$ npm install -g @ionic/cli@6.8.0
 ```
 
 2.After purchasing, download the zip file containing the entire demo app and unzip

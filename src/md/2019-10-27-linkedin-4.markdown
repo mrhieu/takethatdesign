@@ -86,7 +86,7 @@ Happy prototyping!
 
 ```
 $ npm install -g cordova
-$ npm install -g ionic@5.4.1
+$ npm install -g @ionic/cli@6.8.0
 ```
 
 2.After purchasing, download the zip file containing the entire demo app and unzip
@@ -138,7 +138,8 @@ $ ionic serve
 ![code](https://user-images.githubusercontent.com/1593560/67623506-6b266680-f858-11e9-8e8e-085e4855bee3.png)
 
 
-4.Build with capacitor
+
+### Build with capacitor
 
 First of all, make sure that you can **Run Locally** (see the instruction above).
 

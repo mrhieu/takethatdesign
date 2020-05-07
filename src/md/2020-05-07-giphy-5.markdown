@@ -1,0 +1,197 @@
+---
+layout: post
+title: Ionic Giphy 5 (Ionic 5)
+shortDescription: GIF keyboard 
+price: 6
+createdAt: 2020-05-07 00:00:00 +0800
+category: Plugin
+icon: /images/export/92ae81fbbdad12158b9e9d34c48478ed063c5939-1024x1024.jpg
+tags: ["plugin","gif","keyboard","messaging","giphy"]
+framework: Ionic 5
+marketUrl: https://market.ionicframework.com/plugins/giphy-5
+gumroadUrl: https://gum.co/giphy-5
+sellfyUrl: 
+paypalUrl: https://paypal.me/mrhieu/6
+color: "#e1e1e1"
+thumbnails: ["/images/export/5ba5efa350ebe64933569b5bd74f5a9dfe018f5d-828x1792.jpg","/images/export/8d8b125d7e9bd08e22dc2c7a7d3f9fcacb4d1953-828x1792.jpg","/images/export/46d8e3c00aa1f67299ab5ef38bfde8494dcb9e4b-828x1792.jpg","/images/export/73c75c48e6dc8bad515b37235e51bfa14bcdfbcc-546x968.gif"]
+smallThumbnails: ["/images/export/small/5ba5efa350ebe64933569b5bd74f5a9dfe018f5d-828x1792.jpg","/images/export/small/8d8b125d7e9bd08e22dc2c7a7d3f9fcacb4d1953-828x1792.jpg","/images/export/small/46d8e3c00aa1f67299ab5ef38bfde8494dcb9e4b-828x1792.jpg"]
+---
+
+# Introduction
+
+[Giphy](https://giphy.com/) is an online database and search engine that allows users to search for and share animated GIF files (wiki). Giphy and other GIF photo services are so popular that it's hard to find a messaging app that you cannot share GIF. You might see such a feature on Facebook Messenger, Tinder chat, Twitter inbox,...
+
+In this package, not only the Giphy keyboard itself, the source code also includes a beautiful **messaging UI** with auto-expanding input box.
+
+I always take it serious to keep the code quality high, with clean and self-explained code.
+
+# Preview
+
+
+
+**Download APK to preview the theme:** 
+
+[![enter image description here](https://lh3.googleusercontent.com/MIkXV-iIhrxPG5tZn8QTglczrISwLwebr8QmCKcJFN6NL0eNLf5GqWltrefAZwzAwh2r4RPk=w96-h96-e365)
+giphy-5_demo.apk](https://bit.ly/2WavB6n)
+
+
+**Watch on Youtube**
+
+See how it works on Youtube: https://youtu.be/ap01AH3zO_4
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ap01AH3zO_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+Happy prototyping!
+
+
+# Changelog
+
+> Note: All updates are on Ionic 5
+
+*Last updated: May 7 2020*
+
+### v1 (May 7 2020)
+
+* First version
+
+# Screens
+
+1. Messaging UI
+2. GIF keyboard
+
+
+# Run locally
+1.Install Ionic environment
+
+```
+$ npm install -g cordova
+$ npm install -g @ionic/cli@6.8.0
+```
+
+2.After purchasing, download the zip file containing the entire demo app and unzip
+
+3.Go inside the extracted folder
+
+4.Install all dependencies
+
+```
+$ npm install
+```
+
+5.Start local server
+```
+$ ionic serve
+```
+
+6.Your default browser should now automatically open the template
+
+
+# Notes
+
+Sample data structure for the messages template is pretty straight-forward. You will find it in `src/app/home/messages.dummy.js`
+
+```
+[
+  {
+    isSender: true,
+    type: 'image',// text || image
+    body: 'https://media.giphy.com/media/3oz8xSjBmD1ZyELqW4/giphy.gif',
+    timestamp: 'Jan 25, 2019 9:47am'
+  },
+  {
+    isSender: false,
+    avatar: 'assets/img/hieu.png',
+    type: 'text',// text || image
+    body: 'Hey yo what\'s up?',
+    timestamp: 'Jan 25, 2019 9:48am'
+  },
+  {
+    isSender: true,
+    type: 'image',// text || image
+    body: 'https://media.giphy.com/media/lXiRyZVS9B79r2YOQ/giphy.gif',
+    timestamp: 'Jan 25, 2019 9:50am'
+  },
+  {
+    isSender: false,
+    avatar: 'assets/img/hieu.png',
+    type: 'image',// text || image
+    body: 'https://media.giphy.com/media/JUMLTR3dHEGpW/giphy.gif',
+    timestamp: 'Jan 25, 2019 9:52am'
+  },
+  {
+    isSender: true,
+    type: 'text',// text || image
+    body: 'Where are you, buddy?',
+    timestamp: 'Jan 25, 2019 9:53am'
+  },
+  {
+    isSender: false,
+    avatar: 'assets/img/hieu.png',
+    type: 'text',// text || image
+    body: 'I\'m almost there',
+    timestamp: 'Jan 25, 2019 9:53am'
+  }
+];
+```
+
+Giphy module is now a folder under `src/app/plugins/giphy`
+![enter image description here](https://i.gyazo.com/9519f4edb25a17bfe9e977a54267eddd.png)
+
+After importing into  `chat.module.ts` (or your chat page)
+
+```
+import { GiphyModule } from '../plugins/giphy/giphy';
+...
+```
+
+You can start to use the main component **<input-with-giphy>** in your message UI
+
+```
+<ion-footer>
+  <ion-toolbar>
+    <input-with-giphy
+      (onSubmit)="onSubmitMessage($event)"
+      (onSizeChange)="onInputSizeChange()">
+    </input-with-giphy>
+  </ion-toolbar>
+</ion-footer>
+```
+
+
+### Build with capacitor
+
+First of all, make sure that you can **Run Locally** (see the instruction above).
+
+```
+# build web asset (to folder www)
+$ ionic build
+
+# add platform (ios or android)
+$ ionic capacitor add ios
+
+# prepare app icons and splash images
+$ npm run resources
+
+# copy web assets into the native project
+$ ionic capacitor copy ios
+
+# open Xcode, then build the native app from there
+$ ionic capacitor open ios
+
+# OR run in live-reload mode
+$ ionic capacitor run ios -l --external
+```
+
+See more: 
+
+[Ionic - iOS Development](https://ionicframework.com/docs/building/ios)
+
+[Ionic - Android Development](https://ionicframework.com/docs/building/android)
+
+[Migrating a Web App Using Cordova to Capacitor](https://capacitor.ionicframework.com/docs/cordova/migrating-from-cordova-to-capacitor/)
+
+# Contact
+If you need technical support or have any questions, don't hesitate to send me a message: [mr_hie@yahoo.com](mailto:mr_hie@yahoo.com)
+
+Homepage: [https://www.takethatdesign.com](https://www.takethatdesign.com)

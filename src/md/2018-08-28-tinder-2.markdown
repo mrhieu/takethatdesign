@@ -83,7 +83,7 @@ Happy prototyping!
 
 ```
 $ npm install -g cordova
-$ npm install -g ionic@5.4.1
+$ npm install -g @ionic/cli@6.8.0
 ```
 
 2.After purchasing, download the zip file containing the entire demo app and unzip
@@ -127,6 +127,38 @@ IonicModule.forRoot(MyApp, {
       backButtonText: '',
     })
 ```
+
+### Build with capacitor
+
+First of all, make sure that you can **Run Locally** (see the instruction above).
+
+```
+# build web asset (to folder www)
+$ ionic build
+
+# add platform (ios or android)
+$ ionic capacitor add ios
+
+# prepare app icons and splash images
+$ npm run resources
+
+# copy web assets into the native project
+$ ionic capacitor copy ios
+
+# open Xcode, then build the native app from there
+$ ionic capacitor open ios
+
+# OR run in live-reload mode
+$ ionic capacitor run ios -l --external
+```
+
+See more: 
+
+[Ionic - iOS Development](https://ionicframework.com/docs/building/ios)
+
+[Ionic - Android Development](https://ionicframework.com/docs/building/android)
+
+[Migrating a Web App Using Cordova to Capacitor](https://capacitor.ionicframework.com/docs/cordova/migrating-from-cordova-to-capacitor/)
 
 # Contact
 If you need technical support or have any questions, don't hesitate to send me a message: [mr_hie@yahoo.com](mailto:mr_hie@yahoo.com)

@@ -79,7 +79,7 @@ All, available in Dark Mode!
 
 ```
 $ npm install -g cordova
-$ npm install -g ionic@5.4.1
+$ npm install -g @ionic/cli@6.8.0
 ```
 
 2.After purchasing, download the zip file containing the entire demo app and unzip
@@ -143,7 +143,9 @@ npm install --save angular2-swing lodash
  (window as any).global = window;
 ```
 
-5.Build with capacitor
+
+
+### Build with capacitor
 
 First of all, make sure that you can **Run Locally** (see the instruction above).
 
