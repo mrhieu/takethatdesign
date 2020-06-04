@@ -49,10 +49,15 @@ Happy prototyping!
 
 > Note: All updates are on Ionic 5
 
-*Last updated: May 5, 2020*
+*Last updated: May 26, 2020*
 
 ### v1 (May 5, 2020)
 * First version
+
+### v2 (May 26, 2020)
+* Significantly improve the performance on older Android devices
+* Fix status bar color on Android
+* Some UI bug fixes
 
 # Screens
 
