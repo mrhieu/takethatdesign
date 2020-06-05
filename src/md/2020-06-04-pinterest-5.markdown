@@ -13,8 +13,8 @@ gumroadUrl: https://gum.co/ionic-pinterest-5
 sellfyUrl: 
 paypalUrl: https://paypal.me/mrhieu/24
 color: "#e60023"
-thumbnails: ["/images/export/6f1f10d2676ccc3de1efa4ec32b0b383526d2c96-828x1792.jpg","/images/export/4f1e39671696a2ce0ed3d0cd88ed19a34236cc46-828x1792.jpg","/images/export/8931361964ed0b607e942f983bde99df214e7f4f-828x1792.jpg","/images/export/75eb032e9d832a623b6b0f98042b7be97356c0dc-828x1792.jpg","/images/export/33c55f66c1d327d71aecb677d1ff885d742cc307-828x1792.jpg","/images/export/715c89ee781eac25d59180c4d34e3b68e1f717a1-828x1792.jpg","/images/export/75f801ae12c2c1b511a68379dcf8d3eb01644653-828x1792.jpg","/images/export/81eacaf20b1c212d5f9c8d206bcee201e4b2933f-828x1792.jpg","/images/export/9dc348c5974eccf8e4d8cb1e0c41bc3bc04fe42f-828x1792.jpg","/images/export/55df651590ce80472cbdb25f7798fa1283ad322a-828x1792.jpg"]
-smallThumbnails: ["/images/export/small/6f1f10d2676ccc3de1efa4ec32b0b383526d2c96-828x1792.jpg","/images/export/small/4f1e39671696a2ce0ed3d0cd88ed19a34236cc46-828x1792.jpg","/images/export/small/8931361964ed0b607e942f983bde99df214e7f4f-828x1792.jpg"]
+thumbnails: ["/images/export/4f1e39671696a2ce0ed3d0cd88ed19a34236cc46-828x1792.jpg","/images/export/75f801ae12c2c1b511a68379dcf8d3eb01644653-828x1792.jpg","/images/export/8931361964ed0b607e942f983bde99df214e7f4f-828x1792.jpg","/images/export/6f1f10d2676ccc3de1efa4ec32b0b383526d2c96-828x1792.jpg","/images/export/75eb032e9d832a623b6b0f98042b7be97356c0dc-828x1792.jpg","/images/export/33c55f66c1d327d71aecb677d1ff885d742cc307-828x1792.jpg","/images/export/715c89ee781eac25d59180c4d34e3b68e1f717a1-828x1792.jpg","/images/export/81eacaf20b1c212d5f9c8d206bcee201e4b2933f-828x1792.jpg","/images/export/9dc348c5974eccf8e4d8cb1e0c41bc3bc04fe42f-828x1792.jpg","/images/export/55df651590ce80472cbdb25f7798fa1283ad322a-828x1792.jpg"]
+smallThumbnails: ["/images/export/small/4f1e39671696a2ce0ed3d0cd88ed19a34236cc46-828x1792.jpg","/images/export/small/75f801ae12c2c1b511a68379dcf8d3eb01644653-828x1792.jpg","/images/export/small/8931361964ed0b607e942f983bde99df214e7f4f-828x1792.jpg"]
 ---
 
 # Introduction
@@ -35,9 +35,9 @@ pinterest-5_demo.apk](https://bit.ly/3eMiij6)
 
 **Watch on Youtube**
 
-See how it works on Youtube: 
+See how it works on Youtube: https://youtu.be/bH3WcSbUme4
 
-(coming soon)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bH3WcSbUme4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Happy prototyping!
