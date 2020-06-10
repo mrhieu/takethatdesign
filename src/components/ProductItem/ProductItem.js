@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import './ProductItem.scss';
@@ -12,11 +12,15 @@ export default ({ data, onTagClick }) => {
     onTagClick({type, name});
   }
 
+  const goToDetail = () => {
+    navigate(slug);
+  }
+
   return (
     <div className="product-item">
       {
         itemData.smallThumbnails &&
-        <div className="item-image-stack" style={{backgroundColor: itemData.color }}>
+        <div className="item-image-stack" role="button" tabIndex="0" onKeyDown={() => {}} style={{backgroundColor: itemData.color }} onClick={goToDetail}>
           {
             itemData.smallThumbnails.map(imageUrl => (
               <img key={ imageUrl } src={ imageUrl } alt="" />

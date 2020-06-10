@@ -125,8 +125,6 @@ const SEO = ({ metaTags }) => {
 
       {/* Addthis widget */}
       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e72fd7107058ce5"></script>
-
-      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet" />
     </Helmet>
   )
 }

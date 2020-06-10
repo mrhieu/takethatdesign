@@ -27,24 +27,23 @@ export default ({ data }) => {
             </div>
 
             <div>
+              <Link to={`/products?q=${metadata.framework}`} className="text-muted font-bold">{ metadata.framework }</Link>
+              <span className="middot">·</span>
+              <Link to={`/products?q=${metadata.category}`} className="text-muted font-bold">{ metadata.category }</Link>
+            </div>
+
+            <div>
               <span className="text-muted">Created on </span>
               { format(new Date(metadata.createdAt), 'MMM dd, yyyy') }
             </div>
-            <div>
-              <span className="text-muted">Framework </span>
-              <Link to={`/?q=${metadata.framework}`} className="tag tag-sm">{ metadata.framework }</Link>
-            </div>
-            <div>
-              <span className="text-muted">Category </span>
-              <Link to={`/?q=${metadata.category}`} className="tag tag-sm">{ metadata.category }</Link>
-            </div>
+
             <div className="tags">
               {
                 metadata.tags.map(tag => (
                   <Link
                     key={tag}
                     className="tag tag-sm"
-                    to={`/?q=${tag}`}
+                    to={`/products?q=${tag}`}
                   >
                     {tag}
                   </Link>

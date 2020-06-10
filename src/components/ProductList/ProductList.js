@@ -64,7 +64,7 @@ export default ({location}) => {
   }
 
   const searchTag = tag => {
-    navigate(`/?q=${tag.name}`);
+    navigate(`/products?q=${tag.name}`);
     setSearchQuery(tag.name);
   }
 
@@ -72,7 +72,7 @@ export default ({location}) => {
 
   return (
     <React.Fragment>
-      <div className="search-bar row mb-2">
+      <div className="search-bar row mb-2 mt-4">
         <div className="form-group col-lg-8 offset-lg-2">
           <Icon className="search-icon" path={ mdiMagnify } color="#aaa" />
           {
@@ -86,7 +86,7 @@ export default ({location}) => {
           }
           <input
             type="text"
-            className="form-control form-control-lg"
+            className={`form-control form-control-lg${searchQuery.length > 0 ? ' active' : ''}`}
             value={ searchQuery }
             onChange={ handleInputChange }
             placeholder="Search: Tinder, Pinterest, etc"
@@ -97,7 +97,7 @@ export default ({location}) => {
       {
         searchQuery.length > 0 &&
         <h4 className="text-center mb-4 font-bold">
-          - Showing { filteredProductlist().length } results -
+          Showing { filteredProductlist().length } results
         </h4>
       }
 

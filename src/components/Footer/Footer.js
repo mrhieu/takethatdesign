@@ -6,9 +6,9 @@ export default () => (
   <footer className="footer-wrapper">
     <div className="container d-flex flex-row align-items-center justify-content-between flex-wrap">
       <div className="email-form">
-        <p>
-          Join hundreds of happy customers and developers
-        </p>
+        <div className="email-form-label">
+          Join 1,100+ happy customers and developers
+        </div>
 
         <GumroadForm />
       </div>

@@ -1,7 +1,15 @@
 .search-bar {
-  .form-control {
+  input.form-control {
     padding-left: 50px;
-    border-radius: 6px;
+    border-radius: 99em;
+    border: none;
+    background-color: #efefef;
+    font-size: 16px;
+    height: 48px;
+
+    &:focus, &.active {
+      box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, .1);
+    }
   }
 
   .form-group {
