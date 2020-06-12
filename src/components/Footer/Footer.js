@@ -4,7 +4,7 @@ import './Footer.scss';
 
 export default () => (
   <footer className="footer-wrapper">
-    <div className="container d-flex flex-row align-items-center justify-content-between flex-wrap">
+    <div className="container d-flex flex-row justify-content-between flex-wrap">
       <div className="email-form">
         <div className="email-form-label">
           Join 1,100+ happy customers and developers

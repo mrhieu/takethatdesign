@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import ProductList from '../components/ProductList/ProductList';
+import { Link } from 'gatsby';
+import HeroSlide from '../components/HeroSlide/HeroSlide';
+import FeaturedProducts from '../components/FeaturedProducts/FeaturedProducts';
 
 export default ({ location }) => {
   return (
@@ -9,16 +11,17 @@ export default ({ location }) => {
         pageUrl: location.href,
       }}
     >
-      <div className="hero-text">
-        Best of Ionic Themes & Plugins
-      </div>
+      <HeroSlide />
 
-      <div className="padder-v text-center text-muted text-sm d-none d-md-block">
-        Based on <a href="https://ionicframework.com/" className="font-bold text-dark" target="_blank" rel="noopener noreferrer">Ionic Framework</a> - My favorite hybrid mobile app framework
-      </div>
-
-      <div className="product-container">
-        <ProductList location={location}/>
+      <div>
+        <div className="featured-header">
+          <div className="feature-title">
+          </div>
+          <Link to="/products?q=Theme">See All</Link>
+        </div>
+        <div>
+          <FeaturedProducts />
+        </div>
       </div>
     </Layout>
   )

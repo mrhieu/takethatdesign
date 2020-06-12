@@ -48,13 +48,13 @@ export default ({ location }) => (
               <span className="mr-2">
                 <Icon path={ mdiCheckboxMarkedCircleOutline } color="#777" size="18px" />
               </span>
-              <strong>Themes</strong>: the UI kits that give your next mobile app the similar look of the most popular mobile apps
+              <strong>Themes</strong>: the UI kits that give your next mobile app the similar look of the most popular mobile apps.
             </div>
             <div className="post-body-text">
               <span className="mr-2">
                 <Icon path={ mdiCheckboxMarkedCircleOutline } color="#777" size="18px" />
               </span>
-              <strong>Plugins</strong>: the sets of features that enhance your existing Ionic apps
+              <strong>Plugins</strong>: the sets of features that enhance your existing Ionic apps.
             </div>
             <div className="post-body-text">
               <span className="mr-2">
@@ -79,19 +79,19 @@ export default ({ location }) => (
               <span className="mr-2">
                 <Icon path={ mdiCheckboxMarkedCircleOutline } color="#777" size="18px" />
               </span>
-              Ionic Developers who are already familiar with <a href="https://ionicframework.com/docs/intro">Ionic Apps development</a>
+              Ionic Developers who are already familiar with <a href="https://ionicframework.com/docs/intro">Ionic Apps development</a>.
             </div>
             <div className="post-body-text">
               <span className="mr-2">
                 <Icon path={ mdiCheckboxMarkedCircleOutline } color="#777" size="18px" />
               </span>
-              Developers who are new to Ionic Framework and want to pick up the best practices of Ionic development
+              Developers who are new to Ionic Framework and want to pick up the best practices of Ionic development.
             </div>
             <div className="post-body-text">
               <span className="mr-2">
                 <Icon path={ mdiCheckboxMarkedCircleOutline } color="#777" size="18px" />
               </span>
-              Hybrid Mobile app developers who want to quickly start a project with their favorite UI kit
+              Hybrid Mobile app developers who want to quickly start a project with their favorite UI kit.
             </div>
           </div>
 
