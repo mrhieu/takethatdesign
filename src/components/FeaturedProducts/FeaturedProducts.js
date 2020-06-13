@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import './FeaturedProducts.scss';
 
 export default ({ listData }) => {
@@ -11,13 +12,17 @@ export default ({ listData }) => {
           data.map(item => (
             <div className="product-item col-md-3 col-6" key={item.id}>
               <div className="item-icon">
-                <img src={ item.icon } alt=""/>
+                <Link to={ `/${item.slug}` }>
+                  <img src={ item.icon } alt=""/>
+                </Link>
               </div>
               <div className="item-title text-ellipsis">
-                { item.title }
-              </div>
-              <div className="item-short-description text-muted text-ellipsis">
-                { item.shortDescription }
+                <Link to={ `/${item.slug}` }>
+                  { item.title }
+                </Link>
+                <div className="item-short-description text-muted text-ellipsis">
+                  { item.shortDescription }
+                </div>
               </div>
             </div>
           ))

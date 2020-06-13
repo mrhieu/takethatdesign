@@ -4,6 +4,8 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import './ProductItem.scss';
 
+const thirtyDays = 60 * 60 * 24 * 30 * 1000;
+
 export default ({ data, onTagClick }) => {
   const { frontmatter: itemData } = data;
   const { slug } = data.fields;
@@ -16,6 +18,11 @@ export default ({ data, onTagClick }) => {
     navigate(slug);
   }
 
+  // A NEW item is the one that was created less than 30 days ago
+  const isNew = () => {
+    return new Date().getTime() - new Date(itemData.createdAt).getTime() < thirtyDays;
+  }
+
   return (
     <div className="product-item">
       {
@@ -25,6 +32,10 @@ export default ({ data, onTagClick }) => {
             itemData.smallThumbnails.map(imageUrl => (
               <img key={ imageUrl } src={ imageUrl } alt="" />
             ))
+          }
+          {
+            isNew() &&
+            <div className="label-new">NEW</div>
           }
         </div>
       }

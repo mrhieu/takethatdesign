@@ -50,14 +50,14 @@ export default ({ location }) => {
       const { category } = node.frontmatter;
 
       return category.toUpperCase() === 'THEME';
-    }).map(item => ({...item.node.frontmatter, id: item.node.id}));
+    }).map(item => ({...item.node.frontmatter, id: item.node.id, slug: item.node.fields.slug}));
 
   const pluginList = productList
     .filter(({ node }) => {
       const { category } = node.frontmatter;
 
       return category.toUpperCase() === 'PLUGIN';
-    }).map(item => ({...item.node.frontmatter, id: item.node.id}));
+    }).map(item => ({...item.node.frontmatter, id: item.node.id, slug: item.node.fields.slug}));
 
   return (
     <Layout
@@ -87,7 +87,7 @@ export default ({ location }) => {
           <div className="feature-title">
             Plugins
           </div>
-          <Link to="/products?q=Theme">
+          <Link to="/products?q=Plugin">
             All Plugins
             <Icon path={ mdiChevronRight } color="#007bff" size="20px" />
           </Link>
