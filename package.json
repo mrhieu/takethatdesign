@@ -2,7 +2,7 @@
   "name": "take-that-design",
   "private": true,
   "description": "Best of Ionic Themes and Plugins",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "license": "Custom",
   "scripts": {
     "build": "gatsby build",
@@ -14,7 +14,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "dev": "npm run develop",
     "prod": "gatsby build && gatsby serve",
-    "deploy": "gatsby build && cp CNAME public/ && cp robots.txt public/ && gh-pages -d public"
+    "deploy": "gatsby build && cp CNAME public/ && cp robots.txt public/ && gh-pages -d public",
+    "firebase": "gatsby build && firebase deploy"
   },
   "dependencies": {
     "@mdi/js": "^4.9.95",
@@ -30,6 +31,7 @@
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-react-helmet-canonical-urls": "^1.4.0",
     "gatsby-plugin-sass": "^2.1.29",
+    "gatsby-plugin-twitter": "^2.3.4",
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-remark": "^2.6.53",
     "gh-pages": "^2.2.0",

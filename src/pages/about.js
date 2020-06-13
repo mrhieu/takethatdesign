@@ -13,7 +13,7 @@ export default ({ location }) => (
     <div className="row">
       <article className="col-lg-8 offset-lg-2">
         <div className="post-content">
-          <p className="post-body-text">You’ll find the story of <strong><a href="https://www.takethatdesign.com">Take That Design</a></strong> here.</p>
+          <p className="post-body-text">Here's the story of <strong><a href="https://www.takethatdesign.com">Take That Design</a></strong>.</p>
 
           <h2 id="why">Why did I start Take That Design?</h2>
 

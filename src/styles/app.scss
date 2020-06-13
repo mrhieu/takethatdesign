@@ -145,3 +145,36 @@ img {
     line-height: 1.6em;
   }
 }
+
+.twitter-embed {
+  margin-bottom: 24px;
+
+  .twitter-tweet {
+    margin: 0 auto;
+  }
+}
+
+.hero-slide-wrapper {
+  margin-bottom: 40px;
+}
+
+.project-100ions-list {
+  .project-item {
+    margin-bottom: 24px;
+  }
+}
+
+.featured-products-wrapper {
+  margin-bottom: 24px;
+
+  .featured-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0 16px;
+  }
+
+  .feature-title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

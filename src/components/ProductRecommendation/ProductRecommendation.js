@@ -58,7 +58,7 @@ export default ({ itemData }) => {
     ? (
       <div className="product-recommendation">
         <h4>More Like This</h4>
-        <div className="row">
+        <div className="row product-items">
           {
             filteredProductlist()
               .map(({ node }) => (

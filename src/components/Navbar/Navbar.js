@@ -37,7 +37,7 @@ export default ({ location }) => (
             </Link>
           </div>
           <div className="menu-item">
-            <Link to="/100ions" activeClassName="active">
+            <Link to="/100ions/" activeClassName="active">
               <span className="menu-icon-text">#</span>
               <span className="menu-text">100ions</span>
             </Link>
