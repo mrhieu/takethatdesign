@@ -16,6 +16,17 @@
   .page-seal {
     margin-top: 24px;
   }
+
+  .external-links {
+    padding-top: 24px;
+    text-align: center;
+    flex: 1 1 auto;
+
+    a {
+      display: inline-block;
+      margin: 0 16px;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
