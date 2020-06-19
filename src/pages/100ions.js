@@ -1,6 +1,23 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
+const projects = [
+  {
+    title: 'Ionic-cnn',
+    description: 'CNN News App',
+    keywords: ['cnn', 'news'],
+    githubUrl: 'https://github.com/mrhieu/ionic-cnn',
+    createdAt: 'June 7 2020',
+  },
+  {
+    title: 'Ionic-messenger',
+    description: '(Facebook) Messenger',
+    keywords: ['messaging', 'chat', 'messenger'],
+    githubUrl: 'https://github.com/mrhieu/ionic-messenger',
+    createdAt: 'June 19 2020',
+  }
+]
+
 export default ({ location }) => (
   <Layout
     metaTags={{
@@ -14,6 +31,8 @@ export default ({ location }) => (
           <h2>Project #100ions</h2>
           <p>by <strong>Take That Design</strong></p>
 
+          <h3 class="text-center">100 Free Ionic Templates</h3>
+
           <div className="twitter-embed">
             <blockquote className="twitter-tweet">
               <p lang="en" dir="ltr">
@@ -22,22 +41,30 @@ export default ({ location }) => (
             </blockquote>
           </div>
 
-          <p>Let's keep it short, as the tweet mentioned, I've planned to create <strong>100 Ionic Templates</strong> for Free. This is the most ambitious project of mine with Ionic Framework.</p>
+          <p>Let's keep it short, as the tweet mentioned, I've planned to create <strong>100 Ionic Templates</strong> for <strong>Free</strong>. This is the most ambitious project of mine with Ionic Framework.</p>
           <p>Template may vary from Theme to Plugin, or some specific micro design element. You can find the published projects below.</p>
           <p>Happy coding!</p>
 
           <ol className="project-100ions-list">
-            <li className="project-item">
-              <div className="project-title">
-                <strong>Ionic-cnn</strong>
-              </div>
-              <div className="project-description">
-                CNN News App
-              </div>
-              <div className="project-url">
-                <a href="https://github.com/mrhieu/ionic-cnn" target="_blank" rel="noreferrer noopener">github.com/mrhieu/ionic-cnn</a>
-              </div>
-            </li>
+            {
+              projects.map(item => (
+                <li className="project-item">
+                  <div className="project-title">
+                    <strong>{item.title}</strong>
+                  </div>
+                  <div className="project-description">
+                    {item.description}
+                  </div>
+                  <div className="project-url">
+                    <a href={item.githubUrl} target="_blank" rel="noreferrer noopener">{item.githubUrl}</a>
+                  </div>
+                  <div className="text-muted">
+                    {item.createdAt}
+                  </div>
+                </li>
+              ))
+            }
+
             <li className="project-item">
               <div className="project-title">
                 <div className="text-muted">Coming up</div>
