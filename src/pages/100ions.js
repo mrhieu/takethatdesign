@@ -15,6 +15,13 @@ const projects = [
     keywords: ['messaging', 'chat', 'messenger'],
     githubUrl: 'https://github.com/mrhieu/ionic-messenger',
     createdAt: 'June 19 2020',
+  },
+  {
+    title: 'Ionic-udemy',
+    description: 'Udemy',
+    keywords: ['learning', 'platform', 'video'],
+    githubUrl: 'https://github.com/mrhieu/ionic-udemy',
+    createdAt: 'June 21 2020',
   }
 ]
 
