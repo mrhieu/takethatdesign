@@ -22,6 +22,13 @@ const projects = [
     keywords: ['learning', 'platform', 'video'],
     githubUrl: 'https://github.com/mrhieu/ionic-udemy',
     createdAt: 'June 21 2020',
+  },
+  {
+    title: 'Ionic-instagram',
+    description: 'Instagram',
+    keywords: ['social', 'photo', 'comment'],
+    githubUrl: 'https://github.com/mrhieu/ionic-instagram',
+    createdAt: 'June 28 2020',
   }
 ]
 
