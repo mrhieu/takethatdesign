@@ -35,7 +35,7 @@ const projects = [
 export default ({ location }) => (
   <Layout
     metaTags={{
-      title: 'About'
+      title: 'Project #100ions'
     }}
     location={ location }
   >
