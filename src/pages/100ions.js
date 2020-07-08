@@ -29,6 +29,13 @@ const projects = [
     keywords: ['social', 'photo', 'comment'],
     githubUrl: 'https://github.com/mrhieu/ionic-instagram',
     createdAt: 'June 28 2020',
+  },
+  {
+    title: 'Ionic-loader',
+    description: 'Skeleton Loader',
+    keywords: ['loading', 'skeleton'],
+    githubUrl: 'https://github.com/mrhieu/ionic-loader',
+    createdAt: 'July 8 2020',
   }
 ]
 
