@@ -36,7 +36,14 @@ const projects = [
     keywords: ['loading', 'skeleton'],
     githubUrl: 'https://github.com/mrhieu/ionic-loader',
     createdAt: 'July 8 2020',
-  }
+  },
+  {
+    title: 'Ionic-spotify',
+    description: 'Spotify',
+    keywords: ['music', 'streaming', 'player'],
+    githubUrl: 'https://github.com/mrhieu/ionic-spotify',
+    createdAt: 'July 30 2020',
+  },
 ]
 
 export default ({ location }) => (
