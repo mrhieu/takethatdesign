@@ -11,12 +11,12 @@ export default () => (
             <div>
               <div className="label-latest">Latest</div>
               <div className="slide-title">
-                Pinterest UI for Ionic Apps
+                Twitter UI for Ionic Apps
               </div>
               <div className="slide-subtitle">
-                The most beautiful Ionic Theme that I've ever created
+                I've had the most fun (and challenges) working on this Ionic Theme
               </div>
-              <Link to="/theme/pinterest-5" className="slide-cta">
+              <Link to="/theme/twitter-5" className="slide-cta">
                 Take a look
               </Link>
             </div>
@@ -25,9 +25,9 @@ export default () => (
 
         <div className="col-md-5">
           <div className="slide-images">
-            <img src="/images/export/6f1f10d2676ccc3de1efa4ec32b0b383526d2c96-828x1792.jpg" alt="" className="image-item"/>
-            <img src="/images/export/4f1e39671696a2ce0ed3d0cd88ed19a34236cc46-828x1792.jpg" alt="" className="image-item" />
-            <img src="/images/export/55df651590ce80472cbdb25f7798fa1283ad322a-828x1792.jpg" alt="" className="image-item" />
+            <img src="/images/export/d04d11c8cd6656635dea0dd2aeeac5079a4b1057-828x1792.jpg" alt="" className="image-item"/>
+            <img src="/images/export/e37cae1bb7a93d36ef61bde9d8560abd7230e264-828x1792.jpg" alt="" className="image-item" />
+            <img src="/images/export/fb2feac5e821806a1ef37637cb03a44e4b96e59a-828x1792.jpg" alt="" className="image-item" />
           </div>
         </div>
       </div>
