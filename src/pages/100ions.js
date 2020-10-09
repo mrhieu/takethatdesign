@@ -44,7 +44,21 @@ const projects = [
     githubUrl: 'https://github.com/mrhieu/ionic-spotify',
     createdAt: 'July 30 2020',
   },
+  {
+    title: 'Ionic-slack',
+    description: 'Slack',
+    keywords: ['communication', 'messaging', 'chat'],
+    githubUrl: 'https://github.com/mrhieu/ionic-slack',
+    createdAt: 'Oct 09 2020',
+  },
 ]
+
+const thirtyDays = 60 * 60 * 24 * 30 * 1000;
+
+// A NEW item is the one that was created less than 30 days ago
+const isNew = itemData => {
+  return new Date().getTime() - new Date(itemData.createdAt).getTime() < thirtyDays;
+}
 
 export default ({ location }) => (
   <Layout
@@ -78,7 +92,11 @@ export default ({ location }) => (
               projects.map(item => (
                 <li className="project-item">
                   <div className="project-title">
-                    <strong>{item.title}</strong>
+                    <strong>{item.title} </strong>
+                    {
+                      isNew(item) &&
+                      <span className="badge badge-danger">NEW</span>
+                    }
                   </div>
                   <div className="project-description">
                     {item.description}
