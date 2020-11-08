@@ -16,7 +16,7 @@ export default () => (
               <div className="slide-subtitle">
                 The latest Tinder UI (Ionic 5) with Tabbed View, Profile Passions edit
               </div>
-              <Link to="/theme/twitter-5" className="slide-cta">
+              <Link to="/theme/tinder-5-tabbed-view/" className="slide-cta">
                 Take a look
               </Link>
             </div>
