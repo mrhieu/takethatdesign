@@ -12,32 +12,11 @@ export default ({location}) => {
   const data = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(sort: { fields: [frontmatter___createdAt], order: DESC }) {
-          totalCount
+        allSanityProduct {
           edges {
             node {
               id
-              frontmatter {
-                title
-                shortDescription
-                price
-                createdAt(formatString: "DD MMMM, YYYY")
-                category
-                icon
-                tags
-                framework
-                marketUrl
-                gumroadUrl
-                sellfyUrl
-                paypalUrl
-                color
-                thumbnails
-                smallThumbnails
-              }
-              fields {
-                slug
-              }
-              excerpt
+              title
             }
           }
         }
@@ -68,7 +47,7 @@ export default ({location}) => {
     setSearchQuery(tag.name);
   }
 
-  const { edges: productList } = data.allMarkdownRemark;
+  const { edges: productList } = data.allSanityProduct;
 
   return (
     <React.Fragment>
@@ -117,9 +96,39 @@ export default ({location}) => {
       {
         searchQuery.length === 0 &&
         <div className="text-center text-muted">
-          Total: { data.allMarkdownRemark.totalCount } items.
+          Total: { data.allSanityProduct.totalCount } items.
         </div>
       }
     </React.Fragment>
   )
 }
+
+// allMarkdownRemark(sort: { fields: [frontmatter___createdAt], order: DESC }) {
+//   totalCount
+//   edges {
+//     node {
+//       id
+//       frontmatter {
+//         title
+//         shortDescription
+//         price
+//         createdAt(formatString: "DD MMMM, YYYY")
+//         category
+//         icon
+//         tags
+//         framework
+//         marketUrl
+//         gumroadUrl
+//         sellfyUrl
+//         paypalUrl
+//         color
+//         thumbnails
+//         smallThumbnails
+//       }
+//       fields {
+//         slug
+//       }
+//       excerpt
+//     }
+//   }
+// }

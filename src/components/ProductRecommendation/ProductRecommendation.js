@@ -8,32 +8,11 @@ export default ({ itemData }) => {
   const data = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(sort: { fields: [frontmatter___createdAt], order: DESC }) {
-          totalCount
+        allSanityProduct {
           edges {
             node {
               id
-              frontmatter {
-                title
-                shortDescription
-                price
-                createdAt(formatString: "DD MMMM, YYYY")
-                category
-                icon
-                tags
-                framework
-                marketUrl
-                gumroadUrl
-                sellfyUrl
-                paypalUrl
-                color
-                thumbnails
-                smallThumbnails
-              }
-              fields {
-                slug
-              }
-              excerpt
+              title
             }
           }
         }
@@ -41,7 +20,7 @@ export default ({ itemData }) => {
     `
   )
 
-  const { edges: productList } = data.allMarkdownRemark;
+  const { edges: productList } = data.allSanityProduct;
 
   const filteredProductlist = () => {
     return productList
@@ -74,3 +53,35 @@ export default ({ itemData }) => {
     )
     : null;
 }
+
+// query {
+//   allMarkdownRemark(sort: { fields: [frontmatter___createdAt], order: DESC }) {
+//     totalCount
+//     edges {
+//       node {
+//         id
+//         frontmatter {
+//           title
+//           shortDescription
+//           price
+//           createdAt(formatString: "DD MMMM, YYYY")
+//           category
+//           icon
+//           tags
+//           framework
+//           marketUrl
+//           gumroadUrl
+//           sellfyUrl
+//           paypalUrl
+//           color
+//           thumbnails
+//           smallThumbnails
+//         }
+//         fields {
+//           slug
+//         }
+//         excerpt
+//       }
+//     }
+//   }
+// }

@@ -4,6 +4,10 @@
 * See: https://www.gatsbyjs.org/docs/gatsby-config/
 */
 
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV || 'development'}`
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Take That Design',
@@ -31,7 +35,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        id: 'GTM-W3WCQBW',
+        id: process.env.GOOGLE_TAG,
 
         // Include GTM in development.
         // Defaults to false meaning GTM will only be loaded in production.
@@ -46,7 +50,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-fullstory',
       options: {
-        fs_org: 'GQ0RN',
+        fs_org: process.env.FULLSTORY,
       },
     },
     {
@@ -58,7 +62,7 @@ module.exports = {
           version: 'v3.2',
         },
         chat: {
-          pageId: '272354566715786',
+          pageId: process.env.FB_PAGE_ID,
           loggedInGreeting: 'Hi! How can I help you?',
           loggedOutGreeting: 'Hi! How can I help you?',
         }
@@ -80,5 +84,19 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-twitter',
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: 'o607ve1z',
+        dataset: 'leafdb',
+        // a token with read permissions is required
+        // if you have a private dataset
+        token: process.env.SANITY_TOKEN,
+
+        // If the Sanity GraphQL API was deployed using `--tag <name>`,
+        // use `graphqlTag` to specify the tag name. Defaults to `default`.
+        graphqlTag: 'default',
+      },
+    },
   ],
 }

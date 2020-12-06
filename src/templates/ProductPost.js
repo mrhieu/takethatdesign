@@ -26,27 +26,35 @@ export default ({ data, location }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        shortDescription
-        price
-        createdAt(formatString: "DD MMMM, YYYY")
-        category
-        icon
-        tags
-        framework
-        marketUrl
-        gumroadUrl
-        sellfyUrl
-        paypalUrl
-        color
-        thumbnails
-        smallThumbnails
+  query($id: String!) {
+    allSanityProduct(filter: { id: { eq: $id } }) {
+      edges {
+        node {
+          id
+          title
+        }
       }
-      excerpt
     }
   }
 `
+
+
+// html
+// frontmatter {
+//   title
+//   shortDescription
+//   price
+//   createdAt(formatString: "DD MMMM, YYYY")
+//   category
+//   icon
+//   tags
+//   framework
+//   marketUrl
+//   gumroadUrl
+//   sellfyUrl
+//   paypalUrl
+//   color
+//   thumbnails
+//   smallThumbnails
+// }
+// excerpt
