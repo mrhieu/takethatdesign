@@ -8,7 +8,7 @@ export default () => (
 
     <p>
       <a href="https://takethatdesign.com" target="_blank" rel="noreferrer noopener">
-        <img src="http://bit.ly/ttdads1" alt="takethatdesign.com thumbnail" />
+        <img src="https://bit.ly/ttdads1" alt="takethatdesign.com thumbnail" />
       </a>
     </p>
   </div>
