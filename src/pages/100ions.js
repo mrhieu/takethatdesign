@@ -90,7 +90,7 @@ export default ({ location }) => (
           <ol className="project-100ions-list">
             {
               projects.map(item => (
-                <li className="project-item">
+                <li className="project-item" key={ item.title }>
                   <div className="project-title">
                     <strong>{item.title} </strong>
                     {
