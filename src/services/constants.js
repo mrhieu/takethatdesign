@@ -1,5 +1,7 @@
 import { graphql } from 'gatsby';
 
+export const USE_SANITY_IMG = true;
+
 /**
   Gatsby searches all your files for fragments first. Then it builds your site. You don't need
   to think about defining fragments before you use them. Gatsby takes care of that for you.
@@ -23,19 +25,32 @@ export const productItemFragment = graphql`
       id
       title
     }
+    framework {
+      id
+      title
+    }
     productImage {
       color {
         hex
       }
       icon {
+        _key
+        _rawAsset
         asset {
+          extension
           fluid(maxWidth: 400) {
             ...GatsbySanityImageFluid
           }
         }
       }
       thumbnails {
+        _key
         _rawAsset
+        asset {
+          fluid(maxWidth: 600) {
+            ...GatsbySanityImageFluid
+          }
+        }
       }
     }
     tags

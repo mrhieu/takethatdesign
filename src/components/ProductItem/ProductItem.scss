@@ -49,9 +49,9 @@
       outline: none;
     }
 
-    img {
+    & > img, .gatsby-image-wrapper {
       width: 35%;
-      position: absolute;
+      position: absolute !important;
       top: 15%;
       left: 50%;
       transform: translate3d(-50%, 0, 0);

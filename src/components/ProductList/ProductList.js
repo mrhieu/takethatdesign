@@ -12,11 +12,10 @@ export default ({location}) => {
   const data = useStaticQuery(
     graphql`
       query {
-        allSanityProduct {
+        allSanityProduct(sort: { fields: createdAt, order: DESC }) {
           edges {
             node {
-              id
-              title
+              ...ProductItem
             }
           }
         }
@@ -29,11 +28,11 @@ export default ({location}) => {
     setSearchQuery(value);
   }
 
-  const filteredProductlist = () => {
+  const getFilteredProductlist = () => {
     return productList
       .filter(({ node }) => {
-        const { title, category, framework, tags } = node.frontmatter;
-        const itemKey = `${title}${category}${framework}${tags.join('')}`;
+        const { title, category, framework, tags } = node;
+        const itemKey = `${title}${category.title}${framework.title}${tags.join('')}`;
         return itemKey.toUpperCase().indexOf(searchQuery.toUpperCase()) > -1;
       });
   }
@@ -48,6 +47,7 @@ export default ({location}) => {
   }
 
   const { edges: productList } = data.allSanityProduct;
+  const filteredProductList = getFilteredProductlist();
 
   return (
     <React.Fragment>
@@ -76,13 +76,13 @@ export default ({location}) => {
       {
         searchQuery.length > 0 &&
         <h4 className="text-center mb-4 font-bold">
-          Showing { filteredProductlist().length } results
+          Showing { filteredProductList.length } results
         </h4>
       }
 
       <div className="product-items row">
         {
-          filteredProductlist()
+          filteredProductList
             .map(({ node }) => (
               <div key={ node.id } className="col-lg-4 col-md-6">
                 <ProductItem
@@ -96,39 +96,9 @@ export default ({location}) => {
       {
         searchQuery.length === 0 &&
         <div className="text-center text-muted">
-          Total: { data.allSanityProduct.totalCount } items.
+          Total: { filteredProductList.length } items.
         </div>
       }
     </React.Fragment>
   )
 }
-
-// allMarkdownRemark(sort: { fields: [frontmatter___createdAt], order: DESC }) {
-//   totalCount
-//   edges {
-//     node {
-//       id
-//       frontmatter {
-//         title
-//         shortDescription
-//         price
-//         createdAt(formatString: "DD MMMM, YYYY")
-//         category
-//         icon
-//         tags
-//         framework
-//         marketUrl
-//         gumroadUrl
-//         sellfyUrl
-//         paypalUrl
-//         color
-//         thumbnails
-//         smallThumbnails
-//       }
-//       fields {
-//         slug
-//       }
-//       excerpt
-//     }
-//   }
-// }

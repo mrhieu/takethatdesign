@@ -2,20 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const { createFilePath } = require('gatsby-source-filesystem');
 
-// exports.onCreateNode = ({ node, getNode, actions }) => {
-//   const { createNodeField } = actions
-//   if (node.internal.type === 'MarkdownRemark') {
-//     const { category } = node.frontmatter;
-//     const name = createFilePath({ node, getNode, basePath: 'pages' }).split('.')[0].substring(15);
-//
-//     createNodeField({
-//       node,
-//       name: 'slug',
-//       value: `${category.toLowerCase()}/${name}`,
-//     })
-//   }
-// }
-
 exports.createPages = async ({ graphql, actions, reporter }) => {
   // **Note:** The graphql function call returns a Promise
   // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info
@@ -46,11 +32,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   result.data.allSanityProduct.edges.forEach(({ node }) => {
-    const category = node.category.title;
-    const slug = node.slug.current;
+    const category = node.category.title.toLowerCase();
+    const slug = node.slug.current.toLowerCase();
+    const productUrl = `${ category }/${ slug }`;
 
     createPage({
-      path: `${category.toLowerCase()}/${slug}`,
+      path: productUrl,
       component: path.resolve('./src/templates/ProductPost.js'),
       context: {
         // Data passed to context is available
@@ -61,7 +48,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     // For iFrame Embedded
     createPage({
-      path: `embedded/${slug}`,
+      path: `embedded/${ productUrl }`,
       component: path.resolve('./src/templates/ProductPostEmbedded.js'),
       context: {
         // Data passed to context is available
