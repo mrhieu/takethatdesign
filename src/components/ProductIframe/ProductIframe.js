@@ -1,52 +1,49 @@
 import React from 'react';
+import ReactMarkdownWithHtml from 'react-markdown/with-html';
 import '../ProductDetail/ProductDetail.scss';
 import './ProductIframe.scss';
+import ProductService from '../../services/productService';
 import ProductAnnouncement from '../ProductAnnouncement/ProductAnnouncement';
+import ProductCompatibility from '../ProductCompatibility/ProductCompatibility';
+import PaymentInstruction from '../PaymentInstruction/PaymentInstruction';
 import MyWorks from '../MyWorks/MyWorks';
+import ProductPromotion from '../ProductPromotion/ProductPromotion';
 
 export default ({ data }) => {
-  const { html: htmlContent } = data.markdownRemark;
-  const { frontmatter: metadata } = data.markdownRemark;
+  const markdown = ProductService.generateMarkdown(data);
 
   return (
     <article className="product-detail no-sidebar h-entry embedded" itemScope itemType="http://schema.org/BlogPosting">
-      <ProductAnnouncement />
+      <div className="product-content e-content mb-5">
+        <h1>{data.title}</h1>
+      </div>
 
-      <h1>{metadata.title}</h1>
+      <div className="product-content e-content">
+        <ProductAnnouncement />
+        <ProductCompatibility data={ data } />
+      </div>
 
       {
-        metadata.price > 0 &&
-        <div className="mb-4">
-          <h4>Payment Methods</h4>
-          <div>
-            <p><span class="badge badge-secondary">1</span> Pay via <strong>Stripe</strong> using the button <strong>PURCHASE ${ metadata.price }</strong> on the side.</p>
-            <p><span class="badge badge-secondary">2</span> Pay via <strong>Gumroad</strong></p>
-
-            <p>
-              <a href={ metadata.gumroadUrl }>
-                <img src="/images/btn_gumroad.png" alt="Purchase Externally" />
-              </a>
-            </p>
-
-            <p><span class="badge badge-secondary">3</span> Pay via <strong>Paypal</strong>. Please let me know the name of the item by sending me an email <a href="mailto:mr_hie@yahoo.com">mr_hie@yahoo.com</a> <strong>before</strong> you process the payment. Thanks.</p>
-
-            <p>
-              <a href={ metadata.paypalUrl }>
-                <img src="/images/btn_paypal.png" alt="Purchase Externally" />
-              </a>
-            </p>
-
-          </div>
+        data.price > 0 &&
+        <div className="mb-4 product-content e-content">
+          <PaymentInstruction data={ data } />
         </div>
       }
 
       <div
         className="product-content e-content"
         itemProp="articleBody"
-        dangerouslySetInnerHTML={{ __html: htmlContent }}
-      />
+      >
+        <ReactMarkdownWithHtml children={ markdown } allowDangerousHtml />
+      </div>
 
-      <MyWorks />
+      <div className="product-content e-content">
+        <MyWorks />
+      </div>
+
+      <div className="mt-5 product-content e-content">
+        <ProductPromotion />
+      </div>
     </article>
   )
 }

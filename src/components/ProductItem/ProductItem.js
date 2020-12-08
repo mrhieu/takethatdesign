@@ -3,12 +3,13 @@ import { Link, navigate } from 'gatsby';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import './ProductItem.scss';
+import ProductService from '../../services/productService';
+import ImageWrapper from '../ImageWrapper/ImageWrapper';
 
 const thirtyDays = 60 * 60 * 24 * 30 * 1000;
 
 export default ({ data, onTagClick }) => {
-  const { frontmatter: itemData } = data;
-  const { slug } = data.fields;
+  const slug = ProductService.getProductUrl(data);
 
   const handleTagClick = (type, name) => {
     onTagClick({type, name});
@@ -20,17 +21,26 @@ export default ({ data, onTagClick }) => {
 
   // A NEW item is the one that was created less than 30 days ago
   const isNew = () => {
-    return new Date().getTime() - new Date(itemData.createdAt).getTime() < thirtyDays;
+    return new Date().getTime() - new Date(data.createdAt).getTime() < thirtyDays;
   }
+
+  const smallThumbnails = data.productImage.thumbnails.slice(0, 3);
 
   return (
     <div className="product-item">
       {
-        itemData.smallThumbnails &&
-        <div className="item-image-stack" role="button" tabIndex="0" onKeyDown={() => {}} style={{backgroundColor: itemData.color }} onClick={goToDetail}>
+        smallThumbnails.length > 0 &&
+        <div
+          className="item-image-stack"
+          role="button"
+          tabIndex="0"
+          onKeyDown={() => {}}
+          style={{backgroundColor: data.productImage.color.hex }}
+          onClick={goToDetail}
+        >
           {
-            itemData.smallThumbnails.map(imageUrl => (
-              <img key={ imageUrl } src={ imageUrl } alt="" />
+            smallThumbnails.map(item => (
+              <ImageWrapper key={ item._key } imageData={ item } isFixed={ true } />
             ))
           }
           {
@@ -40,31 +50,21 @@ export default ({ data, onTagClick }) => {
         </div>
       }
 
-      {
-        !itemData.smallThumbnails &&
-        <div className="item-image">
-          <img src={ itemData.thumbnail } alt="" />
-          <Link to={ `/${itemData.marketUrl}` } className="item-image-overlay">
-            <button className="btn btn-dark btn-view" data-title="{{ itemData.title }}">View</button>
-          </Link>
-        </div>
-      }
-
       <div className="item-footer">
         <div className="item-info">
           <div className="item-icon">
-            <Link to={ `/${slug}` } title={ itemData.title }>
-              <img src={ itemData.icon } alt="" />
+            <Link to={ `/${slug}` } title={ data.title }>
+              <ImageWrapper imageData={ data.productImage.icon } />
             </Link>
           </div>
 
           <div className="font-bold text-ellipsis">
-            <Link to={ `/${slug}` } title={ itemData.title }>
-              { itemData.title }
+            <Link to={ `/${slug}` } title={ data.title }>
+              { data.title }
             </Link>
           </div>
-          <div className="text-muted text-sm text-ellipsis" title={ itemData.description }>
-            { itemData.shortDescription }
+          <div className="text-muted text-sm text-ellipsis" title={ data.shortDescription }>
+            { data.shortDescription }
           </div>
           <div className="item-tags">
             <OverlayTrigger
@@ -74,8 +74,8 @@ export default ({ data, onTagClick }) => {
                 </Tooltip>
               }
             >
-              <button onClick={() => handleTagClick('framework', itemData.framework)} className="tag tag-sm">
-                { itemData.framework }
+              <button onClick={() => handleTagClick('framework', data.framework.title)} className="tag tag-sm">
+                { data.framework.title }
               </button>
             </OverlayTrigger>
 
@@ -86,23 +86,23 @@ export default ({ data, onTagClick }) => {
                 </Tooltip>
               }
             >
-              <button onClick={() => handleTagClick('category', itemData.category)} className="tag tag-sm">
-                { itemData.category }
+              <button onClick={() => handleTagClick('category', data.category.title)} className="tag tag-sm">
+                { data.category.title }
               </button>
             </OverlayTrigger>
           </div>
         </div>
 
-        <Link to={ `/${slug}` } title={ itemData.title } className="item-price">
+        <Link to={ `/${slug}` } title={ data.title } className="item-price">
           {
-            itemData.price === 0 &&
+            data.price === 0 &&
             <span className="text-danger">Free</span>
           }
 
           {
-            itemData.price !== 0 &&
+            data.price !== 0 &&
             <span>
-              ${ itemData.price }
+              ${ data.price }
             </span>
           }
         </Link>

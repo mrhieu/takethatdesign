@@ -11,32 +11,11 @@ export default ({ location }) => {
   const data = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(sort: { fields: [frontmatter___createdAt], order: DESC }) {
+        allSanityProduct(sort: { fields: createdAt, order: DESC }) {
           totalCount
           edges {
             node {
-              id
-              frontmatter {
-                title
-                shortDescription
-                price
-                createdAt(formatString: "DD MMMM, YYYY")
-                category
-                icon
-                tags
-                framework
-                marketUrl
-                gumroadUrl
-                sellfyUrl
-                paypalUrl
-                color
-                thumbnails
-                smallThumbnails
-              }
-              fields {
-                slug
-              }
-              excerpt
+              ...ProductItem
             }
           }
         }
@@ -44,20 +23,14 @@ export default ({ location }) => {
     `
   )
 
-  const { edges: productList } = data.allMarkdownRemark;
-  const themeList = productList
-    .filter(({ node }) => {
-      const { category } = node.frontmatter;
+  const { edges: productList } = data.allSanityProduct;
+  const featuredThemeList = productList
+    .filter(({ node }) => node.category.title.toUpperCase() === 'THEME')
+    .map(item => item.node)
 
-      return category.toUpperCase() === 'THEME';
-    }).map(item => ({...item.node.frontmatter, id: item.node.id, slug: item.node.fields.slug}));
-
-  const pluginList = productList
-    .filter(({ node }) => {
-      const { category } = node.frontmatter;
-
-      return category.toUpperCase() === 'PLUGIN';
-    }).map(item => ({...item.node.frontmatter, id: item.node.id, slug: item.node.fields.slug}));
+  const featuredPluginList = productList
+    .filter(({ node }) => node.category.title.toUpperCase() === 'PLUGIN')
+    .map(item => item.node)
 
   return (
     <Layout
@@ -79,7 +52,7 @@ export default ({ location }) => {
             <Icon path={ mdiChevronRight } color="#007bff" size="20px" />
           </Link>
         </div>
-        <FeaturedProducts listData={themeList}/>
+        <FeaturedProducts listData={ featuredThemeList } />
       </div>
 
       <div className="featured-products-wrapper">
@@ -92,7 +65,7 @@ export default ({ location }) => {
             <Icon path={ mdiChevronRight } color="#007bff" size="20px" />
           </Link>
         </div>
-        <FeaturedProducts listData={pluginList}/>
+        <FeaturedProducts listData={ featuredPluginList } />
       </div>
     </Layout>
   )

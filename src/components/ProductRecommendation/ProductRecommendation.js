@@ -8,32 +8,11 @@ export default ({ itemData }) => {
   const data = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(sort: { fields: [frontmatter___createdAt], order: DESC }) {
+        allSanityProduct(sort: { fields: createdAt, order: DESC }) {
           totalCount
           edges {
             node {
-              id
-              frontmatter {
-                title
-                shortDescription
-                price
-                createdAt(formatString: "DD MMMM, YYYY")
-                category
-                icon
-                tags
-                framework
-                marketUrl
-                gumroadUrl
-                sellfyUrl
-                paypalUrl
-                color
-                thumbnails
-                smallThumbnails
-              }
-              fields {
-                slug
-              }
-              excerpt
+              ...ProductItem
             }
           }
         }
@@ -41,17 +20,16 @@ export default ({ itemData }) => {
     `
   )
 
-  const { edges: productList } = data.allMarkdownRemark;
+  const { edges: productList } = data.allSanityProduct;
 
   const filteredProductlist = () => {
     return productList
       .filter(({ node }) => {
-        const { title, category, framework, tags } = node.frontmatter;
-        const itemKey = `${title}${category}${framework}${tags.join('')}`;
+        const { title, category, framework, tags } = node;
+        const itemKey = `${title}${category.title}${framework.title}${tags.join('')}`;
         return title !== itemData.title
-          && itemKey.toUpperCase().indexOf(itemData.framework.toUpperCase()) > -1;
-      })
-      .slice(0, 4);
+          && itemKey.toUpperCase().indexOf(itemData.framework.title.toUpperCase()) > -1;
+      }).slice(0, 4);
   }
 
   return filteredProductlist().length > 0
