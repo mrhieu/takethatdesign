@@ -2,11 +2,9 @@
   Query Cheat Sheet: https://www.sanity.io/docs/query-cheat-sheet
 */
 
-// import template from 'lodash/template';
-// import format from 'date-fns/format';
+import template from 'lodash/template';
+import { USE_SANITY_IMG } from './constants';
 
-// const MARKDOWN_TMPL_ID = 'V8rzlpeNVm0cBtmWcgaiuh';
-// const MARKDOWN_REACT_TMPL_ID = 'kZxj3TLRwjMU1nkKJ92a7T';
 const IMAGE_IMPORT_FOLDER = '/images/import';
 
 export default class ProductService {
@@ -32,10 +30,47 @@ export default class ProductService {
     return JSON.stringify(thumbnails);
   }
 
+  static getImageDisplayUrl(imageData, isFixed = false) {
+    if (USE_SANITY_IMG) {
+      if (isFixed) {
+        return imageData.asset.fixed.src;
+      }
+
+      return imageData.asset.fluid.src;
+    }
+
+    return ProductService.getImageFilePath(imageData);
+  }
+
   static getProductUrl(data) {
     const category = data.category.title.toLowerCase();
     const slug = data.slug.current.toLowerCase();
 
     return `${ category }/${ slug }`;
+  }
+
+  static generateMarkdown(data) {
+    const markdownTemplate = data.documentGenerator.productDocument.template.body;
+    const compiled = template(markdownTemplate);
+    const markdown = compiled({
+      data: {
+        ...data.documentGenerator.productDocument,
+        slug: data.slug.current,
+        price: data.price,
+        shortDescription: data.shortDescription,
+        createdAt: data.createdAt,
+        category: data.category.title,
+        framework: data.framework.title,
+        ...data.productLink,
+        paypalUrl: `https://paypal.me/mrhieu/${data.price}`,
+        icon: ProductService.getImageFilePath(data.productImage.icon),
+        tags: JSON.stringify(data.tags),
+        color: data.productImage.color.hex,
+        thumbnails: ProductService.getThumbnails(data.productImage.thumbnails),
+        smallThumbnails: ProductService.getThumbnails(data.productImage.thumbnails, 3, '/small'),
+      }
+    });
+
+    return markdown;
   }
 }

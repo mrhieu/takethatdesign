@@ -25,16 +25,22 @@ export default ({ data, onTagClick }) => {
   }
 
   const smallThumbnails = data.productImage.thumbnails.slice(0, 3);
-  console.log('smallThumbnails', smallThumbnails); // eslint-disable-line
 
   return (
     <div className="product-item">
       {
         smallThumbnails.length > 0 &&
-        <div className="item-image-stack" role="button" tabIndex="0" onKeyDown={() => {}} style={{backgroundColor: data.productImage.color.hex }} onClick={goToDetail}>
+        <div
+          className="item-image-stack"
+          role="button"
+          tabIndex="0"
+          onKeyDown={() => {}}
+          style={{backgroundColor: data.productImage.color.hex }}
+          onClick={goToDetail}
+        >
           {
             smallThumbnails.map(item => (
-              <ImageWrapper key={ item._key } imageData={ item } />
+              <ImageWrapper key={ item._key } imageData={ item } isFixed={ true } />
             ))
           }
           {

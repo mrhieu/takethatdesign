@@ -73,7 +73,7 @@ export default ({ location }) => (
           <h2>Project #100ions</h2>
           <p>by <strong>Take That Design</strong></p>
 
-          <h3 class="text-center">100 Free Ionic Templates</h3>
+          <h3 className="text-center">100 Free Ionic Templates</h3>
 
           <div className="twitter-embed">
             <blockquote className="twitter-tweet">

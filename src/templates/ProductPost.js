@@ -1,26 +1,22 @@
-/*
-  add ?type="embedded to be served as iFrame
-*/
-
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import ProductDetail from '../components/ProductDetail/ProductDetail';
+import ProductService from '../services/productService';
 
 export default ({ data, location }) => {
-  const { frontmatter: metadata } = data.markdownRemark;
+
+  const productData = data.allSanityProduct.edges[0].node;
 
   return (
     <Layout
       metaTags={{
-        title: metadata.title,
-        thumbnail: metadata.icon,
+        title: productData.title,
+        thumbnail: ProductService.getImageDisplayUrl(productData.productImage.icon),
         pageUrl: location.href,
       }}
     >
-      <ProductDetail
-        data={data}
-      />
+      <ProductDetail data={ productData } />
     </Layout>
   )
 }
@@ -30,31 +26,9 @@ export const query = graphql`
     allSanityProduct(filter: { id: { eq: $id } }) {
       edges {
         node {
-          id
-          title
+          ...ProductItem
         }
       }
     }
   }
 `
-
-
-// html
-// frontmatter {
-//   title
-//   shortDescription
-//   price
-//   createdAt(formatString: "DD MMMM, YYYY")
-//   category
-//   icon
-//   tags
-//   framework
-//   marketUrl
-//   gumroadUrl
-//   sellfyUrl
-//   paypalUrl
-//   color
-//   thumbnails
-//   smallThumbnails
-// }
-// excerpt

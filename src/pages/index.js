@@ -12,6 +12,7 @@ export default ({ location }) => {
     graphql`
       query {
         allSanityProduct(sort: { fields: createdAt, order: DESC }) {
+          totalCount
           edges {
             node {
               ...ProductItem

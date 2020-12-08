@@ -6,40 +6,42 @@ import { mdiOpenInNew } from '@mdi/js';
 import Dropdown from 'react-bootstrap/Dropdown';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import ReactMarkdownWithHtml from 'react-markdown/with-html';
 import './ProductDetail.scss';
 import ProductRecommendation from '../ProductRecommendation/ProductRecommendation';
 import ProductPromotion from '../ProductPromotion/ProductPromotion';
+import ImageWrapper from '../ImageWrapper/ImageWrapper';
+import ProductService from '../../services/productService';
 
 export default ({ data }) => {
-  const { html: htmlContent } = data.markdownRemark;
-  const { frontmatter: metadata } = data.markdownRemark;
+  const markdown = ProductService.generateMarkdown(data);
 
   return (
     <React.Fragment>
       <article className="product-detail h-entry" itemScope itemType="http://schema.org/BlogPosting">
         <div className="product-summary">
           <div className="item-icon">
-            <img src={ metadata.icon } alt="" />
+            <ImageWrapper imageData={ data.productImage.icon } />
           </div>
           <div className="item-info">
             <div className="item-title">
-              { metadata.title }
+              { data.title }
             </div>
 
             <div>
-              <Link to={`/products?q=${metadata.framework}`} className="text-muted font-bold">{ metadata.framework }</Link>
+              <Link to={`/products?q=${data.framework.title}`} className="text-muted font-bold">{ data.framework.title }</Link>
               <span className="middot">·</span>
-              <Link to={`/products?q=${metadata.category}`} className="text-muted font-bold">{ metadata.category }</Link>
+              <Link to={`/products?q=${data.category.title}`} className="text-muted font-bold">{ data.category.title }</Link>
             </div>
 
             <div>
               <span className="text-muted">Created on </span>
-              { format(new Date(metadata.createdAt), 'MMM dd, yyyy') }
+              { format(new Date(data.createdAt), 'MMM dd, yyyy') }
             </div>
 
             <div className="tags">
               {
-                metadata.tags.map(tag => (
+                data.tags.map(tag => (
                   <Link
                     key={tag}
                     className="tag tag-sm"
@@ -55,28 +57,28 @@ export default ({ data }) => {
           <div className="mb-4">
             <Dropdown>
               <Dropdown.Toggle variant="dark" size="lg" block className="btn-split">
-                { metadata.price > 0 ? 'Buy now' : 'Free Download' }
-                <div className="btn-addon" title={`USD$${ metadata.price }`}>
-                  ${ metadata.price }
+                { data.price > 0 ? 'Buy now' : 'Free Download' }
+                <div className="btn-addon" title={`USD$${ data.price }`}>
+                  ${ data.price }
                 </div>
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
                 {
-                  metadata.gumroadUrl &&
-                  <Dropdown.Item href={ metadata.gumroadUrl } target="_blank" rel="noopener noreferrer">
+                  data.productLink.gumroadUrl &&
+                  <Dropdown.Item href={ data.productLink.gumroadUrl } target="_blank" rel="noopener noreferrer">
                     <Icon className="icon-sm" path={mdiOpenInNew} /> Pay via Gumroad
                   </Dropdown.Item>
                 }
 
                 {
-                  metadata.paypalUrl &&
-                  <Dropdown.Item href={ metadata.paypalUrl } target="_blank" rel="noopener noreferrer">
+                  data.price > 0 &&
+                  <Dropdown.Item href={ `https://paypal.me/mrhieu/${data.price}` } target="_blank" rel="noopener noreferrer">
                     <OverlayTrigger
                       placement="right"
                       overlay={
                         <Tooltip>
-                          Please Add a note <br/><strong>{ metadata.title }</strong><br/> during your payment
+                          Please Add a note <br/><strong>{ data.title }</strong><br/> during your payment
                         </Tooltip>
                       }
                     >
@@ -90,15 +92,15 @@ export default ({ data }) => {
                 <div className="dropdown-divider"></div>
 
                 {
-                  metadata.githubUrl &&
-                  <Dropdown.Item href={ metadata.githubUrl } target="_blank" rel="noopener noreferrer">
+                  data.productLink.githubUrl &&
+                  <Dropdown.Item href={ data.productLink.githubUrl } target="_blank" rel="noopener noreferrer">
                     <Icon className="icon-sm" path={mdiOpenInNew} /> View on Github
                   </Dropdown.Item>
                 }
 
                 {
-                  metadata.marketUrl &&
-                  <Dropdown.Item href={ metadata.marketUrl } target="_blank" rel="noopener noreferrer">
+                  data.productLink.marketIonicUrl &&
+                  <Dropdown.Item href={ data.productLink.marketIonicUrl } target="_blank" rel="noopener noreferrer">
                     <Icon className="icon-sm" path={mdiOpenInNew} /> View on Ionic Market
                   </Dropdown.Item>
                 }
@@ -111,9 +113,15 @@ export default ({ data }) => {
         <div className="product-thumbnail-container">
           <ul className="thumbnail-list">
             {
-              metadata.thumbnails.map((imageUrl, index) => (
-                <li key={imageUrl} className="thumbnail-item" data-fancybox="gallery" data-caption={`Screenshot #${index + 1}`} data-src={imageUrl}>
-                  <img src={ imageUrl } alt="" />
+              data.productImage.thumbnails.map((image, index) => (
+                <li
+                  key={image._key}
+                  className="thumbnail-item"
+                  data-fancybox="gallery"
+                  data-caption={`Screenshot #${index + 1}`}
+                  data-src={ ProductService.getImageDisplayUrl(image, true) }
+                >
+                  <ImageWrapper imageData={ image } isFixed={ true } />
                 </li>
               ))
             }
@@ -123,8 +131,9 @@ export default ({ data }) => {
         <div
           className="product-content e-content"
           itemProp="articleBody"
-          dangerouslySetInnerHTML={{ __html: htmlContent }}
-        />
+        >
+          <ReactMarkdownWithHtml children={ markdown } allowDangerousHtml />
+        </div>
       </article>
 
       <div className="mt-5">
@@ -133,7 +142,7 @@ export default ({ data }) => {
 
       <div className="mt-5">
         <ProductRecommendation
-          itemData={ metadata }
+          itemData={ data }
         />
       </div>
     </React.Fragment>

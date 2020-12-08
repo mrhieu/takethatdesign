@@ -20,7 +20,7 @@ export const productItemFragment = graphql`
     isHidden
     shortDescription
     price
-    createdAt(formatString: "DD MMM, YYYY")
+    createdAt(formatString: "YYYY-MM-DD HH:mm:ss ZZ")
     category {
       id
       title
@@ -40,6 +40,7 @@ export const productItemFragment = graphql`
           extension
           fluid(maxWidth: 400) {
             ...GatsbySanityImageFluid
+            aspectRatio
           }
         }
       }
@@ -47,8 +48,8 @@ export const productItemFragment = graphql`
         _key
         _rawAsset
         asset {
-          fluid(maxWidth: 600) {
-            ...GatsbySanityImageFluid
+          fixed(width: 600) {
+            ...GatsbySanityImageFixed
           }
         }
       }
