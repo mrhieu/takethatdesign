@@ -18,9 +18,12 @@ export default ({ data }) => {
         <h1>{data.title}</h1>
       </div>
 
+      <div className="product-content e-content mb-5">
+        <ProductCompatibility data={ data } />
+      </div>
+
       <div className="product-content e-content">
         <ProductAnnouncement />
-        <ProductCompatibility data={ data } />
       </div>
 
       {
