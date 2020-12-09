@@ -11,7 +11,7 @@ export default () => (
       <div className="col-sm-6">
         <h3>TakeThatDesign.com is my new home</h3>
 
-        <p>Click the screenshot below to visit, don't forget to bookmark, and subscribe to my newsletter. See you there!</p>
+        <p>Click on the screenshot to visit, don't forget to bookmark, and subscribe to my newsletter. <br/>See you there!</p>
       </div>
     </div>
   </div>
