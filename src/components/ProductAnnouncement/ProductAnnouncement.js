@@ -3,9 +3,9 @@ import React from 'react';
 export default () => (
   <div className="container mb-4">
     <div className="row justify-content-md-center">
-      <div className="col-sm-4" style={{border: '1px solid #eee'}}>
+      <div className="col-sm-4">
         <a href="https://takethatdesign.com" target="_blank" rel="noreferrer noopener">
-          <img src="https://bit.ly/ttdads1" alt="takethatdesign.com thumbnail" />
+          <img src="https://bit.ly/ttdads1" alt="takethatdesign.com thumbnail" style={{border: '1px solid #eee'}} />
         </a>
       </div>
       <div className="col-sm-6">
