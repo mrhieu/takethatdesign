@@ -15,7 +15,8 @@
     "dev": "npm run develop",
     "prod": "gatsby build && gatsby serve",
     "deploy": "gatsby build && cp CNAME public/ && cp robots.txt public/ && gh-pages -d public",
-    "firebase": "gatsby build && firebase deploy"
+    "firebase": "gatsby build && firebase deploy",
+    "images": "./scripts/import-images.sh"
   },
   "dependencies": {
     "@mdi/js": "^4.9.95",

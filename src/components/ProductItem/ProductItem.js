@@ -24,12 +24,12 @@ export default ({ data, onTagClick }) => {
     return new Date().getTime() - new Date(data.createdAt).getTime() < thirtyDays;
   }
 
-  const smallThumbnails = data.productImage.thumbnails.slice(0, 3);
+  const thumbnails = data.productImage.thumbnails.slice(0, 3);
 
   return (
     <div className="product-item">
       {
-        smallThumbnails.length > 0 &&
+        thumbnails.length > 0 &&
         <div
           className="item-image-stack"
           role="button"
@@ -39,8 +39,8 @@ export default ({ data, onTagClick }) => {
           onClick={goToDetail}
         >
           {
-            smallThumbnails.map(item => (
-              <ImageWrapper key={ item._key } imageData={ item } isFixed={ true } />
+            thumbnails.map(item => (
+              <ImageWrapper key={ item._key } imageData={ item } isFixed isSmall />
             ))
           }
           {

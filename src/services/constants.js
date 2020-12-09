@@ -20,7 +20,7 @@ export const productItemFragment = graphql`
     isHidden
     shortDescription
     price
-    createdAt(formatString: "YYYY-MM-DD HH:mm:ss ZZ")
+    createdAt(formatString: "YYYY/MM/DD HH:mm:ss ZZ")
     category {
       id
       title
