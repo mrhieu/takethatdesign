@@ -15,10 +15,6 @@ export default ({ data }) => {
   return (
     <article className="product-detail no-sidebar h-entry embedded" itemScope itemType="http://schema.org/BlogPosting">
       <div className="product-content e-content mb-5">
-        <h1>{data.title}</h1>
-      </div>
-
-      <div className="product-content e-content mb-5">
         <ProductCompatibility data={ data } />
       </div>
 
