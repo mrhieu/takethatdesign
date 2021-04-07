@@ -11,12 +11,12 @@ export default () => (
             <div>
               <div className="label-latest">Latest</div>
               <div className="slide-title">
-                Tinder UI for Ionic Apps
+                Tinder Ionic React 5
               </div>
               <div className="slide-subtitle">
-                The latest Tinder UI (Ionic 5) with Tabbed View, Profile Passions edit
+                Tinder UI is <strong>finally</strong> available in Ionic React 5!
               </div>
-              <Link to="/theme/tinder-5-tabbed-view/" className="slide-cta">
+              <Link to="/theme/tinder-react-5/" className="slide-cta">
                 Take a look
               </Link>
             </div>

@@ -6,6 +6,7 @@
 
   .item-icon {
     margin-bottom: 8px;
+    position: relative;
 
     img {
       border-radius: 16px;
@@ -20,6 +21,19 @@
 
   .item-short-description {
     font-size: 14px;
+  }
+
+  .label-new {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 4px 12px;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 12px 0 12px 0;
+    letter-spacing: 1px;
   }
 }
 
