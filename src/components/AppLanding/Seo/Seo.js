@@ -86,7 +86,7 @@ const SEO = ({ metaTags }) => {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${title}`}
+      titleTemplate={`%s | Twelve O'clock App`}
       meta={[
         ...googleMetaTags,
         ...facebookMetaTags,
