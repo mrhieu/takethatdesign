@@ -24,7 +24,7 @@ export default ({ location }) => (
           <p className="post-body-text">
             The easiest way to track your watch accuracy
           </p>
-          <a href="https://apps.apple.com/vn/app/twelve-oclock/id1570977980" className="inline m-b">
+          <a href="https://apps.apple.com/app/twelve-oclock/id1570977980" className="inline m-b">
             <img src="/images/download_appstore.png" height="50" alt=""/>
           </a>
           <img src="/images/twelve/thumbnail.png" style={ styles.thumbnail } alt=""/>
