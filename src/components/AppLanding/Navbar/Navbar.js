@@ -4,7 +4,7 @@ import './Navbar.scss';
 
 export default ({ location }) => (
   <header role="banner">
-    <div className="header-wrapper">
+    <div className="header-wrapper app-landing">
       <div className="container d-flex flex-row align-items-center justify-content-between">
         <div className="navbar-logo d-flex flex-row align-items-center justify-content-between">
           <Link to="/twelveappofficial">
