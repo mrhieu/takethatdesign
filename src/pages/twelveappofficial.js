@@ -25,11 +25,11 @@ export default ({ location }) => (
             The easiest way to track your watch accuracy. <strong>No devices needed.</strong>
           </p>
           <div className="m-b text-center">
-            <a href="https://apps.apple.com/app/twelve-oclock/id1570977980" className="m-l-sm">
+            <a href="https://apps.apple.com/app/twelve-oclock/id1570977980" className="m-r-sm">
               <img src="/images/download_appstore.png" height="48" alt=""/>
             </a>
             <a href="https://play.google.com/store/apps/details?id=com.takethatdesign.twelveappofficial">
-              <img src="/images/download_android.png" height="72" alt=""/>
+              <img src="/images/download_android.png" height="48" alt=""/>
             </a>
           </div>
           <img src="/images/twelve/thumbnail.png" style={ styles.thumbnail } alt=""/>
