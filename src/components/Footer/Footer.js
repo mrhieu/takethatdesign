@@ -1,8 +1,6 @@
 import React from 'react';
 import Icon from '@mdi/react';
-import { mdiFacebook } from '@mdi/js';
-import { mdiTwitter } from '@mdi/js';
-import { mdiShopping } from '@mdi/js';
+import { mdiFacebook, mdiTwitter, mdiShopping } from '@mdi/js';
 import GumroadForm from '../GumroadForm/GumroadForm';
 import './Footer.scss';
 

@@ -1,0 +1,22 @@
+.review-list {
+  text-align: left;
+
+  .review-item {
+    margin-bottom: 40px;
+  }
+
+  .review-item-title {
+    font-weight: 700;
+  }
+
+  .rating {
+    display: inline-block;
+    margin-left: 8px;
+    position: relative;
+    top: -2px;
+  }
+
+  .review-item-metadata {
+    margin-bottom: 8px;
+  }
+}
