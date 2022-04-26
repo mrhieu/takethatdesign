@@ -66,7 +66,7 @@ export default ({ data }) => {
               <Dropdown.Menu>
                 {
                   data.productLink.gumroadUrl &&
-                  <Dropdown.Item href={ data.productLink.gumroadUrl } target="_blank" rel="noopener noreferrer">
+                  <Dropdown.Item href={ data.productLink.gumroadUrl } className="gumroad-button" target="_blank" rel="noopener noreferrer">
                     <Icon className="icon-sm" path={mdiOpenInNew} /> Pay via Gumroad
                   </Dropdown.Item>
                 }
