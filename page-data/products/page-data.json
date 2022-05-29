@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-products-js","path":"/products/","result":{"pageContext":{}}}
+{
+    "componentChunkName": "component---src-pages-products-tsx",
+    "path": "/products/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": ["3215699906","63159454"]}

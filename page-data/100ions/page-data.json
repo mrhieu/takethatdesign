@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-100-ions-js","path":"/100ions/","result":{"pageContext":{}}}
+{
+    "componentChunkName": "component---src-pages-100-ions-tsx",
+    "path": "/100ions/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": ["63159454"]}
